@@ -1,0 +1,72 @@
+//.ck-rounded-corners .ck.ck-editor__main>.ck-editor__editable, .ck.ck-editor__main>.ck-editor__editable.ck-rounded-corners {
+//  min-height: 300px;
+//}
+#tinymce {
+    margin: 0px !important;
+}
+
+.tox {
+    &-menubar {
+        background-color: #e2e2e2 !important;
+    }
+
+    &-mbtn {
+        // font-family: Muli-Regular !important;
+        font-size: 13px !important;
+        color: #5b5b5b !important;
+        margin: 0px 13px !important;
+    }
+
+    &-toolbar__primary {
+        background: #e2e2e2 !important;
+        border-bottom: 1px solid #c7c7c7 !important;
+    }
+
+    &-tbtn {
+        svg {
+            fill: #5b5b5b !important;
+        }
+    }
+
+    &-edit-area__iframe {
+        background-color: #e2e2e2 !important;
+    }
+
+    &-statusbar {
+        display: none !important;
+    }
+
+    &-tinymce {
+        border-radius: 15px !important;
+        border: none !important;
+    }
+}
+
+.tox-menubar,
+.tox-toolbar__primary {
+    background-color: #ffffff !important;
+}
+
+.wrap-editor {
+    .label {
+        color: black !important;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+}
+
+.label {
+    color: black !important;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.tox.tox-tinymce.tox-tinymce--toolbar-sticky-off {
+    height: 90% !important;
+}

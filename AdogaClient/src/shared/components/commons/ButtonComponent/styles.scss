@@ -1,0 +1,43 @@
+@import "./../../../assets/scss/variables";
+
+.btn-component {
+  background-color: $color-origin;
+  padding: 10px 17px 10px 45px;
+  height: 44px;
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+  transition: 0.2s;
+  line-height: 1.5715;
+  display: inline-block;
+  border-radius: 60px;
+  position: relative;
+  box-shadow: 0 10px 20px 0px rgba(243, 87, 87, 0.2);
+  &:hover {
+    color: white;
+    opacity: 0.8;
+  }
+  &__icon {
+    background-color: white;
+    color: $color-origin !important;
+    padding: 6px;
+    border-radius: 90px;
+    position: absolute;
+    top: 6px;
+    left: 7px;
+    height: 32px;
+    width: 32px;
+    .anticon {
+      vertical-align: 0;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+    }
+  }
+  .green{
+    svg{
+      color:$color-green;
+    }
+  }
+}
