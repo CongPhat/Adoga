@@ -7,6 +7,7 @@ export interface IProduct {
   star: number;
   imageThumbnail: string;
   rating: number;
+  discount: number;
 }
 
 export default class ProductEntities implements IProduct {
@@ -18,6 +19,7 @@ export default class ProductEntities implements IProduct {
   locationId: string = "";
   imageThumbnail: string = "";
   rating: number = 0;
+  discount: number = 0;
 
   constructor(data) {
     this.name = data?.name;
@@ -28,6 +30,7 @@ export default class ProductEntities implements IProduct {
     this.locationId = data?.locationId;
     this.imageThumbnail = data?.imageThumbnail;
     this.rating = data?.rating;
+    this.discount = data?.discount || this.discount;
   }
   public get Properties(): IProduct {
     return {
@@ -39,6 +42,7 @@ export default class ProductEntities implements IProduct {
       id: this.id,
       imageThumbnail: this.imageThumbnail,
       rating: this.rating,
+      discount: this.discount,
     };
   }
   static CreateList(listData) {

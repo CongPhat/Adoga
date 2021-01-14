@@ -1,0 +1,21 @@
+.gallery {
+  padding: 1rem;
+  display: flex;
+  overflow-x: scroll;
+  scroll-padding: 0 50%;
+  scroll-snap-type: x mandatory;
+  li {
+    scroll-snap-align: center;
+    display: inline-block;
+    // height: 15vh;
+    border-radius: 3px;
+    font-size: 0;
+    margin-right: 3rem;
+    min-width: 10vw;
+  }
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  @media screen {
+  }
+}

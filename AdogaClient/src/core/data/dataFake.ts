@@ -419,6 +419,7 @@ export const dataProductRecommended = [
     imageThumbnail:
       "https://pix6.agoda.net/hotelImages/941/9411958/9411958_19082615140080010014.jpg",
     rating: 9.7,
+    discount: 50,
   },
   {
     id: "12",
@@ -430,6 +431,7 @@ export const dataProductRecommended = [
     imageThumbnail:
       "https://pix6.agoda.net/hotelImages/5638299/-1/cfdc49590cc000480e5abd69f1ccf9f3.jpg",
     rating: 9.7,
+    discount: 49,
   },
   {
     id: "7",
@@ -441,6 +443,7 @@ export const dataProductRecommended = [
     imageThumbnail:
       "https://pix6.agoda.net/hotelImages/5638299/-1/cfdc49590cc000480e5abd69f1ccf9f3.jpg",
     rating: 9.7,
+    discount: 68,
   },
 ];
 
@@ -448,21 +451,113 @@ export const dataLocationFake = [
   {
     id: "1",
     name: "Ho Chi Minh City",
+    isTop: true,
+    image:
+      "https://pix6.agoda.net/geo/city/13170/1_13170_02.jpg?s=345x345&ar=1x1",
+    accommodations: 8886,
   },
   {
     id: "2",
     name: "Hanoi",
+    isTop: true,
+    image:
+      "https://pix6.agoda.net/geo/city/2758/1_2758_02.jpg?s=345x345&ar=1x1",
+    accommodations: 8886,
   },
   {
     id: "3",
     name: "Dalat",
+    isTop: true,
+    image:
+      "https://pix6.agoda.net/geo/city/15932/1_15932_02.jpg?s=345x345&ar=1x1",
+    accommodations: 8886,
   },
   {
     id: "4",
     name: "VungTau",
+    isTop: true,
+    image:
+      "https://pix6.agoda.net/geo/city/17190/1_17190_02.jpg?s=345x345&ar=1x1",
+    accommodations: 8886,
   },
   {
     id: "5",
     name: "Phu Quoc Island",
+    isTop: true,
+    image:
+      "https://pix6.agoda.net/geo/city/17188/1_17188_02.jpg?s=345x345&ar=1x1",
+    accommodations: 8886,
+  },
+  {
+    id: "6",
+    name: "Da Nang",
+    isTop: true,
+    image:
+      "https://pix6.agoda.net/geo/city/16440/1_16440_02.jpg?s=345x345&ar=1x1",
+    accommodations: 8886,
+  },
+  {
+    id: "7",
+    name: "Nha Trang",
+    isTop: true,
+    image:
+      "https://pix6.agoda.net/geo/city/2679/1_2679_02.jpg?s=345x345&ar=1x1",
+    accommodations: 8886,
+  },
+  {
+    id: "8",
+    name: "Phan Thiet",
+    isTop: true,
+    image:
+      "https://pix6.agoda.net/geo/city/16264/1_16264_02.jpg?s=345x345&ar=1x1",
+    accommodations: 8886,
+  },
+  {
+    id: "9",
+    name: "Sapa",
+    isTop: true,
+    image:
+      "https://pix6.agoda.net/geo/city/13170/1_13170_02.jpg?s=345x345&ar=1x1",
+    accommodations: 8886,
+  },
+  {
+    id: "10",
+    name: "Can Tho",
+    isTop: true,
+    image:
+      "https://pix6.agoda.net/geo/city/13170/1_13170_02.jpg?s=345x345&ar=1x1",
+    accommodations: 8886,
+  },
+  {
+    id: "11",
+    name: "Hue",
+    isTop: true,
+    image:
+      "https://pix6.agoda.net/geo/city/13170/1_13170_02.jpg?s=345x345&ar=1x1",
+    accommodations: 8886,
+  },
+  {
+    id: "12",
+    name: "Hoi An",
+    isTop: true,
+    image:
+      "https://pix6.agoda.net/geo/city/13170/1_13170_02.jpg?s=345x345&ar=1x1",
+    accommodations: 8886,
+  },
+  {
+    id: "13",
+    name: "Ca Mau",
+    isTop: true,
+    image:
+      "https://pix6.agoda.net/geo/city/13170/1_13170_02.jpg?s=345x345&ar=1x1",
+    accommodations: 8886,
+  },
+  {
+    id: "14",
+    name: "Phu Yen",
+    isTop: true,
+    image:
+      "https://pix6.agoda.net/geo/city/13170/1_13170_02.jpg?s=345x345&ar=1x1",
+    accommodations: 8886,
   },
 ];
