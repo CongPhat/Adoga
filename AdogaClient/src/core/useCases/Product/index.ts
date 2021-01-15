@@ -21,4 +21,13 @@ export default class ProductRepositoryImpl implements Repository {
   public async GetProductRecommended(): Promise<ProductEntities[]> {
     return ProductEntities.CreateList(dataProductRecommended);
   }
+  public async GetAllProduct(dataSearch): Promise<ProductEntities[]> {
+    //fake
+    const { location } = dataSearch;
+    let dataResult = [];
+    if (location) {
+      dataResult = dataProductFake.filter((x) => x.locationId == location);
+    }
+    return ProductEntities.CreateList(dataResult);
+  }
 }

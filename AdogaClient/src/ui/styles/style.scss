@@ -9,6 +9,121 @@
   src: local("Roboto Regular"), local("Roboto-Regular"),
     url("../../shared/assets/font/Roboto/Roboto-Regular.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: local("Roboto"), local("Roboto"),
+    url("../../shared/assets/font/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Roboto"), local("Roboto"),
+    url("../../shared/assets/font/Roboto/Roboto-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: local("Roboto"), local("Roboto"),
+    url("../../shared/assets/font/Roboto/Roboto-Thin.ttf") format("truetype");
+}
+/* Roboto bold */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local("Roboto"), local("Roboto"),
+    url("../../shared/assets/font/Roboto/Roboto-Bold.ttf") format("truetype");
+}
+
+/* Helvetica */
+@font-face {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local("Helvetica"), local("Helvetica"),
+    url("../../shared/assets/font/Helvetica/Helvetica-Bold.ttf")
+      format("truetype");
+}
+@font-face {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: local("Helvetica"), local("Helvetica"),
+    url("../../shared/assets/font/Helvetica/Helvetica.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Helvetica"), local("Helvetica"),
+    url("../../shared/assets/font/Helvetica/Helvetica-Light.ttf")
+      format("truetype");
+}
+
+/* Arial */
+@font-face {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local("Arial"), local("Arial"),
+    url("../../shared/assets/font/Arial/Arial-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: local("Arial"), local("Arial"),
+    url("../../shared/assets/font/Arial/Arial.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Arial"), local("Arial"),
+    url("../../shared/assets/font/Arial/Arial-Light.ttf") format("truetype");
+}
+
+/* Segoe */
+@font-face {
+  font-family: "Segoe-UI";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local("Segoe-UI"), local("Segoe-UI"),
+    url("../../shared/assets/font/Segoe-ui/Segoe-UI-Bold.ttf")
+      format("truetype");
+}
+@font-face {
+  font-family: "Segoe-UI";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: local("Segoe-UI"), local("Segoe-UI"),
+    url("../../shared/assets/font/Segoe-ui/Segoe-UI.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Segoe-Historic";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Arial"), local("Arial"),
+    url("../../shared/assets/font/Segoe-ui/Segoe-UI-historic.ttf")
+      format("truetype");
+}
 
 .width-area {
   width: 100%;

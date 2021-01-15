@@ -8,6 +8,10 @@ export const SERVICES = {
   AuthenticationHeaderField: "JWT_TOKEN_HDBANK_CMS",
 };
 
+export const PARAMS = {
+  ALLPRODUCT: "/all-product",
+};
+
 export const KAFKA = {
   DEFAULT_BROKER: "kafka1:9092",
 };

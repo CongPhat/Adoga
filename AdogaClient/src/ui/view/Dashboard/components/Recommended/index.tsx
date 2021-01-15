@@ -1,9 +1,5 @@
-import Tab from "@components/commons/feature/Tab";
-import TabPane from "@components/commons/feature/Tab/TabPane";
-import { useAsync, useSingleAsync } from "@hook/useAsync";
+import { useSingleAsync } from "@hook/useAsync";
 import React, { useEffect } from "react";
-import LocationRepositoryImpl from "@useCases/Location/index";
-import LocationEntities from "@entities/Location";
 import TitleDashboard from "@components/commons/single/TitleDashboard";
 import ProductRepositoryImpl from "@useCases/Product";
 import ProductEntities from "@entities/Product";
@@ -22,7 +18,7 @@ const Recommended = ({}) => {
   return (
     <div className=" mt-60">
       <TitleDashboard text="Recommended places to stay for your next trip!" />
-      <div className="w-5/6 m-auto grid grid-cols-3 gap-4">
+      <div className="w-5/6 m-auto grid lg:grid-cols-3 gap-4 sm:grid-cols-1">
         {asyncGetProductRecommended.value.map((item, index) => (
           <CardProductSimple product={item} key={index} />
         ))}

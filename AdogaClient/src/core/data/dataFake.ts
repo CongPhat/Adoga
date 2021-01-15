@@ -9,6 +9,68 @@ export const dataProductFake = [
     imageThumbnail:
       "https://pix6.agoda.net/hotelImages/941/9411958/9411958_19082615140080010014.jpg",
     rating: 9.7,
+    benefits: [
+      { id: "1", name: "Breakfast" },
+      { id: "2", name: "Free cancellation" },
+      { id: "3", name: "Pay at the hotel" },
+      { id: "4", name: "Free mini bar" },
+      { id: "5", name: "Free saune accsess" },
+      { id: "6", name: "Free fitness center access" },
+      { id: "7", name: "Breakfast for 1 person" },
+      { id: "8", name: "Free pool accsess" },
+    ],
+    images: [
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/dda69105b36792ae769230297d80c6ef.jpg?s=450x450",
+        title: "Main",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/1014e6ac69fbd81ee88238e053dd453d.jpg?s=1024x768",
+        title: "Lobby",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/564/5646737/5646737_18102311260068629495.jpg?s=1024x768",
+        title: "Bed",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/8ac4ace1fdb894e193737e123b1dc27b.jpg?s=1024x768",
+        title: "Out door",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/b9fd9f23603ec4444729a7858990557c.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/94c7ca2a6e715887bc6cf58a2106e9e6.jpg?s=1024x768",
+        title: "Ballroom",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/c2fbb639f2374bb1d18d7be7315a07c1.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/ff1e2a471e7071ca9dc4bdd38920868a.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/bb3d697b703450cb1a76f583ade439c5.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/a185b06e8fa30832ea0afc930e7f717c.jpg?s=1024x768",
+        title: "",
+      },
+    ],
   },
   {
     id: "2",
@@ -20,6 +82,68 @@ export const dataProductFake = [
     imageThumbnail:
       "https://pix6.agoda.net/hotelImages/300/300972/300972_16091317470046411711.png",
     rating: 9.7,
+    benefits: [
+      { id: "1", name: "Breakfast" },
+      { id: "2", name: "Free cancellation" },
+      { id: "3", name: "Pay at the hotel" },
+      { id: "4", name: "Free mini bar" },
+      { id: "5", name: "Free saune accsess" },
+      { id: "6", name: "Free fitness center access" },
+      { id: "7", name: "Breakfast for 1 person" },
+      { id: "8", name: "Free pool accsess" },
+    ],
+    images: [
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/dda69105b36792ae769230297d80c6ef.jpg?s=450x450",
+        title: "Main",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/1014e6ac69fbd81ee88238e053dd453d.jpg?s=1024x768",
+        title: "Lobby",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/564/5646737/5646737_18102311260068629495.jpg?s=1024x768",
+        title: "Bed",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/8ac4ace1fdb894e193737e123b1dc27b.jpg?s=1024x768",
+        title: "Out door",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/b9fd9f23603ec4444729a7858990557c.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/94c7ca2a6e715887bc6cf58a2106e9e6.jpg?s=1024x768",
+        title: "Ballroom",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/c2fbb639f2374bb1d18d7be7315a07c1.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/ff1e2a471e7071ca9dc4bdd38920868a.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/bb3d697b703450cb1a76f583ade439c5.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/a185b06e8fa30832ea0afc930e7f717c.jpg?s=1024x768",
+        title: "",
+      },
+    ],
   },
   {
     id: "6",
@@ -31,6 +155,68 @@ export const dataProductFake = [
     imageThumbnail:
       "https://pix6.agoda.net/hotelImages/102/10291318/10291318_19101815000082170773.jpg",
     rating: 9.7,
+    benefits: [
+      { id: "1", name: "Breakfast" },
+      { id: "2", name: "Free cancellation" },
+      { id: "3", name: "Pay at the hotel" },
+      { id: "4", name: "Free mini bar" },
+      { id: "5", name: "Free saune accsess" },
+      { id: "6", name: "Free fitness center access" },
+      { id: "7", name: "Breakfast for 1 person" },
+      { id: "8", name: "Free pool accsess" },
+    ],
+    images: [
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/dda69105b36792ae769230297d80c6ef.jpg?s=450x450",
+        title: "Main",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/1014e6ac69fbd81ee88238e053dd453d.jpg?s=1024x768",
+        title: "Lobby",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/564/5646737/5646737_18102311260068629495.jpg?s=1024x768",
+        title: "Bed",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/8ac4ace1fdb894e193737e123b1dc27b.jpg?s=1024x768",
+        title: "Out door",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/b9fd9f23603ec4444729a7858990557c.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/94c7ca2a6e715887bc6cf58a2106e9e6.jpg?s=1024x768",
+        title: "Ballroom",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/c2fbb639f2374bb1d18d7be7315a07c1.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/ff1e2a471e7071ca9dc4bdd38920868a.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/bb3d697b703450cb1a76f583ade439c5.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/a185b06e8fa30832ea0afc930e7f717c.jpg?s=1024x768",
+        title: "",
+      },
+    ],
   },
   {
     id: "3",
@@ -42,6 +228,68 @@ export const dataProductFake = [
     imageThumbnail:
       "https://pix6.agoda.net/hotelImages/110/11088582/11088582_19121114480085583809.jpg",
     rating: 9.7,
+    benefits: [
+      { id: "1", name: "Breakfast" },
+      { id: "2", name: "Free cancellation" },
+      { id: "3", name: "Pay at the hotel" },
+      { id: "4", name: "Free mini bar" },
+      { id: "5", name: "Free saune accsess" },
+      { id: "6", name: "Free fitness center access" },
+      { id: "7", name: "Breakfast for 1 person" },
+      { id: "8", name: "Free pool accsess" },
+    ],
+    images: [
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/dda69105b36792ae769230297d80c6ef.jpg?s=450x450",
+        title: "Main",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/1014e6ac69fbd81ee88238e053dd453d.jpg?s=1024x768",
+        title: "Lobby",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/564/5646737/5646737_18102311260068629495.jpg?s=1024x768",
+        title: "Bed",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/8ac4ace1fdb894e193737e123b1dc27b.jpg?s=1024x768",
+        title: "Out door",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/b9fd9f23603ec4444729a7858990557c.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/94c7ca2a6e715887bc6cf58a2106e9e6.jpg?s=1024x768",
+        title: "Ballroom",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/c2fbb639f2374bb1d18d7be7315a07c1.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/ff1e2a471e7071ca9dc4bdd38920868a.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/bb3d697b703450cb1a76f583ade439c5.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/a185b06e8fa30832ea0afc930e7f717c.jpg?s=1024x768",
+        title: "",
+      },
+    ],
   },
   {
     id: "4",
@@ -53,6 +301,68 @@ export const dataProductFake = [
     imageThumbnail:
       "https://pix6.agoda.net/hotelImages/1517561/-1/c8d7f0bb4cf45c2493dfaf257b0b1750.jpg",
     rating: 9.7,
+    benefits: [
+      { id: "1", name: "Breakfast" },
+      { id: "2", name: "Free cancellation" },
+      { id: "3", name: "Pay at the hotel" },
+      { id: "4", name: "Free mini bar" },
+      { id: "5", name: "Free saune accsess" },
+      { id: "6", name: "Free fitness center access" },
+      { id: "7", name: "Breakfast for 1 person" },
+      { id: "8", name: "Free pool accsess" },
+    ],
+    images: [
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/dda69105b36792ae769230297d80c6ef.jpg?s=450x450",
+        title: "Main",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/1014e6ac69fbd81ee88238e053dd453d.jpg?s=1024x768",
+        title: "Lobby",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/564/5646737/5646737_18102311260068629495.jpg?s=1024x768",
+        title: "Bed",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/8ac4ace1fdb894e193737e123b1dc27b.jpg?s=1024x768",
+        title: "Out door",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/b9fd9f23603ec4444729a7858990557c.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/94c7ca2a6e715887bc6cf58a2106e9e6.jpg?s=1024x768",
+        title: "Ballroom",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/c2fbb639f2374bb1d18d7be7315a07c1.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/ff1e2a471e7071ca9dc4bdd38920868a.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/bb3d697b703450cb1a76f583ade439c5.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/a185b06e8fa30832ea0afc930e7f717c.jpg?s=1024x768",
+        title: "",
+      },
+    ],
   },
   {
     id: "5",
@@ -64,6 +374,68 @@ export const dataProductFake = [
     imageThumbnail:
       "https://pix6.agoda.net/hotelImages/941/9411958/9411958_19082615140080010014.jpg",
     rating: 9.7,
+    benefits: [
+      { id: "1", name: "Breakfast" },
+      { id: "2", name: "Free cancellation" },
+      { id: "3", name: "Pay at the hotel" },
+      { id: "4", name: "Free mini bar" },
+      { id: "5", name: "Free saune accsess" },
+      { id: "6", name: "Free fitness center access" },
+      { id: "7", name: "Breakfast for 1 person" },
+      { id: "8", name: "Free pool accsess" },
+    ],
+    images: [
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/dda69105b36792ae769230297d80c6ef.jpg?s=450x450",
+        title: "Main",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/1014e6ac69fbd81ee88238e053dd453d.jpg?s=1024x768",
+        title: "Lobby",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/564/5646737/5646737_18102311260068629495.jpg?s=1024x768",
+        title: "Bed",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/8ac4ace1fdb894e193737e123b1dc27b.jpg?s=1024x768",
+        title: "Out door",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/b9fd9f23603ec4444729a7858990557c.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/94c7ca2a6e715887bc6cf58a2106e9e6.jpg?s=1024x768",
+        title: "Ballroom",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/c2fbb639f2374bb1d18d7be7315a07c1.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/ff1e2a471e7071ca9dc4bdd38920868a.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/bb3d697b703450cb1a76f583ade439c5.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/a185b06e8fa30832ea0afc930e7f717c.jpg?s=1024x768",
+        title: "",
+      },
+    ],
   },
   {
     id: "13",
@@ -75,6 +447,68 @@ export const dataProductFake = [
     imageThumbnail:
       "https://pix6.agoda.net/hotelImages/1517561/-1/c8d7f0bb4cf45c2493dfaf257b0b1750.jpg",
     rating: 9.7,
+    benefits: [
+      { id: "1", name: "Breakfast" },
+      { id: "2", name: "Free cancellation" },
+      { id: "3", name: "Pay at the hotel" },
+      { id: "4", name: "Free mini bar" },
+      { id: "5", name: "Free saune accsess" },
+      { id: "6", name: "Free fitness center access" },
+      { id: "7", name: "Breakfast for 1 person" },
+      { id: "8", name: "Free pool accsess" },
+    ],
+    images: [
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/dda69105b36792ae769230297d80c6ef.jpg?s=450x450",
+        title: "Main",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/1014e6ac69fbd81ee88238e053dd453d.jpg?s=1024x768",
+        title: "Lobby",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/564/5646737/5646737_18102311260068629495.jpg?s=1024x768",
+        title: "Bed",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/8ac4ace1fdb894e193737e123b1dc27b.jpg?s=1024x768",
+        title: "Out door",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/b9fd9f23603ec4444729a7858990557c.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/94c7ca2a6e715887bc6cf58a2106e9e6.jpg?s=1024x768",
+        title: "Ballroom",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/c2fbb639f2374bb1d18d7be7315a07c1.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/ff1e2a471e7071ca9dc4bdd38920868a.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/bb3d697b703450cb1a76f583ade439c5.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/a185b06e8fa30832ea0afc930e7f717c.jpg?s=1024x768",
+        title: "",
+      },
+    ],
   },
   {
     id: "7",
@@ -86,6 +520,68 @@ export const dataProductFake = [
     imageThumbnail:
       "https://pix6.agoda.net/hotelImages/941/9411958/9411958_19082615140080010014.jpg",
     rating: 9.7,
+    benefits: [
+      { id: "1", name: "Breakfast" },
+      { id: "2", name: "Free cancellation" },
+      { id: "3", name: "Pay at the hotel" },
+      { id: "4", name: "Free mini bar" },
+      { id: "5", name: "Free saune accsess" },
+      { id: "6", name: "Free fitness center access" },
+      { id: "7", name: "Breakfast for 1 person" },
+      { id: "8", name: "Free pool accsess" },
+    ],
+    images: [
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/dda69105b36792ae769230297d80c6ef.jpg?s=450x450",
+        title: "Main",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/1014e6ac69fbd81ee88238e053dd453d.jpg?s=1024x768",
+        title: "Lobby",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/564/5646737/5646737_18102311260068629495.jpg?s=1024x768",
+        title: "Bed",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/8ac4ace1fdb894e193737e123b1dc27b.jpg?s=1024x768",
+        title: "Out door",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/b9fd9f23603ec4444729a7858990557c.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/94c7ca2a6e715887bc6cf58a2106e9e6.jpg?s=1024x768",
+        title: "Ballroom",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/c2fbb639f2374bb1d18d7be7315a07c1.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/ff1e2a471e7071ca9dc4bdd38920868a.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/bb3d697b703450cb1a76f583ade439c5.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/a185b06e8fa30832ea0afc930e7f717c.jpg?s=1024x768",
+        title: "",
+      },
+    ],
   },
   {
     id: "8",
@@ -97,6 +593,68 @@ export const dataProductFake = [
     imageThumbnail:
       "https://pix6.agoda.net/hotelImages/941/9411958/9411958_19082615140080010014.jpg",
     rating: 9.7,
+    benefits: [
+      { id: "1", name: "Breakfast" },
+      { id: "2", name: "Free cancellation" },
+      { id: "3", name: "Pay at the hotel" },
+      { id: "4", name: "Free mini bar" },
+      { id: "5", name: "Free saune accsess" },
+      { id: "6", name: "Free fitness center access" },
+      { id: "7", name: "Breakfast for 1 person" },
+      { id: "8", name: "Free pool accsess" },
+    ],
+    images: [
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/dda69105b36792ae769230297d80c6ef.jpg?s=450x450",
+        title: "Main",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/1014e6ac69fbd81ee88238e053dd453d.jpg?s=1024x768",
+        title: "Lobby",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/564/5646737/5646737_18102311260068629495.jpg?s=1024x768",
+        title: "Bed",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/8ac4ace1fdb894e193737e123b1dc27b.jpg?s=1024x768",
+        title: "Out door",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/b9fd9f23603ec4444729a7858990557c.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/94c7ca2a6e715887bc6cf58a2106e9e6.jpg?s=1024x768",
+        title: "Ballroom",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/c2fbb639f2374bb1d18d7be7315a07c1.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/ff1e2a471e7071ca9dc4bdd38920868a.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/bb3d697b703450cb1a76f583ade439c5.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/a185b06e8fa30832ea0afc930e7f717c.jpg?s=1024x768",
+        title: "",
+      },
+    ],
   },
   {
     id: "9",
@@ -108,6 +666,68 @@ export const dataProductFake = [
     imageThumbnail:
       "https://pix6.agoda.net/hotelImages/5462641/-1/aebe6ddf0d5731c036a54e3a46418a28.jpg",
     rating: 9.7,
+    benefits: [
+      { id: "1", name: "Breakfast" },
+      { id: "2", name: "Free cancellation" },
+      { id: "3", name: "Pay at the hotel" },
+      { id: "4", name: "Free mini bar" },
+      { id: "5", name: "Free saune accsess" },
+      { id: "6", name: "Free fitness center access" },
+      { id: "7", name: "Breakfast for 1 person" },
+      { id: "8", name: "Free pool accsess" },
+    ],
+    images: [
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/dda69105b36792ae769230297d80c6ef.jpg?s=450x450",
+        title: "Main",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/1014e6ac69fbd81ee88238e053dd453d.jpg?s=1024x768",
+        title: "Lobby",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/564/5646737/5646737_18102311260068629495.jpg?s=1024x768",
+        title: "Bed",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/8ac4ace1fdb894e193737e123b1dc27b.jpg?s=1024x768",
+        title: "Out door",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/b9fd9f23603ec4444729a7858990557c.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/94c7ca2a6e715887bc6cf58a2106e9e6.jpg?s=1024x768",
+        title: "Ballroom",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/c2fbb639f2374bb1d18d7be7315a07c1.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/ff1e2a471e7071ca9dc4bdd38920868a.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/bb3d697b703450cb1a76f583ade439c5.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/a185b06e8fa30832ea0afc930e7f717c.jpg?s=1024x768",
+        title: "",
+      },
+    ],
   },
   {
     id: "10",
@@ -119,6 +739,68 @@ export const dataProductFake = [
     imageThumbnail:
       "https://pix6.agoda.net/hotelImages/5435458/-1/5c31af4969b44f65b5168692b5ce7bb7.jpg",
     rating: 9.7,
+    benefits: [
+      { id: "1", name: "Breakfast" },
+      { id: "2", name: "Free cancellation" },
+      { id: "3", name: "Pay at the hotel" },
+      { id: "4", name: "Free mini bar" },
+      { id: "5", name: "Free saune accsess" },
+      { id: "6", name: "Free fitness center access" },
+      { id: "7", name: "Breakfast for 1 person" },
+      { id: "8", name: "Free pool accsess" },
+    ],
+    images: [
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/dda69105b36792ae769230297d80c6ef.jpg?s=450x450",
+        title: "Main",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/1014e6ac69fbd81ee88238e053dd453d.jpg?s=1024x768",
+        title: "Lobby",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/564/5646737/5646737_18102311260068629495.jpg?s=1024x768",
+        title: "Bed",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/8ac4ace1fdb894e193737e123b1dc27b.jpg?s=1024x768",
+        title: "Out door",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/b9fd9f23603ec4444729a7858990557c.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/94c7ca2a6e715887bc6cf58a2106e9e6.jpg?s=1024x768",
+        title: "Ballroom",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/c2fbb639f2374bb1d18d7be7315a07c1.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/ff1e2a471e7071ca9dc4bdd38920868a.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/bb3d697b703450cb1a76f583ade439c5.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/a185b06e8fa30832ea0afc930e7f717c.jpg?s=1024x768",
+        title: "",
+      },
+    ],
   },
   {
     id: "11",
@@ -130,6 +812,68 @@ export const dataProductFake = [
     imageThumbnail:
       "https://pix6.agoda.net/hotelImages/5462641/-1/aebe6ddf0d5731c036a54e3a46418a28.jpg",
     rating: 9.7,
+    benefits: [
+      { id: "1", name: "Breakfast" },
+      { id: "2", name: "Free cancellation" },
+      { id: "3", name: "Pay at the hotel" },
+      { id: "4", name: "Free mini bar" },
+      { id: "5", name: "Free saune accsess" },
+      { id: "6", name: "Free fitness center access" },
+      { id: "7", name: "Breakfast for 1 person" },
+      { id: "8", name: "Free pool accsess" },
+    ],
+    images: [
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/dda69105b36792ae769230297d80c6ef.jpg?s=450x450",
+        title: "Main",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/1014e6ac69fbd81ee88238e053dd453d.jpg?s=1024x768",
+        title: "Lobby",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/564/5646737/5646737_18102311260068629495.jpg?s=1024x768",
+        title: "Bed",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/8ac4ace1fdb894e193737e123b1dc27b.jpg?s=1024x768",
+        title: "Out door",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/b9fd9f23603ec4444729a7858990557c.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/94c7ca2a6e715887bc6cf58a2106e9e6.jpg?s=1024x768",
+        title: "Ballroom",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/c2fbb639f2374bb1d18d7be7315a07c1.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/ff1e2a471e7071ca9dc4bdd38920868a.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/bb3d697b703450cb1a76f583ade439c5.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/a185b06e8fa30832ea0afc930e7f717c.jpg?s=1024x768",
+        title: "",
+      },
+    ],
   },
   {
     id: "12",
@@ -141,9 +885,71 @@ export const dataProductFake = [
     imageThumbnail:
       "https://pix6.agoda.net/hotelImages/5638299/-1/cfdc49590cc000480e5abd69f1ccf9f3.jpg",
     rating: 9.7,
+    benefits: [
+      { id: "1", name: "Breakfast" },
+      { id: "2", name: "Free cancellation" },
+      { id: "3", name: "Pay at the hotel" },
+      { id: "4", name: "Free mini bar" },
+      { id: "5", name: "Free saune accsess" },
+      { id: "6", name: "Free fitness center access" },
+      { id: "7", name: "Breakfast for 1 person" },
+      { id: "8", name: "Free pool accsess" },
+    ],
+    images: [
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/dda69105b36792ae769230297d80c6ef.jpg?s=450x450",
+        title: "Main",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/1014e6ac69fbd81ee88238e053dd453d.jpg?s=1024x768",
+        title: "Lobby",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/564/5646737/5646737_18102311260068629495.jpg?s=1024x768",
+        title: "Bed",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/8ac4ace1fdb894e193737e123b1dc27b.jpg?s=1024x768",
+        title: "Out door",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/b9fd9f23603ec4444729a7858990557c.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/94c7ca2a6e715887bc6cf58a2106e9e6.jpg?s=1024x768",
+        title: "Ballroom",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/c2fbb639f2374bb1d18d7be7315a07c1.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/ff1e2a471e7071ca9dc4bdd38920868a.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/bb3d697b703450cb1a76f583ade439c5.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/a185b06e8fa30832ea0afc930e7f717c.jpg?s=1024x768",
+        title: "",
+      },
+    ],
   },
   {
-    id: "12",
+    id: "14",
     name: "Cozrum Homes Truong Dinh",
     star: 4,
     street: "Binh Thanh, Ho Chi Minh City",
@@ -152,9 +958,71 @@ export const dataProductFake = [
     imageThumbnail:
       "https://pix6.agoda.net/hotelImages/5638299/-1/cfdc49590cc000480e5abd69f1ccf9f3.jpg",
     rating: 9.7,
+    benefits: [
+      { id: "1", name: "Breakfast" },
+      { id: "2", name: "Free cancellation" },
+      { id: "3", name: "Pay at the hotel" },
+      { id: "4", name: "Free mini bar" },
+      { id: "5", name: "Free saune accsess" },
+      { id: "6", name: "Free fitness center access" },
+      { id: "7", name: "Breakfast for 1 person" },
+      { id: "8", name: "Free pool accsess" },
+    ],
+    images: [
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/dda69105b36792ae769230297d80c6ef.jpg?s=450x450",
+        title: "Main",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/1014e6ac69fbd81ee88238e053dd453d.jpg?s=1024x768",
+        title: "Lobby",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/564/5646737/5646737_18102311260068629495.jpg?s=1024x768",
+        title: "Bed",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/8ac4ace1fdb894e193737e123b1dc27b.jpg?s=1024x768",
+        title: "Out door",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/b9fd9f23603ec4444729a7858990557c.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/94c7ca2a6e715887bc6cf58a2106e9e6.jpg?s=1024x768",
+        title: "Ballroom",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/c2fbb639f2374bb1d18d7be7315a07c1.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/ff1e2a471e7071ca9dc4bdd38920868a.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/bb3d697b703450cb1a76f583ade439c5.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/a185b06e8fa30832ea0afc930e7f717c.jpg?s=1024x768",
+        title: "",
+      },
+    ],
   },
   {
-    id: "12",
+    id: "15",
     name: "Cozrum Homes Truong Dinh",
     star: 4,
     street: "Binh Thanh, Ho Chi Minh City",
@@ -163,9 +1031,71 @@ export const dataProductFake = [
     imageThumbnail:
       "https://pix6.agoda.net/hotelImages/5638299/-1/cfdc49590cc000480e5abd69f1ccf9f3.jpg",
     rating: 9.7,
+    benefits: [
+      { id: "1", name: "Breakfast" },
+      { id: "2", name: "Free cancellation" },
+      { id: "3", name: "Pay at the hotel" },
+      { id: "4", name: "Free mini bar" },
+      { id: "5", name: "Free saune accsess" },
+      { id: "6", name: "Free fitness center access" },
+      { id: "7", name: "Breakfast for 1 person" },
+      { id: "8", name: "Free pool accsess" },
+    ],
+    images: [
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/dda69105b36792ae769230297d80c6ef.jpg?s=450x450",
+        title: "Main",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/1014e6ac69fbd81ee88238e053dd453d.jpg?s=1024x768",
+        title: "Lobby",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/564/5646737/5646737_18102311260068629495.jpg?s=1024x768",
+        title: "Bed",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/8ac4ace1fdb894e193737e123b1dc27b.jpg?s=1024x768",
+        title: "Out door",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/b9fd9f23603ec4444729a7858990557c.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/94c7ca2a6e715887bc6cf58a2106e9e6.jpg?s=1024x768",
+        title: "Ballroom",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/c2fbb639f2374bb1d18d7be7315a07c1.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/ff1e2a471e7071ca9dc4bdd38920868a.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/bb3d697b703450cb1a76f583ade439c5.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/a185b06e8fa30832ea0afc930e7f717c.jpg?s=1024x768",
+        title: "",
+      },
+    ],
   },
   {
-    id: "12",
+    id: "16",
     name: "Cozrum Homes Truong Dinh",
     star: 4,
     street: "Binh Thanh, Ho Chi Minh City",
@@ -174,9 +1104,71 @@ export const dataProductFake = [
     imageThumbnail:
       "https://pix6.agoda.net/hotelImages/5638299/-1/cfdc49590cc000480e5abd69f1ccf9f3.jpg",
     rating: 9.7,
+    benefits: [
+      { id: "1", name: "Breakfast" },
+      { id: "2", name: "Free cancellation" },
+      { id: "3", name: "Pay at the hotel" },
+      { id: "4", name: "Free mini bar" },
+      { id: "5", name: "Free saune accsess" },
+      { id: "6", name: "Free fitness center access" },
+      { id: "7", name: "Breakfast for 1 person" },
+      { id: "8", name: "Free pool accsess" },
+    ],
+    images: [
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/dda69105b36792ae769230297d80c6ef.jpg?s=450x450",
+        title: "Main",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/1014e6ac69fbd81ee88238e053dd453d.jpg?s=1024x768",
+        title: "Lobby",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/564/5646737/5646737_18102311260068629495.jpg?s=1024x768",
+        title: "Bed",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/8ac4ace1fdb894e193737e123b1dc27b.jpg?s=1024x768",
+        title: "Out door",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/b9fd9f23603ec4444729a7858990557c.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/94c7ca2a6e715887bc6cf58a2106e9e6.jpg?s=1024x768",
+        title: "Ballroom",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/c2fbb639f2374bb1d18d7be7315a07c1.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/ff1e2a471e7071ca9dc4bdd38920868a.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/bb3d697b703450cb1a76f583ade439c5.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/a185b06e8fa30832ea0afc930e7f717c.jpg?s=1024x768",
+        title: "",
+      },
+    ],
   },
   {
-    id: "12",
+    id: "17",
     name: "Cozrum Homes Truong Dinh",
     star: 4,
     street: "Binh Thanh, Ho Chi Minh City",
@@ -185,9 +1177,71 @@ export const dataProductFake = [
     imageThumbnail:
       "https://pix6.agoda.net/hotelImages/5638299/-1/cfdc49590cc000480e5abd69f1ccf9f3.jpg",
     rating: 9.7,
+    benefits: [
+      { id: "1", name: "Breakfast" },
+      { id: "2", name: "Free cancellation" },
+      { id: "3", name: "Pay at the hotel" },
+      { id: "4", name: "Free mini bar" },
+      { id: "5", name: "Free saune accsess" },
+      { id: "6", name: "Free fitness center access" },
+      { id: "7", name: "Breakfast for 1 person" },
+      { id: "8", name: "Free pool accsess" },
+    ],
+    images: [
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/dda69105b36792ae769230297d80c6ef.jpg?s=450x450",
+        title: "Main",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/1014e6ac69fbd81ee88238e053dd453d.jpg?s=1024x768",
+        title: "Lobby",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/564/5646737/5646737_18102311260068629495.jpg?s=1024x768",
+        title: "Bed",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/8ac4ace1fdb894e193737e123b1dc27b.jpg?s=1024x768",
+        title: "Out door",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/b9fd9f23603ec4444729a7858990557c.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/94c7ca2a6e715887bc6cf58a2106e9e6.jpg?s=1024x768",
+        title: "Ballroom",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/c2fbb639f2374bb1d18d7be7315a07c1.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/ff1e2a471e7071ca9dc4bdd38920868a.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/bb3d697b703450cb1a76f583ade439c5.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/a185b06e8fa30832ea0afc930e7f717c.jpg?s=1024x768",
+        title: "",
+      },
+    ],
   },
   {
-    id: "12",
+    id: "18",
     name: "Cozrum Homes Truong Dinh",
     star: 4,
     street: "Binh Thanh, Ho Chi Minh City",
@@ -196,9 +1250,71 @@ export const dataProductFake = [
     imageThumbnail:
       "https://pix6.agoda.net/hotelImages/5638299/-1/cfdc49590cc000480e5abd69f1ccf9f3.jpg",
     rating: 9.7,
+    benefits: [
+      { id: "1", name: "Breakfast" },
+      { id: "2", name: "Free cancellation" },
+      { id: "3", name: "Pay at the hotel" },
+      { id: "4", name: "Free mini bar" },
+      { id: "5", name: "Free saune accsess" },
+      { id: "6", name: "Free fitness center access" },
+      { id: "7", name: "Breakfast for 1 person" },
+      { id: "8", name: "Free pool accsess" },
+    ],
+    images: [
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/dda69105b36792ae769230297d80c6ef.jpg?s=450x450",
+        title: "Main",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/1014e6ac69fbd81ee88238e053dd453d.jpg?s=1024x768",
+        title: "Lobby",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/564/5646737/5646737_18102311260068629495.jpg?s=1024x768",
+        title: "Bed",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/8ac4ace1fdb894e193737e123b1dc27b.jpg?s=1024x768",
+        title: "Out door",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/b9fd9f23603ec4444729a7858990557c.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/94c7ca2a6e715887bc6cf58a2106e9e6.jpg?s=1024x768",
+        title: "Ballroom",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/c2fbb639f2374bb1d18d7be7315a07c1.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/ff1e2a471e7071ca9dc4bdd38920868a.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/bb3d697b703450cb1a76f583ade439c5.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/a185b06e8fa30832ea0afc930e7f717c.jpg?s=1024x768",
+        title: "",
+      },
+    ],
   },
   {
-    id: "12",
+    id: "19",
     name: "Cozrum Homes Truong Dinh",
     star: 4,
     street: "Binh Thanh, Ho Chi Minh City",
@@ -207,9 +1323,71 @@ export const dataProductFake = [
     imageThumbnail:
       "https://pix6.agoda.net/hotelImages/5638299/-1/cfdc49590cc000480e5abd69f1ccf9f3.jpg",
     rating: 9.7,
+    benefits: [
+      { id: "1", name: "Breakfast" },
+      { id: "2", name: "Free cancellation" },
+      { id: "3", name: "Pay at the hotel" },
+      { id: "4", name: "Free mini bar" },
+      { id: "5", name: "Free saune accsess" },
+      { id: "6", name: "Free fitness center access" },
+      { id: "7", name: "Breakfast for 1 person" },
+      { id: "8", name: "Free pool accsess" },
+    ],
+    images: [
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/dda69105b36792ae769230297d80c6ef.jpg?s=450x450",
+        title: "Main",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/1014e6ac69fbd81ee88238e053dd453d.jpg?s=1024x768",
+        title: "Lobby",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/564/5646737/5646737_18102311260068629495.jpg?s=1024x768",
+        title: "Bed",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/8ac4ace1fdb894e193737e123b1dc27b.jpg?s=1024x768",
+        title: "Out door",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/b9fd9f23603ec4444729a7858990557c.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/94c7ca2a6e715887bc6cf58a2106e9e6.jpg?s=1024x768",
+        title: "Ballroom",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/c2fbb639f2374bb1d18d7be7315a07c1.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/ff1e2a471e7071ca9dc4bdd38920868a.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/bb3d697b703450cb1a76f583ade439c5.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/a185b06e8fa30832ea0afc930e7f717c.jpg?s=1024x768",
+        title: "",
+      },
+    ],
   },
   {
-    id: "12",
+    id: "20",
     name: "Cozrum Homes Truong Dinh",
     star: 4,
     street: "Binh Thanh, Ho Chi Minh City",
@@ -218,9 +1396,71 @@ export const dataProductFake = [
     imageThumbnail:
       "https://pix6.agoda.net/hotelImages/5638299/-1/cfdc49590cc000480e5abd69f1ccf9f3.jpg",
     rating: 9.7,
+    benefits: [
+      { id: "1", name: "Breakfast" },
+      { id: "2", name: "Free cancellation" },
+      { id: "3", name: "Pay at the hotel" },
+      { id: "4", name: "Free mini bar" },
+      { id: "5", name: "Free saune accsess" },
+      { id: "6", name: "Free fitness center access" },
+      { id: "7", name: "Breakfast for 1 person" },
+      { id: "8", name: "Free pool accsess" },
+    ],
+    images: [
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/dda69105b36792ae769230297d80c6ef.jpg?s=450x450",
+        title: "Main",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/1014e6ac69fbd81ee88238e053dd453d.jpg?s=1024x768",
+        title: "Lobby",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/564/5646737/5646737_18102311260068629495.jpg?s=1024x768",
+        title: "Bed",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/8ac4ace1fdb894e193737e123b1dc27b.jpg?s=1024x768",
+        title: "Out door",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/b9fd9f23603ec4444729a7858990557c.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/94c7ca2a6e715887bc6cf58a2106e9e6.jpg?s=1024x768",
+        title: "Ballroom",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/c2fbb639f2374bb1d18d7be7315a07c1.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/ff1e2a471e7071ca9dc4bdd38920868a.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/bb3d697b703450cb1a76f583ade439c5.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/a185b06e8fa30832ea0afc930e7f717c.jpg?s=1024x768",
+        title: "",
+      },
+    ],
   },
   {
-    id: "12",
+    id: "21",
     name: "Cozrum Homes Truong Dinh",
     star: 4,
     street: "Binh Thanh, Ho Chi Minh City",
@@ -229,9 +1469,71 @@ export const dataProductFake = [
     imageThumbnail:
       "https://pix6.agoda.net/hotelImages/5638299/-1/cfdc49590cc000480e5abd69f1ccf9f3.jpg",
     rating: 9.7,
+    benefits: [
+      { id: "1", name: "Breakfast" },
+      { id: "2", name: "Free cancellation" },
+      { id: "3", name: "Pay at the hotel" },
+      { id: "4", name: "Free mini bar" },
+      { id: "5", name: "Free saune accsess" },
+      { id: "6", name: "Free fitness center access" },
+      { id: "7", name: "Breakfast for 1 person" },
+      { id: "8", name: "Free pool accsess" },
+    ],
+    images: [
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/dda69105b36792ae769230297d80c6ef.jpg?s=450x450",
+        title: "Main",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/1014e6ac69fbd81ee88238e053dd453d.jpg?s=1024x768",
+        title: "Lobby",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/564/5646737/5646737_18102311260068629495.jpg?s=1024x768",
+        title: "Bed",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/8ac4ace1fdb894e193737e123b1dc27b.jpg?s=1024x768",
+        title: "Out door",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/b9fd9f23603ec4444729a7858990557c.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/94c7ca2a6e715887bc6cf58a2106e9e6.jpg?s=1024x768",
+        title: "Ballroom",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/c2fbb639f2374bb1d18d7be7315a07c1.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/ff1e2a471e7071ca9dc4bdd38920868a.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/bb3d697b703450cb1a76f583ade439c5.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/a185b06e8fa30832ea0afc930e7f717c.jpg?s=1024x768",
+        title: "",
+      },
+    ],
   },
   {
-    id: "12",
+    id: "22",
     name: "Cozrum Homes Truong Dinh",
     star: 4,
     street: "Binh Thanh, Ho Chi Minh City",
@@ -240,9 +1542,71 @@ export const dataProductFake = [
     imageThumbnail:
       "https://pix6.agoda.net/hotelImages/5638299/-1/cfdc49590cc000480e5abd69f1ccf9f3.jpg",
     rating: 9.7,
+    benefits: [
+      { id: "1", name: "Breakfast" },
+      { id: "2", name: "Free cancellation" },
+      { id: "3", name: "Pay at the hotel" },
+      { id: "4", name: "Free mini bar" },
+      { id: "5", name: "Free saune accsess" },
+      { id: "6", name: "Free fitness center access" },
+      { id: "7", name: "Breakfast for 1 person" },
+      { id: "8", name: "Free pool accsess" },
+    ],
+    images: [
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/dda69105b36792ae769230297d80c6ef.jpg?s=450x450",
+        title: "Main",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/1014e6ac69fbd81ee88238e053dd453d.jpg?s=1024x768",
+        title: "Lobby",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/564/5646737/5646737_18102311260068629495.jpg?s=1024x768",
+        title: "Bed",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/8ac4ace1fdb894e193737e123b1dc27b.jpg?s=1024x768",
+        title: "Out door",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/b9fd9f23603ec4444729a7858990557c.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/94c7ca2a6e715887bc6cf58a2106e9e6.jpg?s=1024x768",
+        title: "Ballroom",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/c2fbb639f2374bb1d18d7be7315a07c1.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/ff1e2a471e7071ca9dc4bdd38920868a.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/bb3d697b703450cb1a76f583ade439c5.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/a185b06e8fa30832ea0afc930e7f717c.jpg?s=1024x768",
+        title: "",
+      },
+    ],
   },
   {
-    id: "12",
+    id: "23",
     name: "Cozrum Homes Truong Dinh",
     star: 4,
     street: "Binh Thanh, Ho Chi Minh City",
@@ -251,9 +1615,71 @@ export const dataProductFake = [
     imageThumbnail:
       "https://pix6.agoda.net/hotelImages/5638299/-1/cfdc49590cc000480e5abd69f1ccf9f3.jpg",
     rating: 9.7,
+    benefits: [
+      { id: "1", name: "Breakfast" },
+      { id: "2", name: "Free cancellation" },
+      { id: "3", name: "Pay at the hotel" },
+      { id: "4", name: "Free mini bar" },
+      { id: "5", name: "Free saune accsess" },
+      { id: "6", name: "Free fitness center access" },
+      { id: "7", name: "Breakfast for 1 person" },
+      { id: "8", name: "Free pool accsess" },
+    ],
+    images: [
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/dda69105b36792ae769230297d80c6ef.jpg?s=450x450",
+        title: "Main",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/1014e6ac69fbd81ee88238e053dd453d.jpg?s=1024x768",
+        title: "Lobby",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/564/5646737/5646737_18102311260068629495.jpg?s=1024x768",
+        title: "Bed",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/8ac4ace1fdb894e193737e123b1dc27b.jpg?s=1024x768",
+        title: "Out door",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/b9fd9f23603ec4444729a7858990557c.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/94c7ca2a6e715887bc6cf58a2106e9e6.jpg?s=1024x768",
+        title: "Ballroom",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/c2fbb639f2374bb1d18d7be7315a07c1.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/ff1e2a471e7071ca9dc4bdd38920868a.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/bb3d697b703450cb1a76f583ade439c5.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/a185b06e8fa30832ea0afc930e7f717c.jpg?s=1024x768",
+        title: "",
+      },
+    ],
   },
   {
-    id: "12",
+    id: "24",
     name: "Cozrum Homes Truong Dinh",
     star: 4,
     street: "Binh Thanh, Ho Chi Minh City",
@@ -262,9 +1688,71 @@ export const dataProductFake = [
     imageThumbnail:
       "https://pix6.agoda.net/hotelImages/5638299/-1/cfdc49590cc000480e5abd69f1ccf9f3.jpg",
     rating: 9.7,
+    benefits: [
+      { id: "1", name: "Breakfast" },
+      { id: "2", name: "Free cancellation" },
+      { id: "3", name: "Pay at the hotel" },
+      { id: "4", name: "Free mini bar" },
+      { id: "5", name: "Free saune accsess" },
+      { id: "6", name: "Free fitness center access" },
+      { id: "7", name: "Breakfast for 1 person" },
+      { id: "8", name: "Free pool accsess" },
+    ],
+    images: [
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/dda69105b36792ae769230297d80c6ef.jpg?s=450x450",
+        title: "Main",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/1014e6ac69fbd81ee88238e053dd453d.jpg?s=1024x768",
+        title: "Lobby",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/564/5646737/5646737_18102311260068629495.jpg?s=1024x768",
+        title: "Bed",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/8ac4ace1fdb894e193737e123b1dc27b.jpg?s=1024x768",
+        title: "Out door",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/b9fd9f23603ec4444729a7858990557c.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/94c7ca2a6e715887bc6cf58a2106e9e6.jpg?s=1024x768",
+        title: "Ballroom",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/c2fbb639f2374bb1d18d7be7315a07c1.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/ff1e2a471e7071ca9dc4bdd38920868a.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/bb3d697b703450cb1a76f583ade439c5.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/a185b06e8fa30832ea0afc930e7f717c.jpg?s=1024x768",
+        title: "",
+      },
+    ],
   },
   {
-    id: "12",
+    id: "25",
     name: "Cozrum Homes Truong Dinh",
     star: 4,
     street: "Binh Thanh, Ho Chi Minh City",
@@ -273,9 +1761,71 @@ export const dataProductFake = [
     imageThumbnail:
       "https://pix6.agoda.net/hotelImages/5638299/-1/cfdc49590cc000480e5abd69f1ccf9f3.jpg",
     rating: 9.7,
+    benefits: [
+      { id: "1", name: "Breakfast" },
+      { id: "2", name: "Free cancellation" },
+      { id: "3", name: "Pay at the hotel" },
+      { id: "4", name: "Free mini bar" },
+      { id: "5", name: "Free saune accsess" },
+      { id: "6", name: "Free fitness center access" },
+      { id: "7", name: "Breakfast for 1 person" },
+      { id: "8", name: "Free pool accsess" },
+    ],
+    images: [
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/dda69105b36792ae769230297d80c6ef.jpg?s=450x450",
+        title: "Main",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/1014e6ac69fbd81ee88238e053dd453d.jpg?s=1024x768",
+        title: "Lobby",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/564/5646737/5646737_18102311260068629495.jpg?s=1024x768",
+        title: "Bed",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/8ac4ace1fdb894e193737e123b1dc27b.jpg?s=1024x768",
+        title: "Out door",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/b9fd9f23603ec4444729a7858990557c.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/94c7ca2a6e715887bc6cf58a2106e9e6.jpg?s=1024x768",
+        title: "Ballroom",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/c2fbb639f2374bb1d18d7be7315a07c1.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/ff1e2a471e7071ca9dc4bdd38920868a.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/bb3d697b703450cb1a76f583ade439c5.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/a185b06e8fa30832ea0afc930e7f717c.jpg?s=1024x768",
+        title: "",
+      },
+    ],
   },
   {
-    id: "12",
+    id: "26",
     name: "Cozrum Homes Truong Dinh",
     star: 4,
     street: "Binh Thanh, Ho Chi Minh City",
@@ -284,9 +1834,71 @@ export const dataProductFake = [
     imageThumbnail:
       "https://pix6.agoda.net/hotelImages/5638299/-1/cfdc49590cc000480e5abd69f1ccf9f3.jpg",
     rating: 9.7,
+    benefits: [
+      { id: "1", name: "Breakfast" },
+      { id: "2", name: "Free cancellation" },
+      { id: "3", name: "Pay at the hotel" },
+      { id: "4", name: "Free mini bar" },
+      { id: "5", name: "Free saune accsess" },
+      { id: "6", name: "Free fitness center access" },
+      { id: "7", name: "Breakfast for 1 person" },
+      { id: "8", name: "Free pool accsess" },
+    ],
+    images: [
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/dda69105b36792ae769230297d80c6ef.jpg?s=450x450",
+        title: "Main",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/1014e6ac69fbd81ee88238e053dd453d.jpg?s=1024x768",
+        title: "Lobby",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/564/5646737/5646737_18102311260068629495.jpg?s=1024x768",
+        title: "Bed",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/8ac4ace1fdb894e193737e123b1dc27b.jpg?s=1024x768",
+        title: "Out door",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/b9fd9f23603ec4444729a7858990557c.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/94c7ca2a6e715887bc6cf58a2106e9e6.jpg?s=1024x768",
+        title: "Ballroom",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/c2fbb639f2374bb1d18d7be7315a07c1.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/ff1e2a471e7071ca9dc4bdd38920868a.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/bb3d697b703450cb1a76f583ade439c5.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/a185b06e8fa30832ea0afc930e7f717c.jpg?s=1024x768",
+        title: "",
+      },
+    ],
   },
   {
-    id: "12",
+    id: "27",
     name: "Cozrum Homes Truong Dinh",
     star: 4,
     street: "Binh Thanh, Ho Chi Minh City",
@@ -295,9 +1907,71 @@ export const dataProductFake = [
     imageThumbnail:
       "https://pix6.agoda.net/hotelImages/5638299/-1/cfdc49590cc000480e5abd69f1ccf9f3.jpg",
     rating: 9.7,
+    benefits: [
+      { id: "1", name: "Breakfast" },
+      { id: "2", name: "Free cancellation" },
+      { id: "3", name: "Pay at the hotel" },
+      { id: "4", name: "Free mini bar" },
+      { id: "5", name: "Free saune accsess" },
+      { id: "6", name: "Free fitness center access" },
+      { id: "7", name: "Breakfast for 1 person" },
+      { id: "8", name: "Free pool accsess" },
+    ],
+    images: [
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/dda69105b36792ae769230297d80c6ef.jpg?s=450x450",
+        title: "Main",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/1014e6ac69fbd81ee88238e053dd453d.jpg?s=1024x768",
+        title: "Lobby",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/564/5646737/5646737_18102311260068629495.jpg?s=1024x768",
+        title: "Bed",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/8ac4ace1fdb894e193737e123b1dc27b.jpg?s=1024x768",
+        title: "Out door",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/b9fd9f23603ec4444729a7858990557c.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/94c7ca2a6e715887bc6cf58a2106e9e6.jpg?s=1024x768",
+        title: "Ballroom",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/c2fbb639f2374bb1d18d7be7315a07c1.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/ff1e2a471e7071ca9dc4bdd38920868a.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/bb3d697b703450cb1a76f583ade439c5.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/a185b06e8fa30832ea0afc930e7f717c.jpg?s=1024x768",
+        title: "",
+      },
+    ],
   },
   {
-    id: "12",
+    id: "28",
     name: "Cozrum Homes Truong Dinh",
     star: 4,
     street: "Binh Thanh, Ho Chi Minh City",
@@ -306,9 +1980,71 @@ export const dataProductFake = [
     imageThumbnail:
       "https://pix6.agoda.net/hotelImages/5638299/-1/cfdc49590cc000480e5abd69f1ccf9f3.jpg",
     rating: 9.7,
+    benefits: [
+      { id: "1", name: "Breakfast" },
+      { id: "2", name: "Free cancellation" },
+      { id: "3", name: "Pay at the hotel" },
+      { id: "4", name: "Free mini bar" },
+      { id: "5", name: "Free saune accsess" },
+      { id: "6", name: "Free fitness center access" },
+      { id: "7", name: "Breakfast for 1 person" },
+      { id: "8", name: "Free pool accsess" },
+    ],
+    images: [
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/dda69105b36792ae769230297d80c6ef.jpg?s=450x450",
+        title: "Main",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/1014e6ac69fbd81ee88238e053dd453d.jpg?s=1024x768",
+        title: "Lobby",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/564/5646737/5646737_18102311260068629495.jpg?s=1024x768",
+        title: "Bed",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/8ac4ace1fdb894e193737e123b1dc27b.jpg?s=1024x768",
+        title: "Out door",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/b9fd9f23603ec4444729a7858990557c.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/94c7ca2a6e715887bc6cf58a2106e9e6.jpg?s=1024x768",
+        title: "Ballroom",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/c2fbb639f2374bb1d18d7be7315a07c1.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/ff1e2a471e7071ca9dc4bdd38920868a.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/bb3d697b703450cb1a76f583ade439c5.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/a185b06e8fa30832ea0afc930e7f717c.jpg?s=1024x768",
+        title: "",
+      },
+    ],
   },
   {
-    id: "12",
+    id: "29",
     name: "Cozrum Homes Truong Dinh",
     star: 4,
     street: "Binh Thanh, Ho Chi Minh City",
@@ -317,9 +2053,71 @@ export const dataProductFake = [
     imageThumbnail:
       "https://pix6.agoda.net/hotelImages/5638299/-1/cfdc49590cc000480e5abd69f1ccf9f3.jpg",
     rating: 9.7,
+    benefits: [
+      { id: "1", name: "Breakfast" },
+      { id: "2", name: "Free cancellation" },
+      { id: "3", name: "Pay at the hotel" },
+      { id: "4", name: "Free mini bar" },
+      { id: "5", name: "Free saune accsess" },
+      { id: "6", name: "Free fitness center access" },
+      { id: "7", name: "Breakfast for 1 person" },
+      { id: "8", name: "Free pool accsess" },
+    ],
+    images: [
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/dda69105b36792ae769230297d80c6ef.jpg?s=450x450",
+        title: "Main",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/1014e6ac69fbd81ee88238e053dd453d.jpg?s=1024x768",
+        title: "Lobby",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/564/5646737/5646737_18102311260068629495.jpg?s=1024x768",
+        title: "Bed",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/8ac4ace1fdb894e193737e123b1dc27b.jpg?s=1024x768",
+        title: "Out door",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/b9fd9f23603ec4444729a7858990557c.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/94c7ca2a6e715887bc6cf58a2106e9e6.jpg?s=1024x768",
+        title: "Ballroom",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/c2fbb639f2374bb1d18d7be7315a07c1.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/ff1e2a471e7071ca9dc4bdd38920868a.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/bb3d697b703450cb1a76f583ade439c5.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/a185b06e8fa30832ea0afc930e7f717c.jpg?s=1024x768",
+        title: "",
+      },
+    ],
   },
   {
-    id: "12",
+    id: "30",
     name: "Cozrum Homes Truong Dinh",
     star: 4,
     street: "Binh Thanh, Ho Chi Minh City",
@@ -328,9 +2126,71 @@ export const dataProductFake = [
     imageThumbnail:
       "https://pix6.agoda.net/hotelImages/5638299/-1/cfdc49590cc000480e5abd69f1ccf9f3.jpg",
     rating: 9.7,
+    benefits: [
+      { id: "1", name: "Breakfast" },
+      { id: "2", name: "Free cancellation" },
+      { id: "3", name: "Pay at the hotel" },
+      { id: "4", name: "Free mini bar" },
+      { id: "5", name: "Free saune accsess" },
+      { id: "6", name: "Free fitness center access" },
+      { id: "7", name: "Breakfast for 1 person" },
+      { id: "8", name: "Free pool accsess" },
+    ],
+    images: [
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/dda69105b36792ae769230297d80c6ef.jpg?s=450x450",
+        title: "Main",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/1014e6ac69fbd81ee88238e053dd453d.jpg?s=1024x768",
+        title: "Lobby",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/564/5646737/5646737_18102311260068629495.jpg?s=1024x768",
+        title: "Bed",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/8ac4ace1fdb894e193737e123b1dc27b.jpg?s=1024x768",
+        title: "Out door",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/b9fd9f23603ec4444729a7858990557c.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/94c7ca2a6e715887bc6cf58a2106e9e6.jpg?s=1024x768",
+        title: "Ballroom",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/c2fbb639f2374bb1d18d7be7315a07c1.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/ff1e2a471e7071ca9dc4bdd38920868a.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/bb3d697b703450cb1a76f583ade439c5.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/a185b06e8fa30832ea0afc930e7f717c.jpg?s=1024x768",
+        title: "",
+      },
+    ],
   },
   {
-    id: "12",
+    id: "31",
     name: "Cozrum Homes Truong Dinh",
     star: 4,
     street: "Binh Thanh, Ho Chi Minh City",
@@ -339,9 +2199,71 @@ export const dataProductFake = [
     imageThumbnail:
       "https://pix6.agoda.net/hotelImages/5638299/-1/cfdc49590cc000480e5abd69f1ccf9f3.jpg",
     rating: 9.7,
+    benefits: [
+      { id: "1", name: "Breakfast" },
+      { id: "2", name: "Free cancellation" },
+      { id: "3", name: "Pay at the hotel" },
+      { id: "4", name: "Free mini bar" },
+      { id: "5", name: "Free saune accsess" },
+      { id: "6", name: "Free fitness center access" },
+      { id: "7", name: "Breakfast for 1 person" },
+      { id: "8", name: "Free pool accsess" },
+    ],
+    images: [
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/dda69105b36792ae769230297d80c6ef.jpg?s=450x450",
+        title: "Main",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/1014e6ac69fbd81ee88238e053dd453d.jpg?s=1024x768",
+        title: "Lobby",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/564/5646737/5646737_18102311260068629495.jpg?s=1024x768",
+        title: "Bed",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/8ac4ace1fdb894e193737e123b1dc27b.jpg?s=1024x768",
+        title: "Out door",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/b9fd9f23603ec4444729a7858990557c.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/94c7ca2a6e715887bc6cf58a2106e9e6.jpg?s=1024x768",
+        title: "Ballroom",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/c2fbb639f2374bb1d18d7be7315a07c1.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/ff1e2a471e7071ca9dc4bdd38920868a.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/bb3d697b703450cb1a76f583ade439c5.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/a185b06e8fa30832ea0afc930e7f717c.jpg?s=1024x768",
+        title: "",
+      },
+    ],
   },
   {
-    id: "12",
+    id: "32",
     name: "Cozrum Homes Truong Dinh",
     star: 4,
     street: "Binh Thanh, Ho Chi Minh City",
@@ -350,9 +2272,71 @@ export const dataProductFake = [
     imageThumbnail:
       "https://pix6.agoda.net/hotelImages/5638299/-1/cfdc49590cc000480e5abd69f1ccf9f3.jpg",
     rating: 9.7,
+    benefits: [
+      { id: "1", name: "Breakfast" },
+      { id: "2", name: "Free cancellation" },
+      { id: "3", name: "Pay at the hotel" },
+      { id: "4", name: "Free mini bar" },
+      { id: "5", name: "Free saune accsess" },
+      { id: "6", name: "Free fitness center access" },
+      { id: "7", name: "Breakfast for 1 person" },
+      { id: "8", name: "Free pool accsess" },
+    ],
+    images: [
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/dda69105b36792ae769230297d80c6ef.jpg?s=450x450",
+        title: "Main",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/1014e6ac69fbd81ee88238e053dd453d.jpg?s=1024x768",
+        title: "Lobby",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/564/5646737/5646737_18102311260068629495.jpg?s=1024x768",
+        title: "Bed",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/8ac4ace1fdb894e193737e123b1dc27b.jpg?s=1024x768",
+        title: "Out door",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/b9fd9f23603ec4444729a7858990557c.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/94c7ca2a6e715887bc6cf58a2106e9e6.jpg?s=1024x768",
+        title: "Ballroom",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/c2fbb639f2374bb1d18d7be7315a07c1.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/ff1e2a471e7071ca9dc4bdd38920868a.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/bb3d697b703450cb1a76f583ade439c5.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/a185b06e8fa30832ea0afc930e7f717c.jpg?s=1024x768",
+        title: "",
+      },
+    ],
   },
   {
-    id: "12",
+    id: "33",
     name: "Cozrum Homes Truong Dinh",
     star: 4,
     street: "Binh Thanh, Ho Chi Minh City",
@@ -361,9 +2345,71 @@ export const dataProductFake = [
     imageThumbnail:
       "https://pix6.agoda.net/hotelImages/5638299/-1/cfdc49590cc000480e5abd69f1ccf9f3.jpg",
     rating: 9.7,
+    benefits: [
+      { id: "1", name: "Breakfast" },
+      { id: "2", name: "Free cancellation" },
+      { id: "3", name: "Pay at the hotel" },
+      { id: "4", name: "Free mini bar" },
+      { id: "5", name: "Free saune accsess" },
+      { id: "6", name: "Free fitness center access" },
+      { id: "7", name: "Breakfast for 1 person" },
+      { id: "8", name: "Free pool accsess" },
+    ],
+    images: [
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/dda69105b36792ae769230297d80c6ef.jpg?s=450x450",
+        title: "Main",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/1014e6ac69fbd81ee88238e053dd453d.jpg?s=1024x768",
+        title: "Lobby",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/564/5646737/5646737_18102311260068629495.jpg?s=1024x768",
+        title: "Bed",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/8ac4ace1fdb894e193737e123b1dc27b.jpg?s=1024x768",
+        title: "Out door",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/b9fd9f23603ec4444729a7858990557c.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/94c7ca2a6e715887bc6cf58a2106e9e6.jpg?s=1024x768",
+        title: "Ballroom",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/c2fbb639f2374bb1d18d7be7315a07c1.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/ff1e2a471e7071ca9dc4bdd38920868a.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/bb3d697b703450cb1a76f583ade439c5.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/a185b06e8fa30832ea0afc930e7f717c.jpg?s=1024x768",
+        title: "",
+      },
+    ],
   },
   {
-    id: "12",
+    id: "34",
     name: "Cozrum Homes Truong Dinh",
     star: 4,
     street: "Binh Thanh, Ho Chi Minh City",
@@ -372,9 +2418,71 @@ export const dataProductFake = [
     imageThumbnail:
       "https://pix6.agoda.net/hotelImages/5638299/-1/cfdc49590cc000480e5abd69f1ccf9f3.jpg",
     rating: 9.7,
+    benefits: [
+      { id: "1", name: "Breakfast" },
+      { id: "2", name: "Free cancellation" },
+      { id: "3", name: "Pay at the hotel" },
+      { id: "4", name: "Free mini bar" },
+      { id: "5", name: "Free saune accsess" },
+      { id: "6", name: "Free fitness center access" },
+      { id: "7", name: "Breakfast for 1 person" },
+      { id: "8", name: "Free pool accsess" },
+    ],
+    images: [
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/dda69105b36792ae769230297d80c6ef.jpg?s=450x450",
+        title: "Main",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/1014e6ac69fbd81ee88238e053dd453d.jpg?s=1024x768",
+        title: "Lobby",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/564/5646737/5646737_18102311260068629495.jpg?s=1024x768",
+        title: "Bed",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/8ac4ace1fdb894e193737e123b1dc27b.jpg?s=1024x768",
+        title: "Out door",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/b9fd9f23603ec4444729a7858990557c.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/94c7ca2a6e715887bc6cf58a2106e9e6.jpg?s=1024x768",
+        title: "Ballroom",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/c2fbb639f2374bb1d18d7be7315a07c1.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/ff1e2a471e7071ca9dc4bdd38920868a.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/bb3d697b703450cb1a76f583ade439c5.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/a185b06e8fa30832ea0afc930e7f717c.jpg?s=1024x768",
+        title: "",
+      },
+    ],
   },
   {
-    id: "12",
+    id: "35",
     name: "Cozrum Homes Truong Dinh",
     star: 4,
     street: "Binh Thanh, Ho Chi Minh City",
@@ -383,9 +2491,71 @@ export const dataProductFake = [
     imageThumbnail:
       "https://pix6.agoda.net/hotelImages/5638299/-1/cfdc49590cc000480e5abd69f1ccf9f3.jpg",
     rating: 9.7,
+    benefits: [
+      { id: "1", name: "Breakfast" },
+      { id: "2", name: "Free cancellation" },
+      { id: "3", name: "Pay at the hotel" },
+      { id: "4", name: "Free mini bar" },
+      { id: "5", name: "Free saune accsess" },
+      { id: "6", name: "Free fitness center access" },
+      { id: "7", name: "Breakfast for 1 person" },
+      { id: "8", name: "Free pool accsess" },
+    ],
+    images: [
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/dda69105b36792ae769230297d80c6ef.jpg?s=450x450",
+        title: "Main",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/1014e6ac69fbd81ee88238e053dd453d.jpg?s=1024x768",
+        title: "Lobby",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/564/5646737/5646737_18102311260068629495.jpg?s=1024x768",
+        title: "Bed",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/8ac4ace1fdb894e193737e123b1dc27b.jpg?s=1024x768",
+        title: "Out door",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/b9fd9f23603ec4444729a7858990557c.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/94c7ca2a6e715887bc6cf58a2106e9e6.jpg?s=1024x768",
+        title: "Ballroom",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/c2fbb639f2374bb1d18d7be7315a07c1.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/ff1e2a471e7071ca9dc4bdd38920868a.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/bb3d697b703450cb1a76f583ade439c5.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/a185b06e8fa30832ea0afc930e7f717c.jpg?s=1024x768",
+        title: "",
+      },
+    ],
   },
   {
-    id: "12",
+    id: "36",
     name: "Cozrum Homes Truong Dinh",
     star: 4,
     street: "Binh Thanh, Ho Chi Minh City",
@@ -394,9 +2564,71 @@ export const dataProductFake = [
     imageThumbnail:
       "https://pix6.agoda.net/hotelImages/5638299/-1/cfdc49590cc000480e5abd69f1ccf9f3.jpg",
     rating: 9.7,
+    benefits: [
+      { id: "1", name: "Breakfast" },
+      { id: "2", name: "Free cancellation" },
+      { id: "3", name: "Pay at the hotel" },
+      { id: "4", name: "Free mini bar" },
+      { id: "5", name: "Free saune accsess" },
+      { id: "6", name: "Free fitness center access" },
+      { id: "7", name: "Breakfast for 1 person" },
+      { id: "8", name: "Free pool accsess" },
+    ],
+    images: [
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/dda69105b36792ae769230297d80c6ef.jpg?s=450x450",
+        title: "Main",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/1014e6ac69fbd81ee88238e053dd453d.jpg?s=1024x768",
+        title: "Lobby",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/564/5646737/5646737_18102311260068629495.jpg?s=1024x768",
+        title: "Bed",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/8ac4ace1fdb894e193737e123b1dc27b.jpg?s=1024x768",
+        title: "Out door",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/b9fd9f23603ec4444729a7858990557c.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/94c7ca2a6e715887bc6cf58a2106e9e6.jpg?s=1024x768",
+        title: "Ballroom",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/c2fbb639f2374bb1d18d7be7315a07c1.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/ff1e2a471e7071ca9dc4bdd38920868a.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/bb3d697b703450cb1a76f583ade439c5.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/a185b06e8fa30832ea0afc930e7f717c.jpg?s=1024x768",
+        title: "",
+      },
+    ],
   },
   {
-    id: "12",
+    id: "37",
     name: "Cozrum Homes Truong Dinh",
     star: 4,
     street: "Binh Thanh, Ho Chi Minh City",
@@ -405,6 +2637,68 @@ export const dataProductFake = [
     imageThumbnail:
       "https://pix6.agoda.net/hotelImages/5638299/-1/cfdc49590cc000480e5abd69f1ccf9f3.jpg",
     rating: 9.7,
+    benefits: [
+      { id: "1", name: "Breakfast" },
+      { id: "2", name: "Free cancellation" },
+      { id: "3", name: "Pay at the hotel" },
+      { id: "4", name: "Free mini bar" },
+      { id: "5", name: "Free saune accsess" },
+      { id: "6", name: "Free fitness center access" },
+      { id: "7", name: "Breakfast for 1 person" },
+      { id: "8", name: "Free pool accsess" },
+    ],
+    images: [
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/dda69105b36792ae769230297d80c6ef.jpg?s=450x450",
+        title: "Main",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/1014e6ac69fbd81ee88238e053dd453d.jpg?s=1024x768",
+        title: "Lobby",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/564/5646737/5646737_18102311260068629495.jpg?s=1024x768",
+        title: "Bed",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/8ac4ace1fdb894e193737e123b1dc27b.jpg?s=1024x768",
+        title: "Out door",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/b9fd9f23603ec4444729a7858990557c.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/94c7ca2a6e715887bc6cf58a2106e9e6.jpg?s=1024x768",
+        title: "Ballroom",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/c2fbb639f2374bb1d18d7be7315a07c1.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/ff1e2a471e7071ca9dc4bdd38920868a.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/bb3d697b703450cb1a76f583ade439c5.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/a185b06e8fa30832ea0afc930e7f717c.jpg?s=1024x768",
+        title: "",
+      },
+    ],
   },
 ];
 
@@ -419,6 +2713,68 @@ export const dataProductRecommended = [
     imageThumbnail:
       "https://pix6.agoda.net/hotelImages/941/9411958/9411958_19082615140080010014.jpg",
     rating: 9.7,
+    benefits: [
+      { id: "1", name: "Breakfast" },
+      { id: "2", name: "Free cancellation" },
+      { id: "3", name: "Pay at the hotel" },
+      { id: "4", name: "Free mini bar" },
+      { id: "5", name: "Free saune accsess" },
+      { id: "6", name: "Free fitness center access" },
+      { id: "7", name: "Breakfast for 1 person" },
+      { id: "8", name: "Free pool accsess" },
+    ],
+    images: [
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/dda69105b36792ae769230297d80c6ef.jpg?s=450x450",
+        title: "Main",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/1014e6ac69fbd81ee88238e053dd453d.jpg?s=1024x768",
+        title: "Lobby",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/564/5646737/5646737_18102311260068629495.jpg?s=1024x768",
+        title: "Bed",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/8ac4ace1fdb894e193737e123b1dc27b.jpg?s=1024x768",
+        title: "Out door",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/b9fd9f23603ec4444729a7858990557c.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/94c7ca2a6e715887bc6cf58a2106e9e6.jpg?s=1024x768",
+        title: "Ballroom",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/c2fbb639f2374bb1d18d7be7315a07c1.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/ff1e2a471e7071ca9dc4bdd38920868a.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/bb3d697b703450cb1a76f583ade439c5.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/a185b06e8fa30832ea0afc930e7f717c.jpg?s=1024x768",
+        title: "",
+      },
+    ],
     discount: 50,
   },
   {
@@ -431,6 +2787,68 @@ export const dataProductRecommended = [
     imageThumbnail:
       "https://pix6.agoda.net/hotelImages/5638299/-1/cfdc49590cc000480e5abd69f1ccf9f3.jpg",
     rating: 9.7,
+    benefits: [
+      { id: "1", name: "Breakfast" },
+      { id: "2", name: "Free cancellation" },
+      { id: "3", name: "Pay at the hotel" },
+      { id: "4", name: "Free mini bar" },
+      { id: "5", name: "Free saune accsess" },
+      { id: "6", name: "Free fitness center access" },
+      { id: "7", name: "Breakfast for 1 person" },
+      { id: "8", name: "Free pool accsess" },
+    ],
+    images: [
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/dda69105b36792ae769230297d80c6ef.jpg?s=450x450",
+        title: "Main",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/1014e6ac69fbd81ee88238e053dd453d.jpg?s=1024x768",
+        title: "Lobby",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/564/5646737/5646737_18102311260068629495.jpg?s=1024x768",
+        title: "Bed",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/8ac4ace1fdb894e193737e123b1dc27b.jpg?s=1024x768",
+        title: "Out door",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/b9fd9f23603ec4444729a7858990557c.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/94c7ca2a6e715887bc6cf58a2106e9e6.jpg?s=1024x768",
+        title: "Ballroom",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/c2fbb639f2374bb1d18d7be7315a07c1.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/ff1e2a471e7071ca9dc4bdd38920868a.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/bb3d697b703450cb1a76f583ade439c5.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/a185b06e8fa30832ea0afc930e7f717c.jpg?s=1024x768",
+        title: "",
+      },
+    ],
     discount: 49,
   },
   {
@@ -443,6 +2861,68 @@ export const dataProductRecommended = [
     imageThumbnail:
       "https://pix6.agoda.net/hotelImages/5638299/-1/cfdc49590cc000480e5abd69f1ccf9f3.jpg",
     rating: 9.7,
+    benefits: [
+      { id: "1", name: "Breakfast" },
+      { id: "2", name: "Free cancellation" },
+      { id: "3", name: "Pay at the hotel" },
+      { id: "4", name: "Free mini bar" },
+      { id: "5", name: "Free saune accsess" },
+      { id: "6", name: "Free fitness center access" },
+      { id: "7", name: "Breakfast for 1 person" },
+      { id: "8", name: "Free pool accsess" },
+    ],
+    images: [
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/dda69105b36792ae769230297d80c6ef.jpg?s=450x450",
+        title: "Main",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/1014e6ac69fbd81ee88238e053dd453d.jpg?s=1024x768",
+        title: "Lobby",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/564/5646737/5646737_18102311260068629495.jpg?s=1024x768",
+        title: "Bed",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/8ac4ace1fdb894e193737e123b1dc27b.jpg?s=1024x768",
+        title: "Out door",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/b9fd9f23603ec4444729a7858990557c.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/94c7ca2a6e715887bc6cf58a2106e9e6.jpg?s=1024x768",
+        title: "Ballroom",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/c2fbb639f2374bb1d18d7be7315a07c1.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/ff1e2a471e7071ca9dc4bdd38920868a.jpg?s=1024x768",
+        title: "Restaurant",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/bb3d697b703450cb1a76f583ade439c5.jpg?s=1024x768",
+        title: "Spa",
+      },
+      {
+        linkImage:
+          "https://pix6.agoda.net/hotelImages/5646737/-1/a185b06e8fa30832ea0afc930e7f717c.jpg?s=1024x768",
+        title: "",
+      },
+    ],
     discount: 68,
   },
 ];

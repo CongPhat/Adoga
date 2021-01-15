@@ -166,6 +166,12 @@ module.exports = {
       64: "16rem",
       60: "60px",
       120: "120px",
+      "150%": "150%",
+      "160%": "160%",
+      "170%": "170%",
+      "180%": "180%",
+      "190%": "190%",
+      "200%": "200%",
     },
     backgroundColor: (theme) => theme("colors"),
     backgroundImage: {
@@ -297,6 +303,8 @@ module.exports = {
         '"Courier New"',
         "monospace",
       ],
+      display: ["Helvetica Neue", "Helvetica", "Arial", "sans-serif"],
+      segoe: ["Segoe-historic", "Segoe-UI", "Helvetica", "Arial", "sans-serif"],
     },
     fontSize: {
       xs: "0.75rem",

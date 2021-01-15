@@ -1,3 +1,5 @@
+import BenefitEntities from "@entities/Benefits";
+
 export interface IProduct {
   id: string;
   locationId: string;
@@ -8,6 +10,11 @@ export interface IProduct {
   imageThumbnail: string;
   rating: number;
   discount: number;
+  benefits: Array<BenefitEntities>;
+  images: Array<{
+    linkImage: string;
+    title: string;
+  }>;
 }
 
 export default class ProductEntities implements IProduct {
@@ -18,8 +25,13 @@ export default class ProductEntities implements IProduct {
   star: number = 0;
   locationId: string = "";
   imageThumbnail: string = "";
+  images: Array<{
+    linkImage: string;
+    title: string;
+  }>;
   rating: number = 0;
   discount: number = 0;
+  benefits: Array<BenefitEntities>;
 
   constructor(data) {
     this.name = data?.name;
@@ -31,6 +43,11 @@ export default class ProductEntities implements IProduct {
     this.imageThumbnail = data?.imageThumbnail;
     this.rating = data?.rating;
     this.discount = data?.discount || this.discount;
+    this.benefits = this.setBenefits(data?.benefits || []);
+    this.images = data?.images || [];
+  }
+  private setBenefits(listBenefit): Array<BenefitEntities> {
+    return BenefitEntities.CreateList(listBenefit);
   }
   public get Properties(): IProduct {
     return {
@@ -43,6 +60,8 @@ export default class ProductEntities implements IProduct {
       imageThumbnail: this.imageThumbnail,
       rating: this.rating,
       discount: this.discount,
+      benefits: this.benefits,
+      images: this.images,
     };
   }
   static CreateList(listData) {
