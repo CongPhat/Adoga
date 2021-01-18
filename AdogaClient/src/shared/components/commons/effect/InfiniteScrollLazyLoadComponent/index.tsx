@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect, useRef, useState } from "react";
+import React, { Suspense, useEffect, useMemo, useRef, useState } from "react";
 interface IProps {
   children: any;
   yCoor?: number;
@@ -12,28 +12,61 @@ const InfiniteScrollLazyLoad = ({
   delay,
   loading,
 }: IProps) => {
-  const [active, setActive] = useState<boolean>(false);
   const refScrollLazy = useRef(null);
+  const childrenNew: Array<any> = useMemo(
+    () => (children.length != undefined ? children : [children]),
+    [children]
+  );
 
-  const checkScrollHeight = () => {
-    const offsetTop = yCoor || refScrollLazy.current.offsetTop;
-    if (window.pageYOffset + window.innerHeight >= offsetTop - 300) {
-      setActive(true);
-      window.removeEventListener("scroll", checkScrollHeight);
-    }
+  const childrenDom = (children) => {
+    return children.map((x) => ({
+      dom: x,
+      active: false,
+    }));
   };
 
+  const [activeChildren, setActiveChildren] = useState({
+    current: -1,
+    children: [],
+  });
+
   useEffect(() => {
+    setActiveChildren((pre) => ({
+      ...pre,
+      children: childrenDom(childrenNew),
+    }));
+    checkScrollHeight();
+    window.removeEventListener("scroll", checkScrollHeight);
     window.addEventListener("scroll", checkScrollHeight);
-    setTimeout(() => {
-      checkScrollHeight();
-    }, delay);
-  }, []);
+  }, [childrenNew]);
+
+  const checkScrollHeight = () => {
+    const offsetTop =
+      yCoor ||
+      refScrollLazy.current.offsetTop + refScrollLazy.current.offsetHeight;
+    if (window.pageYOffset + window.innerHeight >= offsetTop - 200) {
+      setActiveChildren((pre) => {
+        if (pre.current + 1 >= childrenNew.length)
+          window.removeEventListener("scroll", checkScrollHeight);
+        return {
+          current: pre.current + 1,
+          children: pre.children.map((x, index) => ({
+            dom: x.dom,
+            active: x.active || pre.current == index,
+          })),
+        };
+      });
+    }
+  };
   return (
     <div ref={refScrollLazy}>
-      {active && (
-        <Suspense fallback={loading || <></>}>{{ ...children }}</Suspense>
-      )}
+      {activeChildren.children.map((x, index) => {
+        return x.active ? (
+          <Suspense fallback={loading || <div />} key={index}>
+            {{ ...x.dom }}
+          </Suspense>
+        ) : null;
+      })}
     </div>
   );
 };

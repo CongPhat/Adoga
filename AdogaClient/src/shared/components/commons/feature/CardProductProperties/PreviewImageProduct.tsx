@@ -15,7 +15,13 @@ const PriviewImageProduct = ({ images }: IProps) => {
 
   return (
     <div>
-      <img src={images[0]?.linkImage} alt="" />
+      <div className="h-180px">
+        <img
+          src={images[0]?.linkImage}
+          alt=""
+          className="w-full h-full object-cover"
+        />
+      </div>
       <div className=" mt-1 relative">
         <div
           onMouseLeave={() => setImageHover(null)}
@@ -41,25 +47,26 @@ const PriviewImageProduct = ({ images }: IProps) => {
             </div>
           ))}
         </div>
-        {imageHover && (
-          <div
-            className="absolute w-170% h-64 z-60 shadow-x1"
-            style={{ top: "-308.5%" }}
+
+        <div
+          className={`absolute w-170% h-64 z-60 shadow-x1 ${
+            imageHover ? "block" : "hidden"
+          }`}
+          style={{ top: "-308.5%" }}
+        >
+          <img
+            src={imageHover?.linkImage}
+            alt=""
+            className="w-full h-full object-cover"
+          />
+          <span
+            className="absolute bottom-0 text-white z-10"
+            style={{ left: "10px" }}
           >
-            <img
-              src={imageHover.linkImage}
-              alt=""
-              className="w-full h-full object-cover"
-            />
-            <span
-              className="absolute bottom-0 text-white z-10"
-              style={{ left: "10px" }}
-            >
-              {imageHover.title}
-            </span>
-            <div className="absolute w-full h-32 bottom-0 bg-gradient-to-t from-black"></div>
-          </div>
-        )}
+            {imageHover?.title}
+          </span>
+          <div className="absolute w-full h-32 bottom-0 bg-gradient-to-t from-black"></div>
+        </div>
       </div>
     </div>
   );

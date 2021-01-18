@@ -71,6 +71,8 @@ export const dataProductFake = [
         title: "",
       },
     ],
+    only: 4,
+    discount: 50,
   },
   {
     id: "2",
@@ -144,6 +146,8 @@ export const dataProductFake = [
         title: "",
       },
     ],
+    only: 4,
+    discount: 50,
   },
   {
     id: "6",
@@ -217,6 +221,8 @@ export const dataProductFake = [
         title: "",
       },
     ],
+    only: 4,
+    discount: 50,
   },
   {
     id: "3",
@@ -290,6 +296,8 @@ export const dataProductFake = [
         title: "",
       },
     ],
+    only: 4,
+    discount: 50,
   },
   {
     id: "4",
@@ -363,6 +371,8 @@ export const dataProductFake = [
         title: "",
       },
     ],
+    only: 4,
+    discount: 50,
   },
   {
     id: "5",
@@ -436,6 +446,8 @@ export const dataProductFake = [
         title: "",
       },
     ],
+    only: 4,
+    discount: 50,
   },
   {
     id: "13",
@@ -509,6 +521,8 @@ export const dataProductFake = [
         title: "",
       },
     ],
+    only: 4,
+    discount: 50,
   },
   {
     id: "7",
@@ -582,6 +596,8 @@ export const dataProductFake = [
         title: "",
       },
     ],
+    only: 4,
+    discount: 50,
   },
   {
     id: "8",
@@ -655,6 +671,8 @@ export const dataProductFake = [
         title: "",
       },
     ],
+    only: 4,
+    discount: 50,
   },
   {
     id: "9",
@@ -728,6 +746,8 @@ export const dataProductFake = [
         title: "",
       },
     ],
+    only: 4,
+    discount: 50,
   },
   {
     id: "10",
@@ -801,6 +821,8 @@ export const dataProductFake = [
         title: "",
       },
     ],
+    only: 4,
+    discount: 50,
   },
   {
     id: "11",
@@ -874,6 +896,8 @@ export const dataProductFake = [
         title: "",
       },
     ],
+    only: 4,
+    discount: 50,
   },
   {
     id: "12",
@@ -947,6 +971,8 @@ export const dataProductFake = [
         title: "",
       },
     ],
+    only: 4,
+    discount: 50,
   },
   {
     id: "14",
@@ -1020,6 +1046,8 @@ export const dataProductFake = [
         title: "",
       },
     ],
+    only: 4,
+    discount: 50,
   },
   {
     id: "15",
@@ -1093,6 +1121,8 @@ export const dataProductFake = [
         title: "",
       },
     ],
+    only: 4,
+    discount: 50,
   },
   {
     id: "16",
@@ -1166,6 +1196,8 @@ export const dataProductFake = [
         title: "",
       },
     ],
+    only: 4,
+    discount: 50,
   },
   {
     id: "17",
@@ -1239,6 +1271,8 @@ export const dataProductFake = [
         title: "",
       },
     ],
+    only: 4,
+    discount: 50,
   },
   {
     id: "18",
@@ -1312,6 +1346,8 @@ export const dataProductFake = [
         title: "",
       },
     ],
+    only: 4,
+    discount: 50,
   },
   {
     id: "19",
@@ -1385,6 +1421,8 @@ export const dataProductFake = [
         title: "",
       },
     ],
+    only: 4,
+    discount: 50,
   },
   {
     id: "20",
@@ -1458,6 +1496,8 @@ export const dataProductFake = [
         title: "",
       },
     ],
+    only: 4,
+    discount: 50,
   },
   {
     id: "21",
@@ -1531,6 +1571,8 @@ export const dataProductFake = [
         title: "",
       },
     ],
+    only: 4,
+    discount: 50,
   },
   {
     id: "22",
@@ -1604,6 +1646,8 @@ export const dataProductFake = [
         title: "",
       },
     ],
+    only: 4,
+    discount: 50,
   },
   {
     id: "23",
@@ -1677,6 +1721,8 @@ export const dataProductFake = [
         title: "",
       },
     ],
+    only: 4,
+    discount: 50,
   },
   {
     id: "24",
@@ -1750,6 +1796,8 @@ export const dataProductFake = [
         title: "",
       },
     ],
+    only: 4,
+    discount: 50,
   },
   {
     id: "25",
@@ -1823,6 +1871,8 @@ export const dataProductFake = [
         title: "",
       },
     ],
+    only: 4,
+    discount: 50,
   },
   {
     id: "26",
@@ -1896,6 +1946,8 @@ export const dataProductFake = [
         title: "",
       },
     ],
+    only: 4,
+    discount: 50,
   },
   {
     id: "27",
@@ -1969,6 +2021,8 @@ export const dataProductFake = [
         title: "",
       },
     ],
+    only: 4,
+    discount: 50,
   },
   {
     id: "28",
@@ -2042,6 +2096,8 @@ export const dataProductFake = [
         title: "",
       },
     ],
+    only: 4,
+    discount: 50,
   },
   {
     id: "29",
@@ -2115,6 +2171,8 @@ export const dataProductFake = [
         title: "",
       },
     ],
+    only: 4,
+    discount: 50,
   },
   {
     id: "30",
@@ -2188,6 +2246,8 @@ export const dataProductFake = [
         title: "",
       },
     ],
+    only: 4,
+    discount: 50,
   },
   {
     id: "31",
@@ -2261,6 +2321,8 @@ export const dataProductFake = [
         title: "",
       },
     ],
+    only: 4,
+    discount: 50,
   },
   {
     id: "32",
@@ -2334,6 +2396,8 @@ export const dataProductFake = [
         title: "",
       },
     ],
+    only: 4,
+    discount: 50,
   },
   {
     id: "33",
@@ -2407,6 +2471,8 @@ export const dataProductFake = [
         title: "",
       },
     ],
+    only: 4,
+    discount: 50,
   },
   {
     id: "34",
@@ -2480,6 +2546,8 @@ export const dataProductFake = [
         title: "",
       },
     ],
+    only: 4,
+    discount: 50,
   },
   {
     id: "35",
@@ -2553,6 +2621,8 @@ export const dataProductFake = [
         title: "",
       },
     ],
+    only: 4,
+    discount: 50,
   },
   {
     id: "36",
@@ -2626,6 +2696,8 @@ export const dataProductFake = [
         title: "",
       },
     ],
+    only: 4,
+    discount: 50,
   },
   {
     id: "37",
@@ -2699,6 +2771,8 @@ export const dataProductFake = [
         title: "",
       },
     ],
+    only: 4,
+    discount: 50,
   },
 ];
 
@@ -2775,6 +2849,7 @@ export const dataProductRecommended = [
         title: "",
       },
     ],
+    only: 4,
     discount: 50,
   },
   {
@@ -2849,6 +2924,7 @@ export const dataProductRecommended = [
         title: "",
       },
     ],
+    only: 4,
     discount: 49,
   },
   {
@@ -2923,6 +2999,7 @@ export const dataProductRecommended = [
         title: "",
       },
     ],
+    only: 4,
     discount: 68,
   },
 ];

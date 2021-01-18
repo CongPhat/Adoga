@@ -139,6 +139,11 @@
     url("../../shared/assets/font/Roboto/Roboto-Bold.ttf") format("truetype");
 }
 
+a {
+  &:hover {
+    color: inherit;
+  }
+}
 body {
   margin: 0;
   padding: 0;
@@ -268,4 +273,9 @@ body {
     background-color: var(--color-blue-button-hover);
     color: white;
   }
+}
+
+//Tooltip
+.ant-tooltip {
+  max-width: fit-content !important;
 }

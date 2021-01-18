@@ -3,6 +3,7 @@ import SearchComponent from "@components/commons/feature/Search";
 import Slider from "@components/commons/feature/Slider";
 import React, { useEffect } from "react";
 import FeaturedHomes from "./components/FeaturedHomes";
+// import Recommended from "./components/Recommended";
 
 const Recommended = React.lazy(() => import("./components/Recommended"));
 const TopDestionations = React.lazy(
@@ -27,10 +28,11 @@ const Dashboard = ({}) => {
         <FeaturedHomes />
         <InfiniteScrollLazyLoad delay={1}>
           <Recommended />
-        </InfiniteScrollLazyLoad>
-        <InfiniteScrollLazyLoad delay={300}>
           <TopDestionations />
         </InfiniteScrollLazyLoad>
+        {/* <InfiniteScrollLazyLoad delay={300}>
+          <TopDestionations />
+        </InfiniteScrollLazyLoad> */}
       </div>
     </div>
   );

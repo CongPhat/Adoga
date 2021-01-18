@@ -49,6 +49,7 @@ module.exports = {
         900: "#742a2a",
         1000: "#c53030",
         1100: "rgb(225, 45, 45)",
+        1200: "#b42424",
       },
       orange: {
         100: "#fffaf0",
@@ -138,6 +139,7 @@ module.exports = {
         800: "#97266d",
         900: "#702459",
         1000: "#ff567d",
+        1100: "#f9d8d8",
       },
       grey: {
         100: "#d9d9d9",
@@ -166,6 +168,7 @@ module.exports = {
       64: "16rem",
       60: "60px",
       120: "120px",
+      "180px": "180px",
       "150%": "150%",
       "160%": "160%",
       "170%": "170%",
@@ -303,7 +306,7 @@ module.exports = {
         '"Courier New"',
         "monospace",
       ],
-      display: ["Helvetica Neue", "Helvetica", "Arial", "sans-serif"],
+      display: ["Roboto", "Helvetica", "Arial", "sans-serif"],
       segoe: ["Segoe-historic", "Segoe-UI", "Helvetica", "Arial", "sans-serif"],
     },
     fontSize: {
@@ -339,6 +342,7 @@ module.exports = {
       350: "350px",
       inherit: "inherit",
       "screen-95": "95vh",
+      "2px": "2px",
     }),
     inset: {
       0: "0",
