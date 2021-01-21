@@ -8,7 +8,7 @@ interface IProps {
 const CardProductSimple = ({ product }: IProps) => {
   return (
     <Link
-      className="card-product-simple relative block border border-gray-1100 hover:shadow-2xl group"
+      className="card-product-simple relative block border border-gray-1100 hover:shadow-2xl group mt-4"
       to={`/product/${product.id}`}
     >
       <div style={{ height: "150px" }}>

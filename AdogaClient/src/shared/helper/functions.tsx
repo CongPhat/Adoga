@@ -143,3 +143,14 @@ export const parseSearchToObject = (string) => {
     }
   );
 };
+export const parseObjectToSearch = (object) => {
+  let string = "";
+  Object.keys(object).map((key, index) => {
+    string = `${string}${index == 0 ? "?" : "&"}${key}=${object[key]}`;
+  });
+  return string;
+};
+
+export const spliceArray = (arr: Array<any>, start: number, end: number) => {
+  return [...arr].splice(start, end);
+};

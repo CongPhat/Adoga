@@ -33,6 +33,7 @@ const InfiniteScrollLazyLoad = ({
   useEffect(() => {
     setActiveChildren((pre) => ({
       ...pre,
+      current: -1,
       children: childrenDom(childrenNew),
     }));
     checkScrollHeight();
@@ -44,10 +45,13 @@ const InfiniteScrollLazyLoad = ({
     const offsetTop =
       yCoor ||
       refScrollLazy.current.offsetTop + refScrollLazy.current.offsetHeight;
+
     if (window.pageYOffset + window.innerHeight >= offsetTop - 200) {
       setActiveChildren((pre) => {
-        if (pre.current + 1 >= childrenNew.length)
+        if (pre.current + 1 >= childrenNew.length) {
           window.removeEventListener("scroll", checkScrollHeight);
+        }
+
         return {
           current: pre.current + 1,
           children: pre.children.map((x, index) => ({

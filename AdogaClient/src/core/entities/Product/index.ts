@@ -16,6 +16,7 @@ export interface IProduct {
     title: string;
   }>;
   only: number;
+  productType: string;
 }
 
 export default class ProductEntities implements IProduct {
@@ -34,6 +35,7 @@ export default class ProductEntities implements IProduct {
   discount: number = 0;
   benefits: Array<BenefitEntities>;
   only: number;
+  productType: string;
 
   constructor(data) {
     this.name = data?.name;
@@ -48,6 +50,7 @@ export default class ProductEntities implements IProduct {
     this.benefits = this.setBenefits(data?.benefits || []);
     this.images = data?.images || [];
     this.only = data?.only || 0;
+    this.productType = data?.productType || "";
   }
   private setBenefits(listBenefit): Array<BenefitEntities> {
     return BenefitEntities.CreateList(listBenefit);
@@ -66,6 +69,7 @@ export default class ProductEntities implements IProduct {
       benefits: this.benefits,
       images: this.images,
       only: this.only,
+      productType: this.productType,
     };
   }
   static CreateList(listData) {

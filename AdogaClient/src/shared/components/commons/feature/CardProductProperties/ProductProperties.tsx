@@ -92,7 +92,7 @@ const ProductProperties = ({ product }: IProps) => {
               {product.discount}% DISCOUNT
             </Tag>
           )}
-          <div>
+          <div className="">
             <span className="text-xs text-gray-1200">
               Price per night as low as
             </span>
@@ -107,10 +107,12 @@ const ProductProperties = ({ product }: IProps) => {
                 ></span>
               </span>
             )}
-            <span className="block leading-3">
+            <span className="block">
               <span className="underline text-2xl">đ</span>
               <span className=" text-2xl text-red-1100">
-                {(product.price * product.discount) / 100}
+                {product.discount != 0
+                  ? (product.price * product.discount) / 100
+                  : product.price}
               </span>
             </span>
             <span className=" text-green-600 text-sm">FREE CANCELLATION</span>

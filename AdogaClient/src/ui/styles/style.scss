@@ -175,6 +175,13 @@ body {
   // }
 }
 
+.ellipsis {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 //Select
 .ant-select {
   &-item {
@@ -278,4 +285,12 @@ body {
 //Tooltip
 .ant-tooltip {
   max-width: fit-content !important;
+}
+
+//Slider
+.ant-slider-step {
+  background: darkgray !important;
+}
+.ant-slider-track {
+  z-index: 1 !important;
 }

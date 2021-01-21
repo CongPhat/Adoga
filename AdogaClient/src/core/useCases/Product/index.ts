@@ -23,11 +23,27 @@ export default class ProductRepositoryImpl implements Repository {
   }
   public async GetAllProduct(dataSearch): Promise<ProductEntities[]> {
     //fake
-    const { location } = dataSearch;
+    const { location, type, PriceFrom, PriceTo } = dataSearch;
     let dataResult = [];
     if (location) {
       dataResult = dataProductFake.filter((x) => x.locationId == location);
     }
+    if (type) {
+      dataResult = dataResult.filter((x) => x.productType == type);
+    }
+    if (PriceFrom) {
+      dataResult = dataResult.filter((x) => x.price >= parseInt(PriceFrom));
+    }
+    if (PriceTo) {
+      dataResult = dataResult.filter((x) => x.price <= parseInt(PriceTo));
+    }
+    return ProductEntities.CreateList(dataResult);
+  }
+  public async GetProductsLike(locationId): Promise<ProductEntities[]> {
+    //fake
+    let dataResult = [...dataProductFake]
+      .filter((x) => x.locationId == locationId)
+      .splice(0, 3);
     return ProductEntities.CreateList(dataResult);
   }
 }
