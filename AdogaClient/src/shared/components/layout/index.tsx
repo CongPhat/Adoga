@@ -1,5 +1,6 @@
 import FilterBar from "@components/commons/feature/FilterBar";
 import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router";
 import HeaderComponent from "./Header";
 import SiderComponent from "./Sidebar";
 

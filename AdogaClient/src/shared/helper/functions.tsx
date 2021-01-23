@@ -135,6 +135,7 @@ export const option_key = [
 ];
 
 export const parseSearchToObject = (string) => {
+  if (string == "") return {};
   var search = string.substring(1);
   return JSON.parse(
     '{"' + search.replace(/&/g, '","').replace(/=/g, '":"') + '"}',
@@ -143,12 +144,19 @@ export const parseSearchToObject = (string) => {
     }
   );
 };
+
 export const parseObjectToSearch = (object) => {
   let string = "";
   Object.keys(object).map((key, index) => {
     string = `${string}${index == 0 ? "?" : "&"}${key}=${object[key]}`;
   });
   return string;
+};
+
+export const parseMoneyVND = (money) => {
+  return Math.floor(money)
+    .toString()
+    .replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
 };
 
 export const spliceArray = (arr: Array<any>, start: number, end: number) => {

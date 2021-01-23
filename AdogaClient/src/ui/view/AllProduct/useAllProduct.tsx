@@ -17,7 +17,7 @@ export interface IItemSearchProduct {
   data: string;
   defaultChecked: boolean;
 }
-interface IUseProduct {
+export interface IUseProduct {
   presenter?: {
     pushSearch?: (checked: boolean, data: any, type: string) => void;
   };

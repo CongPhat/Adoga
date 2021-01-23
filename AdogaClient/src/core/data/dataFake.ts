@@ -1,3 +1,45 @@
+export const amenities = [
+  { id: "1", name: "Bathrobes" },
+  { id: "2", name: "Hair dryer" },
+  { id: "3", name: "Toiletries" },
+  { id: "4", name: "Bathroom phone" },
+  { id: "5", name: "Mirror" },
+  { id: "6", name: "Towels" },
+];
+export const dataRoom = {
+  id: "1234",
+  name: "Superior Double Room",
+  price: 2230103,
+  discount: 75,
+  people: 3,
+  images: [
+    {
+      linkImage:
+        "https://pix6.agoda.net/hotelImages/6390444/-1/d70208f516f47737cd19453e7b616474.jpg?s=208x117&ar=16x9",
+      title: "Room",
+    },
+    {
+      linkImage:
+        "https://pix6.agoda.net/hotelImages/6390444/-1/34d2e67dfa0d0dffb9172782dc19bfa3.jpg?s=100x75",
+      title: "Room",
+    },
+    {
+      linkImage:
+        "https://pix6.agoda.net/hotelImages/6390444/-1/a0d725953f2f035f4fe7b5a9639ad279.jpg?s=100x75",
+      title: "Room",
+    },
+  ],
+  only: 10,
+  facilities: [
+    { id: "1", name: "Bathroom and toiletries", amenities: amenities },
+    { id: "2", name: "Entertainment", amenities: amenities },
+    { id: "3", name: "Comforts", amenities: amenities },
+    { id: "4", name: "Dinging, drink", amenities: amenities },
+    { id: "5", name: "Layout", amenities: amenities },
+    { id: "6", name: "Clothing", amenities: amenities },
+  ],
+};
+
 export const dataProductFake = [
   {
     id: "1",
@@ -73,6 +115,7 @@ export const dataProductFake = [
     ],
     only: 4,
     productType: "1",
+    rooms: [dataRoom, dataRoom, dataRoom, dataRoom, dataRoom],
   },
   {
     id: "2",
@@ -148,6 +191,7 @@ export const dataProductFake = [
     ],
     only: 4,
     productType: "1",
+    rooms: [dataRoom, dataRoom, dataRoom, dataRoom, dataRoom],
   },
   {
     id: "6",
@@ -223,6 +267,7 @@ export const dataProductFake = [
     ],
     only: 4,
     productType: "1",
+    rooms: [dataRoom, dataRoom, dataRoom, dataRoom, dataRoom],
   },
   {
     id: "3",
@@ -298,6 +343,7 @@ export const dataProductFake = [
     ],
     only: 4,
     productType: "1",
+    rooms: [dataRoom, dataRoom, dataRoom, dataRoom, dataRoom],
   },
   {
     id: "4",
@@ -373,6 +419,7 @@ export const dataProductFake = [
     ],
     only: 4,
     productType: "1",
+    rooms: [dataRoom, dataRoom, dataRoom, dataRoom, dataRoom],
   },
   {
     id: "5",
@@ -448,6 +495,7 @@ export const dataProductFake = [
     ],
     only: 4,
     productType: "1",
+    rooms: [dataRoom, dataRoom, dataRoom, dataRoom, dataRoom],
   },
   {
     id: "13",
@@ -523,6 +571,7 @@ export const dataProductFake = [
     ],
     only: 4,
     productType: "1",
+    rooms: [dataRoom, dataRoom, dataRoom, dataRoom, dataRoom],
   },
   {
     id: "7",
@@ -598,6 +647,7 @@ export const dataProductFake = [
     ],
     only: 4,
     productType: "1",
+    rooms: [dataRoom, dataRoom, dataRoom, dataRoom, dataRoom],
   },
   {
     id: "8",
@@ -673,6 +723,7 @@ export const dataProductFake = [
     ],
     only: 4,
     productType: "1",
+    rooms: [dataRoom, dataRoom, dataRoom, dataRoom, dataRoom],
     discount: 50,
   },
   {
@@ -749,6 +800,7 @@ export const dataProductFake = [
     ],
     only: 4,
     productType: "1",
+    rooms: [dataRoom, dataRoom, dataRoom, dataRoom, dataRoom],
   },
   {
     id: "10",
@@ -824,6 +876,7 @@ export const dataProductFake = [
     ],
     only: 4,
     productType: "1",
+    rooms: [dataRoom, dataRoom, dataRoom, dataRoom, dataRoom],
   },
   {
     id: "11",
@@ -899,6 +952,7 @@ export const dataProductFake = [
     ],
     only: 4,
     productType: "1",
+    rooms: [dataRoom, dataRoom, dataRoom, dataRoom, dataRoom],
   },
   {
     id: "12",
@@ -974,6 +1028,7 @@ export const dataProductFake = [
     ],
     only: 4,
     productType: "1",
+    rooms: [dataRoom, dataRoom, dataRoom, dataRoom, dataRoom],
   },
   {
     id: "14",
@@ -1049,6 +1104,7 @@ export const dataProductFake = [
     ],
     only: 4,
     productType: "1",
+    rooms: [dataRoom, dataRoom, dataRoom, dataRoom, dataRoom],
   },
   {
     id: "15",
@@ -1124,6 +1180,7 @@ export const dataProductFake = [
     ],
     only: 4,
     productType: "1",
+    rooms: [dataRoom, dataRoom, dataRoom, dataRoom, dataRoom],
   },
   {
     id: "16",
@@ -1199,6 +1256,7 @@ export const dataProductFake = [
     ],
     only: 4,
     productType: "1",
+    rooms: [dataRoom, dataRoom, dataRoom, dataRoom, dataRoom],
   },
   {
     id: "17",
@@ -1274,6 +1332,7 @@ export const dataProductFake = [
     ],
     only: 4,
     productType: "1",
+    rooms: [dataRoom, dataRoom, dataRoom, dataRoom, dataRoom],
   },
   {
     id: "18",
@@ -1350,6 +1409,7 @@ export const dataProductFake = [
     only: 4,
     discount: 50,
     productType: "2",
+    rooms: [dataRoom, dataRoom, dataRoom, dataRoom, dataRoom],
   },
   {
     id: "19",
@@ -1426,6 +1486,7 @@ export const dataProductFake = [
     only: 4,
     discount: 50,
     productType: "2",
+    rooms: [dataRoom, dataRoom, dataRoom, dataRoom, dataRoom],
   },
   {
     id: "20",
@@ -1502,6 +1563,7 @@ export const dataProductFake = [
     only: 4,
     discount: 50,
     productType: "2",
+    rooms: [dataRoom, dataRoom, dataRoom, dataRoom, dataRoom],
   },
   {
     id: "21",
@@ -1578,6 +1640,7 @@ export const dataProductFake = [
     only: 4,
     discount: 50,
     productType: "2",
+    rooms: [dataRoom, dataRoom, dataRoom, dataRoom, dataRoom],
   },
   {
     id: "22",
@@ -1654,6 +1717,7 @@ export const dataProductFake = [
     only: 4,
     discount: 50,
     productType: "2",
+    rooms: [dataRoom, dataRoom, dataRoom, dataRoom, dataRoom],
   },
   {
     id: "23",
@@ -1730,6 +1794,7 @@ export const dataProductFake = [
     only: 4,
     discount: 50,
     productType: "2",
+    rooms: [dataRoom, dataRoom, dataRoom, dataRoom, dataRoom],
   },
   {
     id: "24",
@@ -1806,6 +1871,7 @@ export const dataProductFake = [
     only: 4,
     discount: 50,
     productType: "2",
+    rooms: [dataRoom, dataRoom, dataRoom, dataRoom, dataRoom],
   },
   {
     id: "25",
@@ -1882,6 +1948,7 @@ export const dataProductFake = [
     only: 4,
     discount: 50,
     productType: "2",
+    rooms: [dataRoom, dataRoom, dataRoom, dataRoom, dataRoom],
   },
   {
     id: "26",
@@ -1958,6 +2025,7 @@ export const dataProductFake = [
     only: 4,
     discount: 50,
     productType: "2",
+    rooms: [dataRoom, dataRoom, dataRoom, dataRoom, dataRoom],
   },
   {
     id: "27",
@@ -2034,6 +2102,7 @@ export const dataProductFake = [
     only: 4,
     discount: 50,
     productType: "2",
+    rooms: [dataRoom, dataRoom, dataRoom, dataRoom, dataRoom],
   },
   {
     id: "28",
@@ -2110,6 +2179,7 @@ export const dataProductFake = [
     only: 4,
     discount: 50,
     productType: "2",
+    rooms: [dataRoom, dataRoom, dataRoom, dataRoom, dataRoom],
   },
   {
     id: "29",
@@ -2186,6 +2256,7 @@ export const dataProductFake = [
     only: 4,
     discount: 50,
     productType: "2",
+    rooms: [dataRoom, dataRoom, dataRoom, dataRoom, dataRoom],
   },
   {
     id: "30",
@@ -2262,6 +2333,7 @@ export const dataProductFake = [
     only: 4,
     discount: 50,
     productType: "2",
+    rooms: [dataRoom, dataRoom, dataRoom, dataRoom, dataRoom],
   },
   {
     id: "31",
@@ -2338,6 +2410,7 @@ export const dataProductFake = [
     only: 4,
     discount: 50,
     productType: "2",
+    rooms: [dataRoom, dataRoom, dataRoom, dataRoom, dataRoom],
   },
   {
     id: "32",
@@ -2414,6 +2487,7 @@ export const dataProductFake = [
     only: 4,
     discount: 50,
     productType: "2",
+    rooms: [dataRoom, dataRoom, dataRoom, dataRoom, dataRoom],
   },
   {
     id: "33",
@@ -2490,6 +2564,7 @@ export const dataProductFake = [
     only: 4,
     discount: 50,
     productType: "2",
+    rooms: [dataRoom, dataRoom, dataRoom, dataRoom, dataRoom],
   },
   {
     id: "34",
@@ -2566,6 +2641,7 @@ export const dataProductFake = [
     only: 4,
     discount: 50,
     productType: "2",
+    rooms: [dataRoom, dataRoom, dataRoom, dataRoom, dataRoom],
   },
   {
     id: "35",
@@ -2642,6 +2718,7 @@ export const dataProductFake = [
     only: 4,
     discount: 50,
     productType: "2",
+    rooms: [dataRoom, dataRoom, dataRoom, dataRoom, dataRoom],
   },
   {
     id: "36",
@@ -2718,6 +2795,7 @@ export const dataProductFake = [
     only: 4,
     discount: 50,
     productType: "2",
+    rooms: [dataRoom, dataRoom, dataRoom, dataRoom, dataRoom],
   },
   {
     id: "37",
@@ -2794,6 +2872,7 @@ export const dataProductFake = [
     only: 4,
     discount: 50,
     productType: "2",
+    rooms: [dataRoom, dataRoom, dataRoom, dataRoom, dataRoom],
   },
 ];
 
@@ -2873,6 +2952,7 @@ export const dataProductRecommended = [
     only: 4,
     discount: 50,
     productType: "2",
+    rooms: [dataRoom, dataRoom, dataRoom, dataRoom, dataRoom],
   },
   {
     id: "12",
@@ -2949,6 +3029,7 @@ export const dataProductRecommended = [
     only: 4,
     discount: 49,
     productType: "2",
+    rooms: [dataRoom, dataRoom, dataRoom, dataRoom, dataRoom],
   },
   {
     id: "7",
@@ -3025,6 +3106,7 @@ export const dataProductRecommended = [
     only: 4,
     discount: 68,
     productType: "2",
+    rooms: [dataRoom, dataRoom, dataRoom, dataRoom, dataRoom],
   },
 ];
 

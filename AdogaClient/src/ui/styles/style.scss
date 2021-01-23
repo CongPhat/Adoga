@@ -144,6 +144,15 @@ a {
     color: inherit;
   }
 }
+button {
+  &:focus {
+    outline: none;
+  }
+}
+img {
+  width: 100%;
+  height: 100%;
+}
 body {
   margin: 0;
   padding: 0;
@@ -293,4 +302,19 @@ body {
 }
 .ant-slider-track {
   z-index: 1 !important;
+}
+
+//modal-show-image
+.modal-show-image {
+  border-radius: 18px !important;
+  overflow: hidden !important;
+  .ant-modal-body {
+    background: black !important;
+    padding: 0 !important;
+    border-radius: 18px !important;
+  }
+  .ant-modal-close-x {
+    font-size: 27px !important;
+    color: white !important;
+  }
 }

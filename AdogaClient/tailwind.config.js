@@ -337,6 +337,7 @@ module.exports = {
       auto: "auto",
       ...theme("spacing"),
       full: "100%",
+      "65vh": "65vh",
       screen: "100vh",
       120: "120px",
       350: "350px",
@@ -502,6 +503,7 @@ module.exports = {
       "10/12": "83.333333%",
       "11/12": "91.666667%",
       full: "100%",
+      "85vw": "85vw",
       screen: "100vw",
     }),
     zIndex: {

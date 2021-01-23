@@ -16,6 +16,10 @@ export const AllProduct = Loadable({
   loader: () => import("@view/AllProduct"),
   loading: LoadingComponent,
 });
+export const Product = Loadable({
+  loader: () => import("@view/Product"),
+  loading: LoadingComponent,
+});
 
 export const publicRouter: Array<object> = [
   {
@@ -27,6 +31,11 @@ export const publicRouter: Array<object> = [
     path: "/all-product",
     exact: true,
     main: () => <AllProduct />,
+  },
+  {
+    path: "/product/:productId",
+    exact: true,
+    main: () => <Product />,
   },
   {
     path: "",

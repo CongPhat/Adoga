@@ -1,4 +1,5 @@
 import BenefitEntities from "@entities/Benefits";
+import RoomEntities from "@entities/Room";
 
 export interface IProduct {
   id: string;
@@ -17,6 +18,7 @@ export interface IProduct {
   }>;
   only: number;
   productType: string;
+  room: RoomEntities;
 }
 
 export default class ProductEntities implements IProduct {
@@ -36,6 +38,7 @@ export default class ProductEntities implements IProduct {
   benefits: Array<BenefitEntities>;
   only: number;
   productType: string;
+  room: RoomEntities;
 
   constructor(data) {
     this.name = data?.name;
@@ -51,9 +54,13 @@ export default class ProductEntities implements IProduct {
     this.images = data?.images || [];
     this.only = data?.only || 0;
     this.productType = data?.productType || "";
+    this.room = this.setOneRoom(data?.rooms[0]);
   }
   private setBenefits(listBenefit): Array<BenefitEntities> {
     return BenefitEntities.CreateList(listBenefit);
+  }
+  private setOneRoom(data): RoomEntities {
+    return new RoomEntities(data);
   }
   public get Properties(): IProduct {
     return {
@@ -70,6 +77,7 @@ export default class ProductEntities implements IProduct {
       images: this.images,
       only: this.only,
       productType: this.productType,
+      room: this.room,
     };
   }
   static CreateList(listData) {

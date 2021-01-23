@@ -46,4 +46,8 @@ export default class ProductRepositoryImpl implements Repository {
       .splice(0, 3);
     return ProductEntities.CreateList(dataResult);
   }
+  public async GetDetailProduct(productId): Promise<ProductEntities> {
+    //fake
+    return new ProductEntities(dataProductFake.find((x) => x.id == productId));
+  }
 }
