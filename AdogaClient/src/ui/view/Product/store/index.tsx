@@ -3,7 +3,8 @@ import RoomEntities from "@entities/Room";
 import { atom } from "recoil";
 
 interface IModalImagesProduct {
-  data: ProductEntities;
+  dataProduct: ProductEntities;
+  dataRoom: RoomEntities;
   type: "product" | "room" | "";
   isShow: boolean;
 }
@@ -11,7 +12,8 @@ interface IModalImagesProduct {
 export const modalImagesProduct = atom<IModalImagesProduct>({
   key: "ModalImagesProduct",
   default: {
-    data: null,
+    dataProduct: null,
+    dataRoom: null,
     type: "",
     isShow: false,
   },

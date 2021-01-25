@@ -144,6 +144,7 @@ module.exports = {
       grey: {
         100: "#d9d9d9",
         200: "e2e2e2",
+        300: "#4e4e4e",
       },
     },
     spacing: {

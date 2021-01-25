@@ -14,10 +14,10 @@ const CardProductProperties = ({ product, loading }: IProps) => {
   return (
     <Link
       className="card-product-properties relative flex mt-8 border border-gray-1100 rounded-md hover:shadow-x1 transition duration-300"
-      to={`/product/${product.id}`}
+      to={`/product/${product.productId}`}
     >
       <div className=" w-2/6">
-        <PriviewImageProduct images={product.images} />
+        <PriviewImageProduct images={product.productImages} />
       </div>
       <div className="w-4/6">
         <ProductProperties product={product} />

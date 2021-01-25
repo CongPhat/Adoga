@@ -1,10 +1,10 @@
 export const amenities = [
-  { id: "1", name: "Bathrobes" },
-  { id: "2", name: "Hair dryer" },
-  { id: "3", name: "Toiletries" },
-  { id: "4", name: "Bathroom phone" },
-  { id: "5", name: "Mirror" },
-  { id: "6", name: "Towels" },
+  { id: "1", name: "Bathrobes", icon: "icon-podcast" },
+  { id: "2", name: "Hair dryer", icon: "icon-cctv" },
+  { id: "3", name: "Toiletries", icon: "icon-cctv" },
+  { id: "4", name: "Bathroom phone", icon: "icon-podcast" },
+  { id: "5", name: "Mirror", icon: "icon-podcast" },
+  { id: "6", name: "Towels", icon: "icon-cctv" },
 ];
 export const dataRoom = {
   id: "1234",
@@ -38,6 +38,7 @@ export const dataRoom = {
     { id: "5", name: "Layout", amenities: amenities },
     { id: "6", name: "Clothing", amenities: amenities },
   ],
+  rating: 8.5,
 };
 
 export const dataProductFake = [

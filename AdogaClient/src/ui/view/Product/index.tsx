@@ -1,3 +1,4 @@
+import RoomsProduct from "@view/Room/components/RoomsProduct";
 import React, { useCallback, useEffect } from "react";
 import { useParams } from "react-router";
 import { useSetRecoilState } from "recoil";
@@ -17,7 +18,8 @@ const Product = () => {
 
   const handleShowImagesProduct = useCallback(() => {
     setModal({
-      data: dataDetailProduct,
+      dataProduct: dataDetailProduct,
+      dataRoom: null,
       type: "product",
       isShow: true,
     });
@@ -29,24 +31,25 @@ const Product = () => {
   return (
     <section>
       <HeaderProduct
-        title={dataDetailProduct.name}
-        star={dataDetailProduct.star}
-        street={dataDetailProduct.street}
+        title={dataDetailProduct.productName}
+        star={dataDetailProduct.productStar}
+        street={dataDetailProduct.productStreet}
       />
       <div className="w-1/2">
-        <HeaderBenefitProduct benefits={dataDetailProduct.benefits} />
+        <HeaderBenefitProduct benefits={dataDetailProduct.productBenefits} />
       </div>
       <div className="flex mt-8">
         <div className=" w-3/4">
           <ImagesPreview
-            images={dataDetailProduct.images}
+            images={dataDetailProduct.productImages}
             showImagesProduct={handleShowImagesProduct}
           />
         </div>
         <div className=" w-1/4 ml-4">
-          <RoomLowestPrice room={dataDetailProduct.room} />
+          <RoomLowestPrice room={dataDetailProduct.productRoom} />
         </div>
       </div>
+      <RoomsProduct productId={params.productId} />
       <ModalShowImages />
     </section>
   );

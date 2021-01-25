@@ -1,5 +1,6 @@
 // @import "./../../../node_modules/antd/dist/antd.css";
 @import "./../../shared/assets/scss/variables";
+@import "../../shared/assets/icon/icomoon/style.css";
 
 @font-face {
   font-family: "Roboto Regular";
@@ -163,6 +164,26 @@ body {
   &.swal2-height-auto {
     height: 100% !important;
   }
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: gray;
+  }
 
   // .main-content-wrapper {
   //   min-height: calc(100vh - 86px - 70px);
@@ -316,5 +337,10 @@ body {
   .ant-modal-close-x {
     font-size: 27px !important;
     color: white !important;
+  }
+  &-room {
+    .ant-modal-close-x {
+      color: black !important;
+    }
   }
 }

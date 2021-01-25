@@ -33,24 +33,24 @@ const ProductProperties = ({ product }: IProps) => {
   return (
     <div className="flex h-full">
       <div className="p-2 w-2/3">
-        <h1 className=" text-base font-bold">{product.name}</h1>
+        <h1 className=" text-base font-bold">{product.productName}</h1>
         <div className="flex items-center">
-          <Rate value={product.star} className=" text-sm" />
+          <Rate value={product.productStar} className=" text-sm" />
           <span className=" text-blue-500 text-xs font-semibold">
-            {product.street}
+            {product.productStreet}
           </span>
         </div>
         <Tooltip
           placement="top"
           title={
             <OverviewTag
-              listTag={product.benefits}
+              listTag={product.productBenefits}
               title="Available room benefits"
             />
           }
         >
           <div className="mt-2">
-            {product.benefits.map((item, index) => {
+            {product.productBenefits.map((item, index) => {
               if (index > 2) return null;
               return (
                 <Tag color="red" key={index} className="font-semibold">
@@ -58,9 +58,9 @@ const ProductProperties = ({ product }: IProps) => {
                 </Tag>
               );
             })}
-            {product.benefits.length > 2 && (
+            {product.productBenefits.length > 2 && (
               <Tag color="red" className="font-semibold">
-                +{product.benefits.length - 2}
+                +{product.productBenefits.length - 2}
               </Tag>
             )}
           </div>
@@ -78,18 +78,18 @@ const ProductProperties = ({ product }: IProps) => {
         <div className="flex justify-end items-center pr-2">
           <span className="text-black">Excellent</span>
           <span className="p-3 bg-blue-600 text-white rounded-md ml-2">
-            {product.rating}
+            {product.productRating}
           </span>
         </div>
         <div className=" text-right pr-2">
-          {product.only !== 0 && (
+          {product.productOnly !== 0 && (
             <Tag className=" bg-red-1100 m-0 text-white rounded transform translate-x-3">
-              ONLY {product.only} LEFT
+              ONLY {product.productOnly} LEFT
             </Tag>
           )}
-          {product.discount !== 0 && (
+          {product.productDiscount !== 0 && (
             <Tag className=" bg-pink-1100 m-0 text-red-1200 rounded transform translate-x-3 mt-2">
-              {product.discount}% DISCOUNT
+              {product.productDiscount}% DISCOUNT
             </Tag>
           )}
           <div className="">
@@ -98,9 +98,9 @@ const ProductProperties = ({ product }: IProps) => {
             </span>
           </div>
           <div>
-            {product.discount !== 0 && (
+            {product.productDiscount !== 0 && (
               <span className="text-2xl relative">
-                {product.price}
+                {product.productPrice}
                 <span
                   className="absolute w-full h-2px bg-red-1100 left-0 top-1/2"
                   style={{ transform: "skew(46deg, 160deg)" }}
@@ -110,9 +110,9 @@ const ProductProperties = ({ product }: IProps) => {
             <span className="block">
               <span className="underline text-2xl">đ</span>
               <span className=" text-2xl text-red-1100">
-                {product.discount != 0
-                  ? (product.price * product.discount) / 100
-                  : product.price}
+                {product.productDiscount != 0
+                  ? (product.productPrice * product.productDiscount) / 100
+                  : product.productPrice}
               </span>
             </span>
             <span className=" text-green-600 text-sm">FREE CANCELLATION</span>

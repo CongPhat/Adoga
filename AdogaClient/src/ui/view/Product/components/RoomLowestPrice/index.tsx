@@ -4,11 +4,22 @@ import { Button, Tag } from "antd";
 import { faUsers, faCreditCard } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { parseMoneyVND } from "@helper/functions";
+import { useSetRecoilState } from "recoil";
+import { modalImagesProduct } from "@view/Product/store";
 interface IRoomLowestPrice {
   room: RoomEntities;
 }
+
 const RoomLowestPrice = ({ room }: IRoomLowestPrice) => {
-  console.log(room, "roomroom");
+  const setModal = useSetRecoilState(modalImagesProduct);
+  const handleShowImagesProduct = () => {
+    setModal({
+      dataProduct: null,
+      dataRoom: room,
+      type: "room",
+      isShow: true,
+    });
+  };
   if (!room.images[0]) return null;
   return (
     <div className="rounded-md overflow-hidden">
@@ -16,7 +27,10 @@ const RoomLowestPrice = ({ room }: IRoomLowestPrice) => {
         Our lowest oruce offer
       </p>
       <div className="border border-red-1100 border-t-0 overflow-hidden">
-        <div className="w-full h-120">
+        <div
+          className="w-full h-120 cursor-pointer"
+          onClick={handleShowImagesProduct}
+        >
           <img
             src={room.images[0].linkImage}
             alt={room.images[0].title}
@@ -29,7 +43,10 @@ const RoomLowestPrice = ({ room }: IRoomLowestPrice) => {
             <FontAwesomeIcon icon={faUsers} className="mr-1" />
             {room.people} adult
           </div>
-          <p className="cursor-pointer text-blue-500 my-2 hover:underline">
+          <p
+            className="cursor-pointer text-blue-500 my-2 hover:underline"
+            onClick={handleShowImagesProduct}
+          >
             View more room details
           </p>
           {room.discount !== 0 && (

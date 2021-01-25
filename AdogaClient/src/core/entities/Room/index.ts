@@ -13,6 +13,7 @@ export interface IRoom {
   }>;
   only: number;
   facilities: Array<FacilitiesEntities>;
+  rating: number;
 }
 
 export default class RoomEntities implements IRoom {
@@ -29,6 +30,7 @@ export default class RoomEntities implements IRoom {
   discount: number = 0;
   facilities: Array<FacilitiesEntities>;
   only: number;
+  rating: number;
 
   constructor(data) {
     this.name = data?.name;
@@ -41,6 +43,7 @@ export default class RoomEntities implements IRoom {
     this.images = data?.images || [];
     this.only = data?.only || 0;
     this.people = data?.people || 0;
+    this.rating = data?.rating || 0;
   }
   private setFacilities(listFacilities): Array<FacilitiesEntities> {
     return FacilitiesEntities.CreateList(listFacilities);
@@ -55,6 +58,7 @@ export default class RoomEntities implements IRoom {
       images: this.images,
       only: this.only,
       facilities: this.facilities,
+      rating: this.rating,
     };
   }
   static CreateList(listData) {

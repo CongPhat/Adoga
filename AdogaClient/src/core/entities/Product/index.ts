@@ -2,59 +2,59 @@ import BenefitEntities from "@entities/Benefits";
 import RoomEntities from "@entities/Room";
 
 export interface IProduct {
-  id: string;
+  productId: string;
   locationId: string;
-  name: string;
-  price: number;
-  street: string;
-  star: number;
-  imageThumbnail: string;
-  rating: number;
-  discount: number;
-  benefits: Array<BenefitEntities>;
-  images: Array<{
+  productName: string;
+  productPrice: number;
+  productStreet: string;
+  productStar: number;
+  productImageThumbnail: string;
+  productRating: number;
+  productDiscount: number;
+  productBenefits: Array<BenefitEntities>;
+  productImages: Array<{
     linkImage: string;
     title: string;
   }>;
-  only: number;
+  productOnly: number;
   productType: string;
-  room: RoomEntities;
+  productRoom: RoomEntities;
 }
 
 export default class ProductEntities implements IProduct {
-  id: string = "";
-  name: string = "";
-  price: number = 0;
-  street: string = "";
-  star: number = 0;
+  productId: string = "";
+  productName: string = "";
+  productPrice: number = 0;
+  productStreet: string = "";
+  productStar: number = 0;
   locationId: string = "";
-  imageThumbnail: string = "";
-  images: Array<{
+  productImageThumbnail: string = "";
+  productImages: Array<{
     linkImage: string;
     title: string;
   }>;
-  rating: number = 0;
-  discount: number = 0;
-  benefits: Array<BenefitEntities>;
-  only: number;
+  productRating: number = 0;
+  productDiscount: number = 0;
+  productBenefits: Array<BenefitEntities>;
+  productOnly: number;
   productType: string;
-  room: RoomEntities;
+  productRoom: RoomEntities;
 
   constructor(data) {
-    this.name = data?.name;
-    this.id = data?.id;
-    this.price = data?.price;
-    this.street = data?.street;
-    this.star = data?.star;
+    this.productName = data?.name;
+    this.productId = data?.id;
+    this.productPrice = data?.price;
+    this.productStreet = data?.street;
+    this.productStar = data?.star;
     this.locationId = data?.locationId;
-    this.imageThumbnail = data?.imageThumbnail;
-    this.rating = data?.rating;
-    this.discount = data?.discount || this.discount;
-    this.benefits = this.setBenefits(data?.benefits || []);
-    this.images = data?.images || [];
-    this.only = data?.only || 0;
+    this.productImageThumbnail = data?.imageThumbnail;
+    this.productRating = data?.rating;
+    this.productDiscount = data?.discount || this.productDiscount;
+    this.productBenefits = this.setBenefits(data?.benefits || []);
+    this.productImages = data?.images || [];
+    this.productOnly = data?.only || 0;
     this.productType = data?.productType || "";
-    this.room = this.setOneRoom(data?.rooms[0]);
+    this.productRoom = this.setOneRoom(data?.rooms[0]);
   }
   private setBenefits(listBenefit): Array<BenefitEntities> {
     return BenefitEntities.CreateList(listBenefit);
@@ -64,20 +64,20 @@ export default class ProductEntities implements IProduct {
   }
   public get Properties(): IProduct {
     return {
-      name: this.name,
-      price: this.price,
-      street: this.street,
-      star: this.star,
+      productName: this.productName,
+      productPrice: this.productPrice,
+      productStreet: this.productStreet,
+      productStar: this.productStar,
       locationId: this.locationId,
-      id: this.id,
-      imageThumbnail: this.imageThumbnail,
-      rating: this.rating,
-      discount: this.discount,
-      benefits: this.benefits,
-      images: this.images,
-      only: this.only,
+      productId: this.productId,
+      productImageThumbnail: this.productImageThumbnail,
+      productRating: this.productRating,
+      productDiscount: this.productDiscount,
+      productBenefits: this.productBenefits,
+      productImages: this.productImages,
+      productOnly: this.productOnly,
       productType: this.productType,
-      room: this.room,
+      productRoom: this.productRoom,
     };
   }
   static CreateList(listData) {
