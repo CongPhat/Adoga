@@ -61,19 +61,15 @@ const HeaderComponent = (props) => {
       </Menu.Item>
     </Menu>
   );
-    const {CHANGE_PASS, LOG_OUT, HI}= useTranslate(UserTranslateKey)
+  const { CHANGE_PASS, LOG_OUT, HI } = useTranslate(UserTranslateKey);
   //---------------THE NEW USER SETTING
   const menuUser = (
     <Menu>
       <Menu.Item key="1" icon={<KeyOutlined />}>
-        <div>
-          {CHANGE_PASS}
-        </div>
+        <div>{CHANGE_PASS}</div>
       </Menu.Item>
       <Menu.Item key="2" icon={<LogoutOutlined />} onClick={handleLogout}>
-        <div>
-          {LOG_OUT}
-        </div>
+        <div>{LOG_OUT}</div>
       </Menu.Item>
     </Menu>
   );
@@ -97,8 +93,8 @@ const HeaderComponent = (props) => {
       ))}
     </Menu>
   );
-  
-  const userInfo:any = getInfoFromToken();
+
+  const userInfo: any = getInfoFromToken();
   useEffect(() => {
     const languageStore = localStorage.getItem(CURRENT_LANGUAGE) || "USA";
     LANGUAGE.includes(languageStore)
@@ -121,7 +117,7 @@ const HeaderComponent = (props) => {
           </div>
           <Space wrap className="">
             <Dropdown
-              className="bg-white"
+              className="bg-white-100"
               overlay={menuLanguage}
               placement="bottomCenter"
             >
@@ -138,7 +134,7 @@ const HeaderComponent = (props) => {
               <h3 className="text-lg">{userInfo.UserName}</h3>
             </div>
             <Dropdown
-              className="bg-white"
+              className="bg-white-100"
               overlay={menuUser}
               placement="bottomCenter"
             >

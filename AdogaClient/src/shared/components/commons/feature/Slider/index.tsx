@@ -54,14 +54,14 @@ const Slider = ({ listItem }: IPropsSlider) => {
         <FontAwesomeIcon
           icon={faAngleLeft}
           onClick={() => handleClick(true)}
-          className="absolute left-0 top-1/2 transform -translate-y-1/2 cursor-pointer text-black bg-white text-xl rounded-full w-10 h-10 shadow-x1"
+          className="absolute left-0 top-1/2 transform -translate-y-1/2 cursor-pointer text-black bg-white-100 text-xl rounded-full w-10 h-10 shadow-x1"
         />
       )}
       {indexCurrent <= arrRefGallery.length - 4 && (
         <FontAwesomeIcon
           icon={faAngleRight}
           onClick={() => handleClick(false)}
-          className="absolute right-0 top-1/2 transform -translate-y-1/2 cursor-pointer text-black bg-white text-xl rounded-full w-10 h-10 shadow-x1"
+          className="absolute right-0 top-1/2 transform -translate-y-1/2 cursor-pointer text-black bg-white-100 text-xl rounded-full w-10 h-10 shadow-x1"
         />
       )}
     </div>

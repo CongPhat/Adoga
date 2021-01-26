@@ -14,7 +14,7 @@ const SearchComponent = ({}) => {
     console.log(values, "values");
   };
   return (
-    <div className="shadow-x1 m-auto p-12 rounded-xl relative bg-white">
+    <div className="shadow-x1 m-auto p-12 rounded-xl relative bg-white-100">
       <Form className="form-search" form={form} onFinish={handleFinishSearch}>
         <Form.Item name="city">
           <Select placeholder="Choose city" suffixIcon={<SearchOutlined />}>
@@ -35,7 +35,7 @@ const SearchComponent = ({}) => {
         </div>
       </Form>
       <div
-        className="absolute left-1/2 transform -translate-x-1/2 bg-white"
+        className="absolute left-1/2 transform -translate-x-1/2 bg-white-100"
         style={{ bottom: "-35px" }}
       >
         <Button

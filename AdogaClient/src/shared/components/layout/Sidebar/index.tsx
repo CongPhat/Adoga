@@ -87,8 +87,12 @@ const SiderComponent = ({ toogleSider }) => {
       collapsed={toogleSider}
       width={275}
     >
-      <div className={`w-100 mb-5 bg-white py-2 logo ${toogleSider && "collapsed"}`}>
-          <img className="mx-auto my-3 logo-img" src={Logo} />
+      <div
+        className={`w-100 mb-5 bg-white-100 py-2 logo ${
+          toogleSider && "collapsed"
+        }`}
+      >
+        <img className="mx-auto my-3 logo-img" src={Logo} />
       </div>
       {openKeys && (
         <Menu

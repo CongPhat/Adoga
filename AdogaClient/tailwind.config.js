@@ -22,6 +22,10 @@ module.exports = {
 
       black: "#000",
       white: "#fff",
+      white: {
+        100: "#fff",
+        200: "#f7f7f7",
+      },
 
       gray: {
         100: "#f7fafc",
@@ -312,6 +316,7 @@ module.exports = {
     },
     fontSize: {
       xs: "0.75rem",
+      "xs-1": "0.8rem",
       sm: "0.875rem",
       base: "1rem",
       lg: "1.125rem",
@@ -321,6 +326,16 @@ module.exports = {
       "4xl": "2.25rem",
       "5xl": "3rem",
       "6xl": "4rem",
+      "xs-em": "0.75em",
+      "sm-em": "0.875em",
+      "base-em": "1em",
+      "lg-em": "1.125em",
+      "xl-em": "1.25em",
+      "2xl-em": "1.5em",
+      "3xl-em": "1.875em",
+      "4xl-em": "2.25em",
+      "5xl-em": "3em",
+      "6xl-em": "4em",
     },
     fontWeight: {
       hairline: "100",

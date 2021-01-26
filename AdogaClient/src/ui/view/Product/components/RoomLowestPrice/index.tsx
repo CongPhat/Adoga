@@ -22,11 +22,11 @@ const RoomLowestPrice = ({ room }: IRoomLowestPrice) => {
   };
   if (!room.images[0]) return null;
   return (
-    <div className="rounded-md overflow-hidden">
-      <p className="bg-orange-600 text-white px-2 py-1">
+    <div className="overflow-hidden rounded-md rounded-b-none">
+      <p className="bg-orange-600 text-white-100 px-2 py-1">
         Our lowest oruce offer
       </p>
-      <div className="border border-red-1100 border-t-0 overflow-hidden">
+      <div className="border border-red-1100 border-t-0 overflow-hidden rounded-md rounded-t-none">
         <div
           className="w-full h-120 cursor-pointer"
           onClick={handleShowImagesProduct}

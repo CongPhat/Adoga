@@ -1,3 +1,4 @@
+import InfiniteScrollLazyLoad from "@components/commons/effect/InfiniteScrollLazyLoadComponent";
 import RoomsProduct from "@view/Room/components/RoomsProduct";
 import React, { useCallback, useEffect } from "react";
 import { useParams } from "react-router";
@@ -9,6 +10,10 @@ import ModalShowImages from "./components/ModalShowImages";
 import RoomLowestPrice from "./components/RoomLowestPrice";
 import PresenterProduct from "./presenterProduct";
 import { modalImagesProduct } from "./store";
+
+const ProductsLike = React.lazy(() => import("./components/ProductsLike"));
+const ProductsViewed = React.lazy(() => import("./components/ProductsViewed"));
+
 const Product = () => {
   const params: any = useParams();
   const setModal = useSetRecoilState(modalImagesProduct);
@@ -49,7 +54,13 @@ const Product = () => {
           <RoomLowestPrice room={dataDetailProduct.productRoom} />
         </div>
       </div>
-      <RoomsProduct productId={params.productId} />
+      <div className="mt-16">
+        <RoomsProduct productId={params.productId} />
+      </div>
+      <InfiniteScrollLazyLoad delay={1}>
+        <ProductsLike />
+        <ProductsViewed />
+      </InfiniteScrollLazyLoad>
       <ModalShowImages />
     </section>
   );

@@ -10,12 +10,14 @@ const ContentModalProduct = ({}: IContentModalProduct) => {
   const { dataProduct } = modal;
   if (!dataProduct) return null;
   return (
-    <div className="w-full h-full p-4 bg-black text-white">
-      <h6 className=" text-xl font-semibold text-white">
+    <div className="w-full h-full p-4 bg-black text-white-100">
+      <h6 className=" text-xl font-semibold text-white-100">
         {dataProduct.productName}
       </h6>
       <Rate value={dataProduct.productStar} disabled className=" text-base" />
-      <p className=" text-xs text-white mt-2">{dataProduct.productStreet}</p>
+      <p className=" text-xs text-white-100 mt-2">
+        {dataProduct.productStreet}
+      </p>
       <p className="mt-4 mb-2 text-base">Starts from</p>
       {dataProduct.productDiscount !== 0 && (
         <Tag color="#f50">{dataProduct.productDiscount}% DISCOUNT</Tag>

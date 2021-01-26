@@ -13,7 +13,7 @@ const ItemOptionProduct = ({
   return (
     <div className="flex items-center mb-2">
       <span className="flex justify-center items-center rounded-full w-8 h-8 bg-green-400 mr-2">
-        <FontAwesomeIcon icon={icon} className="text-white" />
+        <FontAwesomeIcon icon={icon} className="text-white-100" />
       </span>
       <span className="text-xs w-2/3 ellipsis">{text}</span>
       <Switch

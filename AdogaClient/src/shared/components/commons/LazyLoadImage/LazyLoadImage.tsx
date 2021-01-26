@@ -71,7 +71,7 @@ const LazyLoadImage = (props: IProps) => {
           {video.some((x) => props.url.endsWith(x)) && (
             <FontAwesomeIcon
               icon={faPlayCircle}
-              className="absolute z-10 text-3xl transform -translate-x-1/2 -translate-y-1/2 bg-black text-white border-2 border-solid border-white rounded-full"
+              className="absolute z-10 text-3xl transform -translate-x-1/2 -translate-y-1/2 bg-black text-white-100 border-2 border-solid border-white rounded-full"
               style={{ right: "24%", bottom: "31%" }}
             />
           )}

@@ -8,7 +8,7 @@ import CardProductSimple from "@components/commons/feature/CardProductSimple";
 
 const ProductsLike = ({}) => {
   const asyncGetProductsLike = useSingleAsync<Array<ProductEntities>>(
-    new ProductRepositoryImpl().GetProductsLike
+    new ProductRepositoryImpl().GetProductsLikeByLocation
   );
   const location = useLocation();
 
@@ -24,7 +24,7 @@ const ProductsLike = ({}) => {
       </span>
       <div className="search-product relative">
         {asyncGetProductsLike.value?.map((item, index) => (
-          <CardProductSimple product={item} key={index} />
+          <CardProductSimple product={item} key={index} className="text-base" />
         ))}
       </div>
     </>

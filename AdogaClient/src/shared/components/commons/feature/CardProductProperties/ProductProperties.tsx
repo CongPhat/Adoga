@@ -5,6 +5,7 @@ import { Tag } from "antd";
 import BenefitEntities from "@entities/Benefits";
 import { faUser, faCreditCard } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import PriceDiscountComponent from "@components/commons/single/PriceDiscountComponent";
 interface IProps {
   product: IProduct;
   loading?: boolean;
@@ -17,7 +18,7 @@ interface IOverviewTag {
 const OverviewTag = ({ listTag, title }: IOverviewTag) => {
   return (
     <div className="min-w-px-500">
-      <h6 className="text-white">{title}</h6>
+      <h6 className="text-white-100">{title}</h6>
       <div className="grid grid-cols-2 gap-1 p-2">
         {listTag.map((x, y) => (
           <span key={y} className="text-xs">
@@ -77,13 +78,13 @@ const ProductProperties = ({ product }: IProps) => {
       <div className="w-1/3 py-2 flex flex-col justify-between items-end">
         <div className="flex justify-end items-center pr-2">
           <span className="text-black">Excellent</span>
-          <span className="p-3 bg-blue-600 text-white rounded-md ml-2">
+          <span className="p-3 bg-blue-600 text-white-100 rounded-md ml-2">
             {product.productRating}
           </span>
         </div>
         <div className=" text-right pr-2">
           {product.productOnly !== 0 && (
-            <Tag className=" bg-red-1100 m-0 text-white rounded transform translate-x-3">
+            <Tag className=" bg-red-1100 m-0 text-white-100 rounded transform translate-x-3">
               ONLY {product.productOnly} LEFT
             </Tag>
           )}
@@ -97,26 +98,11 @@ const ProductProperties = ({ product }: IProps) => {
               Price per night as low as
             </span>
           </div>
-          <div>
-            {product.productDiscount !== 0 && (
-              <span className="text-2xl relative">
-                {product.productPrice}
-                <span
-                  className="absolute w-full h-2px bg-red-1100 left-0 top-1/2"
-                  style={{ transform: "skew(46deg, 160deg)" }}
-                ></span>
-              </span>
-            )}
-            <span className="block">
-              <span className="underline text-2xl">đ</span>
-              <span className=" text-2xl text-red-1100">
-                {product.productDiscount != 0
-                  ? (product.productPrice * product.productDiscount) / 100
-                  : product.productPrice}
-              </span>
-            </span>
-            <span className=" text-green-600 text-sm">FREE CANCELLATION</span>
-          </div>
+          <PriceDiscountComponent
+            discount={product.productDiscount || 0}
+            price={product.productPrice || 0}
+          />
+          <span className=" text-green-600 text-sm">FREE CANCELLATION</span>
         </div>
       </div>
     </div>

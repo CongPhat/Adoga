@@ -24,7 +24,7 @@ const SliderImage = ({ media = [] }: Iprops) => {
     <div className="slider w-full h-full relative overflow-hidden">
       <button
         onClick={() => slider.setSlider("prev")}
-        className="absolute z-30 top-1/2 bg-white rounded-full w-12 h-12 shadow-product"
+        className="absolute z-30 top-1/2 bg-white-100 rounded-full w-12 h-12 shadow-product"
         style={{ right: "2%" }}
       >
         <FontAwesomeIcon
@@ -59,7 +59,7 @@ const SliderImage = ({ media = [] }: Iprops) => {
       </div>
       <button
         onClick={() => slider.setSlider("next")}
-        className="absolute z-30 top-1/2 bg-white rounded-full w-12 h-12 shadow-product"
+        className="absolute z-30 top-1/2 bg-white-100 rounded-full w-12 h-12 shadow-product"
         style={{ left: "2%" }}
       >
         <FontAwesomeIcon

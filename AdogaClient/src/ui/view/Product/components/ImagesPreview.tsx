@@ -64,7 +64,7 @@ const ImagesPreview = ({
                 style={{ height: images.length > 4 ? "30%" : "50%" }}
               >
                 <div
-                  style={{ height: "81%" }}
+                  style={{ height: "100%" }}
                   className="relative group cursor-pointer"
                   onClick={showImagesProduct}
                 >
@@ -77,7 +77,7 @@ const ImagesPreview = ({
                 </div>
                 {images.length > 3 && (
                   <div
-                    style={{ height: "81%" }}
+                    style={{ height: "100%" }}
                     className="relative group cursor-pointer"
                     onClick={showImagesProduct}
                   >
@@ -88,7 +88,7 @@ const ImagesPreview = ({
                     />
                     {images.length > 3 && (
                       <div className="absolute w-full h-full top-0 z-10 flex justify-center items-center bg-black bg-opacity-50 ">
-                        <span className="text-xs font-semibold text-white">
+                        <span className="text-xs font-semibold text-white-100">
                           SEE ALL {images.length - 3} PHOTOS
                         </span>
                       </div>

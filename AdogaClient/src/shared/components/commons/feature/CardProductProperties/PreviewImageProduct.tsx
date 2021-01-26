@@ -40,7 +40,7 @@ const PriviewImageProduct = ({ images }: IProps) => {
                 className="w-full h-full relative z-10"
               />
               {index == 9 && (
-                <div className="absolute z-20 w-full h-full top-0 left-0 bg-black text-xs text-white opacity-75 flex items-center justify-center">
+                <div className="absolute z-20 w-full h-full top-0 left-0 bg-black text-xs text-white-100 opacity-75 flex items-center justify-center">
                   <span>See all</span>
                 </div>
               )}
@@ -60,7 +60,7 @@ const PriviewImageProduct = ({ images }: IProps) => {
             className="w-full h-full object-cover"
           />
           <span
-            className="absolute bottom-0 text-white z-10"
+            className="absolute bottom-0 text-white-100 z-10"
             style={{ left: "10px" }}
           >
             {imageHover?.title}

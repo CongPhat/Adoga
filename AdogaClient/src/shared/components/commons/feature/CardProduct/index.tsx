@@ -28,7 +28,7 @@ const CardProduct = ({ product }: IProps) => {
           {product.productPrice} $
         </p>
       </div>
-      <div className="absolute bg-blue-700 text-white p-3 top-0 right-0 rounded-bl-lg shadow-x1">
+      <div className="absolute bg-blue-700 text-white-100 p-3 top-0 right-0 rounded-bl-lg shadow-x1">
         <span>{product.productRating}</span>
       </div>
     </Link>

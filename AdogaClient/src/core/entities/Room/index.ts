@@ -1,4 +1,5 @@
 import BenefitEntities from "@entities/Benefits";
+import AmenitiesEntities from "./Amenities";
 import FacilitiesEntities from "./facilities";
 
 export interface IRoom {
@@ -14,6 +15,10 @@ export interface IRoom {
   only: number;
   facilities: Array<FacilitiesEntities>;
   rating: number;
+  beds: number;
+  size: string;
+  amenitiesImportant: Array<AmenitiesEntities>;
+  benefitsRoom: Array<BenefitEntities>;
 }
 
 export default class RoomEntities implements IRoom {
@@ -31,6 +36,10 @@ export default class RoomEntities implements IRoom {
   facilities: Array<FacilitiesEntities>;
   only: number;
   rating: number;
+  beds: number;
+  size: string;
+  amenitiesImportant: Array<AmenitiesEntities>;
+  benefitsRoom: Array<BenefitEntities>;
 
   constructor(data) {
     this.name = data?.name;
@@ -44,9 +53,19 @@ export default class RoomEntities implements IRoom {
     this.only = data?.only || 0;
     this.people = data?.people || 0;
     this.rating = data?.rating || 0;
+    this.beds = data?.beds || 0;
+    this.size = data?.size || "";
+    this.benefitsRoom = this.setBenefitsRoom(data?.benefitsRoom || []);
   }
   private setFacilities(listFacilities): Array<FacilitiesEntities> {
     return FacilitiesEntities.CreateList(listFacilities);
+  }
+  private setBenefitsRoom(listBenefits): Array<BenefitEntities> {
+    return BenefitEntities.CreateList(listBenefits);
+  }
+  public setAmenitiesImportant(listAmenities): this {
+    this.amenitiesImportant = AmenitiesEntities.CreateList(listAmenities || []);
+    return this;
   }
   public get Properties(): IRoom {
     return {
@@ -59,6 +78,10 @@ export default class RoomEntities implements IRoom {
       only: this.only,
       facilities: this.facilities,
       rating: this.rating,
+      beds: this.beds,
+      size: this.size,
+      amenitiesImportant: this.amenitiesImportant,
+      benefitsRoom: this.benefitsRoom,
     };
   }
   static CreateList(listData) {

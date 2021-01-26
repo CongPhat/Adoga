@@ -9,8 +9,6 @@ interface IProps {
   loading: boolean;
 }
 const CardProductProperties = ({ product, loading }: IProps) => {
-  console.log(product);
-
   return (
     <Link
       className="card-product-properties relative flex mt-8 border border-gray-1100 rounded-md hover:shadow-x1 transition duration-300"

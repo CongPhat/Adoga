@@ -1,10 +1,11 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { useRecoilState, useRecoilValue } from "recoil";
 import { modalImagesProduct } from "@view/Product/store";
 import { Modal } from "antd";
 import SliderImage from "@components/commons/feature/SliderImage";
-import ContentModalProduct from "../ContentModalProduct";
-import ContentModalRoom from "../ContentModalRoom";
+
+const ContentModalProduct = React.lazy(() => import("../ContentModalProduct"));
+const ContentModalRoom = React.lazy(() => import("../ContentModalRoom"));
 
 interface IModalShowImages {}
 const ModalShowImages = ({}: IModalShowImages) => {
@@ -41,11 +42,13 @@ const ModalShowImages = ({}: IModalShowImages) => {
               />
             </div>
             <div className="w-1/4 h-65vh">
-              {modal.type == "product" ? (
-                <ContentModalProduct />
-              ) : (
-                <ContentModalRoom />
-              )}
+              <Suspense fallback="">
+                {modal.type == "product" ? (
+                  <ContentModalProduct />
+                ) : (
+                  <ContentModalRoom />
+                )}
+              </Suspense>
             </div>
           </div>
         )}

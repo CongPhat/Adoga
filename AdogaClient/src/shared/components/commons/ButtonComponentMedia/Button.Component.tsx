@@ -39,23 +39,36 @@ const ButtonComponent = (props: IProps) => {
   return (
     <button
       style={props.style}
-      className={`button-component btn align-items-center mx-2 justify-content-center ${props.disabled && "disabled"} ${color()} ${props.classNames}`}
+      className={`button-component btn align-items-center mx-2 justify-content-center ${
+        props.disabled && "disabled"
+      } ${color()} ${props.classNames}`}
       type={props.type ? props.type : "button"}
       // type="button"
       ref={props.refs || myRef}
-      onClick={event => (props.onClick ? props.onClick(event) : undefined)}
+      onClick={(event) => (props.onClick ? props.onClick(event) : undefined)}
       disabled={props.disabled || props.loading}
     >
       {/*indicator={antIcon}*/}
-      {props.icon && <i className={` ${props.icon}`} />} {props.iconAnt} {props.text || ""}
-      {props.loading && <Spin size="small" indicator={antIcon} className="text-white mr-2" />}
+      {props.icon && <i className={` ${props.icon}`} />} {props.iconAnt}{" "}
+      {props.text || ""}
+      {props.loading && (
+        <Spin
+          size="small"
+          indicator={antIcon}
+          className="text-white-100 mr-2"
+        />
+      )}
     </button>
   );
 };
 
 function areEqual(prevProps, nextProps) {
   /* Trả về true nếu nextProps bằng prevProps, ngược lại trả về false */
-  if (prevProps.disabled != nextProps.disabled || prevProps.iconAnt != nextProps.iconAnt || prevProps.text != nextProps.text) {
+  if (
+    prevProps.disabled != nextProps.disabled ||
+    prevProps.iconAnt != nextProps.iconAnt ||
+    prevProps.text != nextProps.text
+  ) {
     return false;
   }
   return true;

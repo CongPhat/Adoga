@@ -41,7 +41,7 @@ const ContentModalRoom = ({}) => {
 
   if (!dataRoom) return null;
   return (
-    <div className="w-full h-full bg-white py-2">
+    <div className="w-full h-full bg-white-100 py-2">
       <div className="shadow p-4">
         <div className="flex justify-between items-center">
           <div>

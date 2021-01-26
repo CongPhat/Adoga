@@ -39,13 +39,28 @@ export default class ProductRepositoryImpl implements Repository {
     }
     return ProductEntities.CreateList(dataResult);
   }
-  public async GetProductsLike(locationId): Promise<ProductEntities[]> {
+  public async GetProductsLikeByLocation(
+    locationId
+  ): Promise<ProductEntities[]> {
     //fake
     let dataResult = [...dataProductFake]
       .filter((x) => x.locationId == locationId)
       .splice(0, 3);
     return ProductEntities.CreateList(dataResult);
   }
+
+  public async GetProductsLikeByProduct(): Promise<ProductEntities[]> {
+    //fake
+    let dataResult = [...dataProductFake].splice(0, 4);
+    return ProductEntities.CreateList(dataResult);
+  }
+
+  public async GetProductsViewed(): Promise<ProductEntities[]> {
+    //fake
+    let dataResult = [...dataProductFake].splice(0, 6);
+    return ProductEntities.CreateList(dataResult);
+  }
+
   public async GetDetailProduct(productId): Promise<ProductEntities> {
     //fake
     return new ProductEntities(dataProductFake.find((x) => x.id == productId));

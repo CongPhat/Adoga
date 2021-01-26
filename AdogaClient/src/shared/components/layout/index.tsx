@@ -17,7 +17,7 @@ const DefaultLayout = (props) => {
       <div className="site-layout width-area ml-auto">
         {/* <HeaderComponent toggle={toggle} toogleSider={toogleSider} /> */}
         <FilterBar />
-        <div className={`main-content-wrapper overflow-x-hidden`}>
+        <div className={`main-content-wrapper`}>
           <div className={`wrap-content w-3/5 m-auto`}>{props.children}</div>
         </div>
       </div>
