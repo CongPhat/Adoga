@@ -1,8 +1,8 @@
-import RoomEntities from "@entities/Room";
 import { spliceArray } from "@helper/functions";
 import InfiniteScrollLazyLoad from "@components/commons/effect/InfiniteScrollLazyLoadComponent";
 import { useRoomProduct } from "@view/Room/presenterRoom";
 import React from "react";
+import DropdownSeeAllFacilities from "../DropdownSeeAllFacilities";
 const ItemRoomProduct = React.lazy(() => import("../ItemRoomProduct"));
 
 interface IRoomsProduct {
@@ -25,6 +25,7 @@ const RoomsProduct = ({ productId }: IRoomsProduct) => {
           )
         )}
       </InfiniteScrollLazyLoad>
+      <DropdownSeeAllFacilities />
     </div>
   );
 };

@@ -3,8 +3,9 @@ import RoomEntities from "@entities/Room";
 import { Button, InputNumber, Select, Table, Tag } from "antd";
 import { faCheck, faMale } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, { useState } from "react";
 import "./style.scss";
+import { useHistory } from "react-router";
 
 interface ITableRoomProduct {
   data: RoomEntities;
@@ -24,9 +25,31 @@ const ItemBenefitTable = ({ text }: IItemBenefitTable) => {
 };
 
 const TableRoomProduct = ({ data }: ITableRoomProduct) => {
+  const history = useHistory();
+  const [rooms, setRooms] = useState<{
+    count: number;
+    isFirst: boolean;
+  }>({
+    count: 0,
+    isFirst: true,
+  });
   function handleChange(value) {
-    console.log("changed", value);
+    setRooms({
+      count: parseInt(value),
+      isFirst: false,
+    });
   }
+
+  const handeleBookNow = (id) => {
+    if (rooms.count == 0) {
+      setRooms({
+        count: 0,
+        isFirst: false,
+      });
+    } else {
+      history.push(`/payment/${id}/${rooms.count}`);
+    }
+  };
 
   const columns = [
     {
@@ -101,27 +124,32 @@ const TableRoomProduct = ({ data }: ITableRoomProduct) => {
       width: "5%",
       render: () => {
         return (
-          <Select
-            defaultValue={0}
-            onChange={handleChange}
-            style={{ width: "70px" }}
-          >
-            {Array.from(Array(11).keys()).map((item, index) => (
-              <Select.Option value={item} key={index}>
-                {item}
-              </Select.Option>
-            ))}
-          </Select>
+          <>
+            <Select
+              defaultValue={0}
+              onChange={handleChange}
+              style={{ width: "70px" }}
+            >
+              {Array.from(Array(11).keys()).map((item, index) => (
+                <Select.Option value={item} key={index}>
+                  {item}
+                </Select.Option>
+              ))}
+            </Select>
+            {!rooms.isFirst && rooms.count == 0 && (
+              <span className="text-red-1100 block mt-2 text-sm">Error</span>
+            )}
+          </>
         );
       },
     },
     {
       title: "Most booked",
-      dataIndex: "Mostbooked",
-      key: "Mostbooked",
+      dataIndex: "id",
+      key: "id",
       width: "5%",
-      render: () => {
-        return <Button>Book now</Button>;
+      render: (id) => {
+        return <Button onClick={() => handeleBookNow(id)}>Book now</Button>;
       },
     },
   ];

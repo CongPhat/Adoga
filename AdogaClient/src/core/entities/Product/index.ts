@@ -1,4 +1,5 @@
 import BenefitEntities from "@entities/Benefits";
+import RatingEntities from "@entities/Rating";
 import RoomEntities from "@entities/Room";
 
 export interface IProduct {
@@ -10,6 +11,7 @@ export interface IProduct {
   productStar: number;
   productImageThumbnail: string;
   productRating: number;
+  productRatingDetail: Array<RatingEntities>;
   productDiscount: number;
   productBenefits: Array<BenefitEntities>;
   productImages: Array<{
@@ -19,6 +21,7 @@ export interface IProduct {
   productOnly: number;
   productType: string;
   productRoom: RoomEntities;
+  productAbout: string;
 }
 
 export default class ProductEntities implements IProduct {
@@ -39,6 +42,8 @@ export default class ProductEntities implements IProduct {
   productOnly: number;
   productType: string;
   productRoom: RoomEntities;
+  productAbout: string;
+  productRatingDetail: Array<RatingEntities>;
 
   constructor(data) {
     this.productName = data?.name;
@@ -55,12 +60,19 @@ export default class ProductEntities implements IProduct {
     this.productOnly = data?.only || 0;
     this.productType = data?.productType || "";
     this.productRoom = this.setOneRoom(data?.rooms[0]);
+    this.productAbout = data?.productAbout || "";
+    this.productRatingDetail = this.setRatingDetail(
+      data?.productRatingDetail || []
+    );
   }
   private setBenefits(listBenefit): Array<BenefitEntities> {
     return BenefitEntities.CreateList(listBenefit);
   }
   private setOneRoom(data): RoomEntities {
     return new RoomEntities(data);
+  }
+  private setRatingDetail(data): Array<RatingEntities> {
+    return RatingEntities.CreateListRating(data);
   }
   public get Properties(): IProduct {
     return {
@@ -77,7 +89,9 @@ export default class ProductEntities implements IProduct {
       productImages: this.productImages,
       productOnly: this.productOnly,
       productType: this.productType,
+      productAbout: this.productAbout,
       productRoom: this.productRoom,
+      productRatingDetail: this.productRatingDetail,
     };
   }
   static CreateList(listData) {

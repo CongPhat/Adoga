@@ -2,7 +2,8 @@ import RatingComponent from "@components/commons/single/RatingComponent";
 import RoomEntities from "@entities/Room";
 import AmenitiesEntities from "@entities/Room/Amenities";
 import { modalImagesProduct } from "@view/Product/store";
-import React from "react";
+import { dropDownFacilitiesRoom } from "@view/Room/store";
+import React, { useRef } from "react";
 import { useSetRecoilState } from "recoil";
 import TableRoomProduct from "../TableRoomProduct";
 
@@ -36,14 +37,30 @@ export const ItemAmenitiesImportant = ({
 };
 
 const ItemRoomProduct = ({ data }: IItemRoomProduct) => {
+  const refSeeAll = useRef(null);
   const { images, amenitiesImportant, size, beds } = data;
   const setModal = useSetRecoilState(modalImagesProduct);
+  const setDropDownFacilities = useSetRecoilState(dropDownFacilitiesRoom);
   const handleShowRoom = () => {
     setModal({
       dataProduct: null,
       dataRoom: data,
       type: "room",
       isShow: true,
+    });
+  };
+  const handleOverSeeAll = () => {
+    setDropDownFacilities({
+      dataFacilities: data.facilities,
+      isShow: true,
+      refSeeAll,
+    });
+  };
+  const handleLeaveSeeAll = () => {
+    setDropDownFacilities({
+      dataFacilities: null,
+      isShow: false,
+      refSeeAll: null,
     });
   };
 
@@ -108,7 +125,12 @@ const ItemRoomProduct = ({ data }: IItemRoomProduct) => {
                 />
               ))}
             </ul>
-            <span className="text-blue-600 cursor-pointer block ml-6">
+            <span
+              className="text-blue-600 cursor-pointer block ml-6"
+              onMouseOver={handleOverSeeAll}
+              onMouseLeave={handleLeaveSeeAll}
+              ref={refSeeAll}
+            >
               See all room facilities
             </span>
           </div>

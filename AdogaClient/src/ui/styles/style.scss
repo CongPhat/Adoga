@@ -346,3 +346,11 @@ body {
     }
   }
 }
+
+//form
+.ant-form-item {
+  display: block !important;
+  &-label {
+    text-align: left !important;
+  }
+}

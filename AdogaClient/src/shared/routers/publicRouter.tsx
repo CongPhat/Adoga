@@ -20,6 +20,10 @@ export const Product = Loadable({
   loader: () => import("@view/Product"),
   loading: LoadingComponent,
 });
+export const Payment = Loadable({
+  loader: () => import("@view/Payment"),
+  loading: LoadingComponent,
+});
 
 export const publicRouter: Array<object> = [
   {
@@ -36,6 +40,11 @@ export const publicRouter: Array<object> = [
     path: "/product/:productId",
     exact: true,
     main: () => <Product />,
+  },
+  {
+    path: "/payment/:roomId/:roomTotal",
+    exact: true,
+    main: () => <Payment />,
   },
   {
     path: "",

@@ -13,6 +13,7 @@ import { modalImagesProduct } from "./store";
 
 const ProductsLike = React.lazy(() => import("./components/ProductsLike"));
 const ProductsViewed = React.lazy(() => import("./components/ProductsViewed"));
+const AboutProduct = React.lazy(() => import("./components/AboutProduct"));
 
 const Product = () => {
   const params: any = useParams();
@@ -40,7 +41,7 @@ const Product = () => {
         star={dataDetailProduct.productStar}
         street={dataDetailProduct.productStreet}
       />
-      <div className="w-1/2">
+      <div className=" w-3/4">
         <HeaderBenefitProduct benefits={dataDetailProduct.productBenefits} />
       </div>
       <div className="flex mt-8">
@@ -60,6 +61,7 @@ const Product = () => {
       <InfiniteScrollLazyLoad delay={1}>
         <ProductsLike />
         <ProductsViewed />
+        <AboutProduct dataProduct={dataDetailProduct} />
       </InfiniteScrollLazyLoad>
       <ModalShowImages />
     </section>

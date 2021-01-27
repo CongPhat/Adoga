@@ -3,37 +3,7 @@ import { useRecoilState, useRecoilValue } from "recoil";
 import { modalImagesProduct } from "@view/Product/store";
 import { Button, Modal, Rate, Tag } from "antd";
 import { parseMoneyVND } from "@helper/functions";
-import FacilitiesEntities from "@entities/Room/facilities";
-import AmenitiesEntities from "@entities/Room/Amenities";
-
-interface IItemFacilities {
-  facilities: FacilitiesEntities;
-}
-interface IItemAmenities {
-  amenities: AmenitiesEntities;
-}
-
-const ItemAmenities = ({ amenities }: IItemAmenities) => {
-  return (
-    <li className="text-xs">
-      <i className={`${amenities.icon}`}></i>
-      <span className="ml-2 text-grey-300">{amenities.name}</span>
-    </li>
-  );
-};
-
-const ItemFacilities = ({ facilities }: IItemFacilities) => {
-  return (
-    <div className="mb-4">
-      <p className="text-grey-300 font-semibold text-sm">{facilities.name}</p>
-      <ul className="grid grid-cols-2 gap-2 mt-1">
-        {facilities.amenities.map((item, index) => (
-          <ItemAmenities amenities={item} key={index} />
-        ))}
-      </ul>
-    </div>
-  );
-};
+import ItemFacilities from "@components/commons/feature/Facilities/ItemFacilities";
 
 const ContentModalRoom = ({}) => {
   const [modal] = useRecoilState(modalImagesProduct);
