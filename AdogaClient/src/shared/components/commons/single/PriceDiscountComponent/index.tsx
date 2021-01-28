@@ -1,5 +1,4 @@
-import { parseMoneyVND } from "@helper/functions";
-import { Divider } from "antd";
+import { parseMoneyVND, priceDiscount } from "@helper/functions";
 import React from "react";
 interface IProps {
   discount: number;
@@ -32,9 +31,7 @@ const PriceDiscountComponent = ({
       <span className="block">
         <span className="underline text-xs-em">đ</span>
         <span className={`text-base-em text-red-1100 ${classTextPrice}`}>
-          {discount != 0
-            ? parseMoneyVND((price * discount) / 100)
-            : parseMoneyVND(price)}
+          {parseMoneyVND(priceDiscount(price, discount))}
         </span>
       </span>
     </div>

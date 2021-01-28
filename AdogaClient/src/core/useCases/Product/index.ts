@@ -1,6 +1,8 @@
 import {
   dataProductFake,
   dataProductRecommended,
+  dataRoom,
+  dataRoom1,
 } from "src/core/data/dataFake";
 import LocationEntities from "@entities/Location";
 import Repository from "@useCases/Structure";
@@ -64,5 +66,18 @@ export default class ProductRepositoryImpl implements Repository {
   public async GetDetailProduct(productId): Promise<ProductEntities> {
     //fake
     return new ProductEntities(dataProductFake.find((x) => x.id == productId));
+  }
+
+  public async GetProductOfRoom(roomId: string): Promise<ProductEntities> {
+    //fake
+    const dataProductFind = dataProductFake.find(
+      (x) => x.rooms.find((y) => y.id == roomId).id
+    );
+    if (dataProductFind) {
+      const roomFind = [dataRoom, dataRoom1].find((x) => x.id == roomId);
+      dataProductFind.rooms = [roomFind];
+    }
+
+    return new ProductEntities(dataProductFind);
   }
 }

@@ -2,7 +2,7 @@ import React from "react";
 import { useRecoilState, useRecoilValue } from "recoil";
 import { modalImagesProduct } from "@view/Product/store";
 import { Button, Modal, Rate, Tag } from "antd";
-import { parseMoneyVND } from "@helper/functions";
+import { parseMoneyVND, priceDiscount } from "@helper/functions";
 
 interface IContentModalProduct {}
 const ContentModalProduct = ({}: IContentModalProduct) => {
@@ -30,11 +30,9 @@ const ContentModalProduct = ({}: IContentModalProduct) => {
       <p className=" leading-3">
         đ
         <span className="mr-1 text-3xl">
-          {dataProduct.productDiscount != 0
-            ? ` ${parseMoneyVND(
-                (dataProduct.productPrice * dataProduct.productDiscount) / 100
-              )}`
-            : `${parseMoneyVND(dataProduct.productPrice)}`}
+          {parseMoneyVND(
+            priceDiscount(dataProduct.productPrice, dataProduct.productDiscount)
+          )}
         </span>
         per night
       </p>

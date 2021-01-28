@@ -1,20 +1,35 @@
-import ProductEntities from "@entities/Product";
-import RoomEntities from "@entities/Room";
+import { Moment } from "moment";
 import { atom } from "recoil";
 
-interface IModalImagesProduct {
-  dataProduct: ProductEntities;
-  dataRoom: RoomEntities;
-  type: "product" | "room" | "";
-  isShow: boolean;
+interface IDateBooking {
+  dateBookingMoment: Array<Date>;
+  totalDate: number;
+}
+export interface IDataValuesBooking {
+  data: {
+    arriving: number;
+    beds: boolean;
+    date: Array<Moment>;
+    email: string;
+    name: string;
+    phoneNumber: string;
+    region: string;
+    retypeEmail: string;
+    smoking: boolean;
+  };
 }
 
-export const modalImagesProduct = atom<IModalImagesProduct>({
-  key: "ModalImagesProduct",
+export const dateBooking = atom<IDateBooking>({
+  key: "dateBooking",
   default: {
-    dataProduct: null,
-    dataRoom: null,
-    type: "",
-    isShow: false,
+    dateBookingMoment: [],
+    totalDate: 0,
+  },
+});
+
+export const valuesFormBooking = atom<IDataValuesBooking>({
+  key: "valuesFormBooking",
+  default: {
+    data: null,
   },
 });

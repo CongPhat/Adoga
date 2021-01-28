@@ -4,6 +4,7 @@ interface IProps {
   rating: number;
   isRevert?: boolean;
   className?: string;
+  classText?: string;
 }
 
 const classifyRating = (rating) => {
@@ -12,10 +13,17 @@ const classifyRating = (rating) => {
   return "Average";
 };
 
-const RatingComponent = ({ rating, isRevert, className = "" }: IProps) => {
+const RatingComponent = ({
+  rating,
+  isRevert,
+  className = "",
+  classText = "",
+}: IProps) => {
   return (
     <div className={`flex items-center ${className}`}>
-      <span className="block mr-2 text-black">{classifyRating(rating)}</span>
+      <span className={`block mr-2 text-black ${classText}`}>
+        {classifyRating(rating)}
+      </span>
       <span
         className={`border-2 ${
           isRevert

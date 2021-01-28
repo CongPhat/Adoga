@@ -1,12 +1,14 @@
 import React, { useEffect } from "react";
-import RoomEntities from "@entities/Room";
-import { useSingleAsync } from "@hook/useAsync";
-import ProductEntities from "@entities/Product";
-import ProductRepositoryImpl from "@useCases/Product";
-import CardProductSimple from "@components/commons/feature/CardProductSimple";
 import FormCustomerPayment from "./components/FormCustomerPayment";
-import { Form, Input, Select } from "antd";
+import { Form } from "antd";
+import moment from "moment";
 import FormCustomerNeed from "./components/FormCustomerNeed";
+import { useSetRecoilState } from "recoil";
+import {
+  dateBooking,
+  IDataValuesBooking,
+  valuesFormBooking,
+} from "@view/Payment/store";
 interface IRoomLowestPrice {}
 const validateMessages = {
   required: "${label} is required!",
@@ -20,11 +22,31 @@ const validateMessages = {
 };
 const CustomerInformation = ({}: IRoomLowestPrice) => {
   const [form] = Form.useForm();
+  const setDateBooking = useSetRecoilState(dateBooking);
+  const setValuesFormBooking = useSetRecoilState(valuesFormBooking);
+
+  useEffect(() => {
+    const day = new Date();
+    const nextDay = new Date(day);
+    nextDay.setDate(day.getDate() + 1);
+    const nextDay1 = new Date(day);
+    nextDay1.setDate(day.getDate() + 2);
+    form.setFieldsValue({
+      date: [moment(nextDay), moment(nextDay1)],
+    });
+    setDateBooking({
+      dateBookingMoment: [nextDay, nextDay1],
+      totalDate: 1,
+    });
+  }, []);
+
   const onFinish = (values: any) => {
-    console.log(values);
+    setValuesFormBooking({
+      data: values,
+    });
   };
   return (
-    <div className="">
+    <div className="w-full">
       <Form
         name="nest-messages"
         onFinish={onFinish}

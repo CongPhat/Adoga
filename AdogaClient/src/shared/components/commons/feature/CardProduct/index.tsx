@@ -1,4 +1,5 @@
 import { IProduct } from "@entities/Product";
+import { parseMoneyVND } from "@helper/functions";
 import { Rate } from "antd";
 import React from "react";
 import { Link } from "react-router-dom";
@@ -25,7 +26,7 @@ const CardProduct = ({ product }: IProps) => {
         <Rate value={product.productStar} disabled className=" text-sm" />
         <p className="text-blue-600 text-xs">{product.productStreet}</p>
         <p className="text-red-1100 hover:text-red-1100 text-lg">
-          {product.productPrice} $
+          đ {parseMoneyVND(product.productPrice)}
         </p>
       </div>
       <div className="absolute bg-blue-700 text-white-100 p-3 top-0 right-0 rounded-bl-lg shadow-x1">

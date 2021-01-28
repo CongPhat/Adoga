@@ -1,5 +1,5 @@
 import { IProduct } from "@entities/Product";
-import { parseMoneyVND } from "@helper/functions";
+import { parseMoneyVND, priceDiscount } from "@helper/functions";
 import { Rate } from "antd";
 import React from "react";
 import { Link } from "react-router-dom";
@@ -44,12 +44,10 @@ const CardProductSimple = ({ product, className = "" }: IProps) => {
             </>
           )}
           <p className="text-red-1000 hover:text-red-1100 text-lg-em">
-            đ
-            {product.productDiscount != 0
-              ? parseMoneyVND(
-                  (product.productPrice * product.productDiscount) / 100
-                )
-              : parseMoneyVND(product.productPrice)}
+            đ{" "}
+            {parseMoneyVND(
+              priceDiscount(product.productPrice, product.productDiscount)
+            )}
           </p>
         </div>
       </div>

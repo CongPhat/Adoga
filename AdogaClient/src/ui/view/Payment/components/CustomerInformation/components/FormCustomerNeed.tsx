@@ -1,5 +1,10 @@
 import React from "react";
+import { DatePicker, Space } from "antd";
+const { RangePicker } = DatePicker;
 import { Button, Form, Radio, Select } from "antd";
+import { dateBooking } from "@view/Payment/store";
+import { useSetRecoilState } from "recoil";
+import { diffInDays } from "@helper/functions";
 interface IFormCustomerNeed {}
 
 const valuesArriving = [
@@ -31,8 +36,33 @@ const valuesArriving = [
 ];
 
 const FormCustomerNeed = ({}: IFormCustomerNeed) => {
+  const setDateBooking = useSetRecoilState(dateBooking);
+  const handleChangeDateBooking = (values, valuesString) => {
+    const dateFrom = new Date(valuesString[0]);
+    const dateTo = new Date(valuesString[1]);
+    setDateBooking({
+      dateBookingMoment: [dateFrom, dateTo],
+      totalDate: diffInDays(dateFrom, dateTo),
+    });
+  };
+
   return (
     <div className="bg-white shadow-x1 p-4 mt-8">
+      <p className="font-semibold text-base mb-2 text-red-1100">
+        Let us know what date you will be staying
+      </p>
+      <span className="block mb-8 text-black">
+        Your request will be processed by us immediately upon your booking.
+      </span>
+      <Form.Item name="date">
+        <RangePicker
+          className="w-3/4"
+          format="ll"
+          onChange={handleChangeDateBooking}
+          clearIcon={false}
+        />
+      </Form.Item>
+
       <p className="font-semibold text-base mb-2">Let us know what you need</p>
       <span className="block mb-8 text-black">
         Requests are fulfilled on a first come, first served basis. We'll send

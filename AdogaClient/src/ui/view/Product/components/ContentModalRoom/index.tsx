@@ -2,7 +2,7 @@ import React from "react";
 import { useRecoilState, useRecoilValue } from "recoil";
 import { modalImagesProduct } from "@view/Product/store";
 import { Button, Modal, Rate, Tag } from "antd";
-import { parseMoneyVND } from "@helper/functions";
+import { parseMoneyVND, priceDiscount } from "@helper/functions";
 import ItemFacilities from "@components/commons/feature/Facilities/ItemFacilities";
 
 const ContentModalRoom = ({}) => {
@@ -29,11 +29,9 @@ const ContentModalRoom = ({}) => {
             <p className="text-base">
               đ
               <span className="text-2xl text-red-1100 font-semibold ">
-                {dataRoom.discount != 0
-                  ? ` ${parseMoneyVND(
-                      (dataRoom.price * dataRoom.discount) / 100
-                    )}`
-                  : `${parseMoneyVND(dataRoom.price)}`}
+                {parseMoneyVND(
+                  priceDiscount(dataRoom.price, dataRoom.discount)
+                )}
               </span>
             </p>
           </div>

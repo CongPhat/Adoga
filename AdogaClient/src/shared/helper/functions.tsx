@@ -154,9 +154,20 @@ export const parseObjectToSearch = (object) => {
 };
 
 export const parseMoneyVND = (money) => {
+  if (money == 0) return 0;
   return Math.floor(money)
     .toString()
     .replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+};
+
+export const diffInDays = (dateFrom, dateTo) => {
+  const diffInMs = dateTo - dateFrom;
+  return diffInMs / (1000 * 60 * 60 * 24);
+};
+
+export const priceDiscount = (price: number, discount: number) => {
+  if (discount == 0) return price;
+  return (price * (100 - discount)) / 100;
 };
 
 export const spliceArray = (arr: Array<any>, start: number, end: number) => {
