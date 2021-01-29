@@ -1,51 +1,61 @@
-import React from "react";
-import {
-  SearchOutlined,
-  UserOutlined,
-  CalendarOutlined,
-} from "@ant-design/icons";
-import { Form, Select, DatePicker, Button } from "antd";
+import React, { Suspense, useEffect } from "react";
+import { Form, DatePicker } from "antd";
 import { useForm } from "antd/lib/form/Form";
+import { useSingleAsync } from "@hook/useAsync";
+import LocationEntities from "@entities/Location";
+import LocationRepositoryImpl from "@useCases/Location";
+import { useHistory, useLocation } from "react-router";
+
+const SearchDashboard = React.lazy(() => import("./SearchDashboard"));
+const SearchMain = React.lazy(() => import("./SearchMain"));
+
 const { RangePicker } = DatePicker;
 
 const SearchComponent = ({}) => {
+  const history = useHistory();
+  const location = useLocation();
+  const asyncGetTopLocation = useSingleAsync<Array<LocationEntities>>(
+    new LocationRepositoryImpl().GetLocationTop
+  );
+  useEffect(() => {
+    asyncGetTopLocation.execute();
+    if (localStorage.getItem("LOCAL_SEARCH")) {
+      form.setFieldsValue({
+        location: localStorage.getItem("LOCAL_SEARCH"),
+      });
+    }
+  }, []);
+
+  useEffect(() => {
+    console.log(location.pathname);
+  }, [location.pathname]);
   const [form] = useForm();
   const handleFinishSearch = (values) => {
-    console.log(values, "values");
+    localStorage.setItem("LOCAL_SEARCH", values.location);
+    history.push(`/all-product?location=${values.location}`);
   };
+
+  const { pathname } = location;
+
   return (
-    <div className="shadow-x1 m-auto p-12 rounded-xl relative bg-white-100">
-      <Form className="form-search" form={form} onFinish={handleFinishSearch}>
-        <Form.Item name="city">
-          <Select placeholder="Choose city" suffixIcon={<SearchOutlined />}>
-            <Select.Option value="jack">Ho Chi Minh City</Select.Option>
-            <Select.Option value="jack1">Ha Noi City</Select.Option>
-          </Select>
-        </Form.Item>
-        <div className="grid grid-cols-2 gap-4">
-          <Form.Item name="date" className="">
-            <RangePicker suffixIcon={<CalendarOutlined />} />
-          </Form.Item>
-          <Form.Item name="room">
-            <Select placeholder="Choose room" suffixIcon={<UserOutlined />}>
-              <Select.Option value="solo">Solo</Select.Option>
-              <Select.Option value="couple">Couple</Select.Option>
-            </Select>
-          </Form.Item>
-        </div>
-      </Form>
-      <div
-        className="absolute left-1/2 transform -translate-x-1/2 bg-white-100"
-        style={{ bottom: "-35px" }}
-      >
-        <Button
-          className="text-lg uppercase min-w-px-500 pt-5 pb-5"
-          onClick={() => form.submit()}
-        >
-          Search
-        </Button>
-      </div>
-    </div>
+    <Form
+      className={`form-search ${
+        pathname == "/" ? "form-search-dashboard" : "form-search-main"
+      }`}
+      form={form}
+      onFinish={handleFinishSearch}
+    >
+      <Suspense fallback="">
+        {pathname == "/" ? (
+          <SearchDashboard
+            dataLocation={asyncGetTopLocation.value}
+            form={form}
+          />
+        ) : (
+          <SearchMain dataLocation={asyncGetTopLocation.value} form={form} />
+        )}
+      </Suspense>
+    </Form>
   );
 };
 export default React.memo(SearchComponent);

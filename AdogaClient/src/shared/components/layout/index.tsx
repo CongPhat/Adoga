@@ -1,8 +1,7 @@
 import FilterBar from "@components/commons/feature/FilterBar";
-import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router";
+import React, { useState } from "react";
+import SearchComponent from "@components/commons/feature/Search";
 import HeaderComponent from "./Header";
-import SiderComponent from "./Sidebar";
 
 const DefaultLayout = (props) => {
   const [toogleSider, setToogleSider] = useState(false);
@@ -15,7 +14,8 @@ const DefaultLayout = (props) => {
     <section className="default-layout flex h-full">
       {/* <SiderComponent toogleSider={toogleSider} /> */}
       <div className="site-layout width-area ml-auto">
-        {/* <HeaderComponent toggle={toggle} toogleSider={toogleSider} /> */}
+        <HeaderComponent />
+        <SearchComponent />
         <FilterBar />
         <div className={`main-content-wrapper`}>
           <div className={`wrap-content w-3/5 m-auto`}>{props.children}</div>

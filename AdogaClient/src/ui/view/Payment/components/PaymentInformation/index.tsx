@@ -1,5 +1,9 @@
+import BillEntities from "@entities/Bill";
+import { useSingleAsync } from "@hook/useAsync";
+import BillRepositoryImpl from "@useCases/Bill";
 import { Form } from "antd";
-import React from "react";
+import React, { useEffect } from "react";
+import { useHistory } from "react-router";
 
 const validateMessages = {
   required: "${label} is required!",
@@ -13,19 +17,22 @@ const validateMessages = {
 };
 
 const PaymentInformation = () => {
-  const [form] = Form.useForm();
-  const onFinish = (values: any) => {
-    // setValuesFormBooking({
-    //   data: values,
-    // });
-  };
+  const history = useHistory();
+  console.log(history.location.search, "historyhistory");
+
+  const asyncGetDetailBill = useSingleAsync<BillEntities>(
+    new BillRepositoryImpl().GetDetail
+  );
+
+  useEffect(() => {
+    // asyncGetDetailBill.execute(params.roomId);
+  }, []);
+  useEffect(() => {}, []);
   return (
-    <div className="flex">
-      <Form
-        onFinish={onFinish}
-        validateMessages={validateMessages}
-        form={form}
-      ></Form>
+    <div>
+      <div>
+        <p></p>
+      </div>
     </div>
   );
 };

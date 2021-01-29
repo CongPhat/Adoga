@@ -3372,3 +3372,22 @@ export const dataLocationFake = [
     accommodations: 8886,
   },
 ];
+
+export const billFake = {
+  billId: "1",
+  fullName: "Huỳnh Công Phát",
+  email: "huynhphat2510@gmail.com",
+  phoneNumber: "0904667082",
+  region: "VN",
+  dateFrom: "29-01-2020",
+  dateTo: "30-01-2020",
+  smoking: true,
+  bed: false,
+  time: 1,
+  room: dataRoom,
+  product: dataProductFake[0],
+  totalRoom: 2,
+  totalDate: 5,
+  price: 60694030,
+  status: true,
+};

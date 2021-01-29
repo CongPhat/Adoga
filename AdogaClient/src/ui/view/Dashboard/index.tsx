@@ -23,8 +23,7 @@ const Dashboard = ({}) => {
           alt=""
         />
       </div>
-      <div className=" pt-56">
-        <SearchComponent />
+      <div style={{ paddingTop: "450px" }}>
         <FeaturedHomes />
         <InfiniteScrollLazyLoad delay={1}>
           <Recommended />

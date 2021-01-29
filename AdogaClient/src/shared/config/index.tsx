@@ -35,3 +35,5 @@ export const MEDIA_ASSET = "/media-asset";
 export const video = ["mp4", "webm"];
 
 export const PATH_NAME_FILTER = ["/all-product"];
+
+export const LOCAL_SEARCH = "LOCAL_SEARCH";

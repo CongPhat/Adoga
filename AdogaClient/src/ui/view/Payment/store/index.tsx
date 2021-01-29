@@ -1,7 +1,7 @@
 import { Moment } from "moment";
 import { atom } from "recoil";
 
-interface IDateBooking {
+export interface IDateBooking {
   dateBookingMoment: Array<Date>;
   totalDate: number;
 }

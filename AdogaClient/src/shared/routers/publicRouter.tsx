@@ -24,6 +24,10 @@ export const Payment = Loadable({
   loader: () => import("@view/Payment"),
   loading: LoadingComponent,
 });
+export const Bill = Loadable({
+  loader: () => import("@view/Bill"),
+  loading: LoadingComponent,
+});
 
 export const publicRouter: Array<object> = [
   {
@@ -45,6 +49,11 @@ export const publicRouter: Array<object> = [
     path: "/payment/:roomId/:roomTotal",
     exact: true,
     main: () => <Payment />,
+  },
+  {
+    path: "/bill/:billId",
+    exact: true,
+    main: () => <Bill />,
   },
   {
     path: "",

@@ -1,4 +1,5 @@
 import RatingComponent from "@components/commons/single/RatingComponent";
+import ShowImagesRoom from "@components/commons/single/ShowImagesRoom";
 import RoomEntities from "@entities/Room";
 import AmenitiesEntities from "@entities/Room/Amenities";
 import { modalImagesProduct } from "@view/Product/store";
@@ -73,31 +74,7 @@ const ItemRoomProduct = ({ data }: IItemRoomProduct) => {
       <div className="flex">
         <div className=" w-1/5">
           <div onClick={handleShowRoom} className="cursor-pointer">
-            {images && (
-              <div>
-                {images.length >= 1 && (
-                  <div className="mb-1 h-120">
-                    <img src={images[0].linkImage} alt={images[0].title} />
-                  </div>
-                )}
-                <div
-                  className={`grid grid-cols-${
-                    images.length == 3 ? "2" : "1"
-                  } gap-1 h-60`}
-                >
-                  {images.length >= 2 && (
-                    <div>
-                      <img src={images[1].linkImage} alt={images[1].title} />
-                    </div>
-                  )}
-                  {images.length >= 3 && (
-                    <div>
-                      <img src={images[2].linkImage} alt={images[2].title} />
-                    </div>
-                  )}
-                </div>
-              </div>
-            )}
+            <ShowImagesRoom images={images} />
             <span className="mt-3 block mb-4 text-blue-600 cursor-pointer hover:underline">
               Room photos and details
             </span>

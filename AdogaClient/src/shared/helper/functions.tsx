@@ -173,3 +173,10 @@ export const priceDiscount = (price: number, discount: number) => {
 export const spliceArray = (arr: Array<any>, start: number, end: number) => {
   return [...arr].splice(start, end);
 };
+
+export const spliceDate = (string: string) => {
+  return string.split("-").map((x, index) => {
+    if (index == 1) return parseInt(x) - 1;
+    return parseInt(x);
+  });
+};

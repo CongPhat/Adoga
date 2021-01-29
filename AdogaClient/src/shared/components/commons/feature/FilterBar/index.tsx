@@ -19,7 +19,7 @@ const PrivateFilter = (Component) => {
 
 const FilterBar = ({}) => {
   return (
-    <div className="header-product relative py-6 shadow-lg ">
+    <div className="header-product relative py-6 shadow-lg bg-gray-1000">
       <div className="w-3/5 m-auto flex items-center">
         <p className="mr-4 font-semibold">Filter</p>
         <FilterPrice />

@@ -34,7 +34,7 @@ const HeaderProductPayment = ({}: IHeaderProductPayment) => {
         >
           <h1 className="text-xl">{dataProduct.productName}</h1>
           <Rate value={dataProduct.productStar} disabled className="text-xs" />
-          <p className="text-xs">{dataProduct.productStreet}</p>
+          <p className="text-xs font-light">{dataProduct.productStreet}</p>
         </div>
       </div>
       <div

@@ -32,7 +32,7 @@ const Slider = ({ listItem }: IPropsSlider) => {
       <ul className="gallery ">
         {arrRefGallery.map((x, y) => (
           <li ref={x.ref}>
-            <Link to={`/location/${x.item.id}`}>
+            <Link to={`/all-product?location=${x.item.id}`}>
               <div className="h-4/5 w-4/5 ">
                 <img
                   src={x.item.image}
