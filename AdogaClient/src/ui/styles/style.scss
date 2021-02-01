@@ -2,48 +2,6 @@
 @import "./../../shared/assets/scss/variables";
 @import "../../shared/assets/icon/icomoon/style.css";
 
-@font-face {
-  font-family: "Roboto Regular";
-  font-style: normal;
-  font-weight: normal;
-  font-display: swap;
-  src: local("Roboto Regular"), local("Roboto-Regular"),
-    url("../../shared/assets/font/Roboto/Roboto-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: normal;
-  font-display: swap;
-  src: local("Roboto"), local("Roboto"),
-    url("../../shared/assets/font/Roboto/Roboto-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: local("Roboto"), local("Roboto"),
-    url("../../shared/assets/font/Roboto/Roboto-Light.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 100;
-  font-display: swap;
-  src: local("Roboto"), local("Roboto"),
-    url("../../shared/assets/font/Roboto/Roboto-Thin.ttf") format("truetype");
-}
-/* Roboto bold */
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: local("Roboto"), local("Roboto"),
-    url("../../shared/assets/font/Roboto/Roboto-Bold.ttf") format("truetype");
-}
-
 /* Helvetica */
 @font-face {
   font-family: "Helvetica";
@@ -98,46 +56,64 @@
     url("../../shared/assets/font/Arial/Arial-Light.ttf") format("truetype");
 }
 
-/* Segoe */
+/* Mallory */
 @font-face {
-  font-family: "Segoe-UI";
+  font-family: "Mallory Bold";
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: local("Segoe-UI"), local("Segoe-UI"),
-    url("../../shared/assets/font/Segoe-ui/Segoe-UI-Bold.ttf")
-      format("truetype");
+  src: local("Mallory"), local("Mallory"),
+    url("../../shared/assets/font/Mallorry/Mallory_Bold.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Segoe-UI";
+  font-family: "Mallory";
   font-style: normal;
   font-weight: normal;
   font-display: swap;
-  src: local("Segoe-UI"), local("Segoe-UI"),
-    url("../../shared/assets/font/Segoe-ui/Segoe-UI.ttf") format("truetype");
+  src: local("Mallory"), local("Mallory"),
+    url("../../shared/assets/font/Mallorry/Mallory_Book.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Segoe-Historic";
+  font-family: "Mallory";
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: local("Arial"), local("Arial"),
-    url("../../shared/assets/font/Segoe-ui/Segoe-UI-historic.ttf")
+  src: local("Mallory"), local("Mallory"),
+    url("../../shared/assets/font/Mallorry/Mallory_Light.ttf")
+      format("truetype");
+}
+
+/* Helveticaneue */
+@font-face {
+  font-family: "Helvetica Neue Bold";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local("Helvetica Neue"), local("Helvetica Neue"),
+    url("../../shared/assets/font/HelveticaNue/helveticaneuebold.ttf")
+      format("truetype");
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: local("Helvetica Neue"), local("Helvetica Neue"),
+    url("../../shared/assets/font/HelveticaNue/helveticaneue.ttf")
+      format("truetype");
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Helvetica Neue"), local("Helvetica Neue"),
+    url("../../shared/assets/font/HelveticaNue/helveticaneuelight.ttf")
       format("truetype");
 }
 
 .width-area {
   width: 100%;
-}
-
-/* Roboto bold */
-@font-face {
-  font-family: "Roboto Bold";
-  font-style: normal;
-  font-weight: bold;
-  font-display: swap;
-  src: local("Roboto Bold"), local("Roboto-Bold"),
-    url("../../shared/assets/font/Roboto/Roboto-Bold.ttf") format("truetype");
 }
 
 a {
@@ -306,6 +282,7 @@ body {
   .ant-form-item {
     margin: 0 !important;
   }
+
   .ant-select-single .ant-select-selector {
     height: 47px !important;
     border-radius: 10px !important;
@@ -378,4 +355,17 @@ body {
   &-label {
     text-align: left !important;
   }
+}
+
+.ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+  height: 40px;
+}
+.ant-select-single .ant-select-selector .ant-select-selection-item,
+.ant-select-single .ant-select-selector .ant-select-selection-placeholder {
+  line-height: 40px;
+}
+
+.ant-input,
+.ant-picker {
+  height: 40px !important;
 }

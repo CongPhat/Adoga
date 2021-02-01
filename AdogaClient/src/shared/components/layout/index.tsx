@@ -4,12 +4,6 @@ import SearchComponent from "@components/commons/feature/Search";
 import HeaderComponent from "./Header";
 
 const DefaultLayout = (props) => {
-  const [toogleSider, setToogleSider] = useState(false);
-
-  const toggle = () => {
-    setToogleSider(!toogleSider);
-  };
-
   return (
     <section className="default-layout flex h-full">
       {/* <SiderComponent toogleSider={toogleSider} /> */}

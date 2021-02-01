@@ -39,6 +39,11 @@ const InfiniteScrollLazyLoad = ({
     checkScrollHeight();
     window.removeEventListener("scroll", checkScrollHeight);
     window.addEventListener("scroll", checkScrollHeight);
+    return () => {
+      console.log("vo day");
+
+      window.removeEventListener("scroll", checkScrollHeight);
+    };
   }, [childrenNew]);
 
   const checkScrollHeight = () => {

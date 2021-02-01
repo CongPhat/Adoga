@@ -15,7 +15,7 @@ const SearchComponent = ({}) => {
   const history = useHistory();
   const location = useLocation();
   const asyncGetTopLocation = useSingleAsync<Array<LocationEntities>>(
-    new LocationRepositoryImpl().GetLocationTop
+    new LocationRepositoryImpl().GetLocation
   );
   useEffect(() => {
     asyncGetTopLocation.execute();

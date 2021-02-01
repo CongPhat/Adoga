@@ -1,7 +1,11 @@
 import PriceDiscountComponent from "@components/commons/single/PriceDiscountComponent";
 import RoomEntities from "@entities/Room";
-import { Button, InputNumber, Select, Table, Tag } from "antd";
-import { faCheck, faMale } from "@fortawesome/free-solid-svg-icons";
+import { Button, InputNumber, Select, Table, Tag, Tooltip } from "antd";
+import {
+  faCheck,
+  faMale,
+  faInfoCircle,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import "./style.scss";
@@ -137,7 +141,15 @@ const TableRoomProduct = ({ data }: ITableRoomProduct) => {
               ))}
             </Select>
             {!rooms.isFirst && rooms.count == 0 && (
-              <span className="text-red-1100 block mt-2 text-sm">Error</span>
+              <div className="flex items-center mt-2">
+                <span className="text-red-1100 block text-sm mr-2">Error</span>
+                <Tooltip title="Please select the total number of rooms.">
+                  <FontAwesomeIcon
+                    icon={faInfoCircle}
+                    className=" text-xs text-gray-1200"
+                  />
+                </Tooltip>
+              </div>
             )}
           </>
         );

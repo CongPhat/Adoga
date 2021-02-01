@@ -14,9 +14,9 @@ export default class LocationEntities implements ILocation {
   accommodations: number;
   constructor(data) {
     this.name = data?.name;
-    this.id = data?.id;
+    this.id = data?._id;
     this.image = data?.image || "";
-    this.isTop = data?.id || false;
+    this.isTop = data?.isTop || false;
     this.accommodations = data?.accommodations || 0;
   }
   public get Properties(): ILocation {
@@ -26,7 +26,6 @@ export default class LocationEntities implements ILocation {
       image: this.image,
       isTop: this.isTop,
       accommodations: this.accommodations,
-      s,
     };
   }
   static CreateList(listData) {

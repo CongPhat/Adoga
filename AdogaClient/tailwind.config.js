@@ -315,6 +315,7 @@ module.exports = {
       ],
       display: ["Roboto", "Helvetica", "Arial", "sans-serif"],
       segoe: ["Segoe-historic", "Segoe-UI", "Helvetica", "Arial", "sans-serif"],
+      mallory: ["Mallory", "Helvetica", "Arial", "sans-serif"],
     },
     fontSize: {
       xs: "0.75rem",

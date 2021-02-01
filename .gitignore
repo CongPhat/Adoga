@@ -5,6 +5,8 @@
 /.idea
 /AdogaClient/node_modules
 /AdogaClient/dist
+/server/node_modules
+/server/public/images
 
 # compiled output
 /dist

@@ -1,7 +1,7 @@
 import React from "react";
 import { Redirect } from "react-router";
 import * as Loadable from "react-loadable";
-import LoadingComponent from "@components/commons/LoadingComponent/loadingComponent";
+import LoadingComponent from "@components/commons/LoadingComponent";
 
 export const PageNotFound = Loadable({
   loader: () => import("@view/PageNotFound"),

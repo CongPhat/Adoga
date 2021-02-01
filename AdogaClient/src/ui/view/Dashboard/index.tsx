@@ -25,6 +25,8 @@ const Dashboard = ({}) => {
       </div>
       <div style={{ paddingTop: "450px" }}>
         <FeaturedHomes />
+        <TopDestionations />
+
         <InfiniteScrollLazyLoad delay={1}>
           <Recommended />
           <TopDestionations />

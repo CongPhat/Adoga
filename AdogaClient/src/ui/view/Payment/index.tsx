@@ -4,7 +4,7 @@ import RoomPayment from "./components/RoomPayment";
 
 const Payment = () => {
   return (
-    <section className="flex">
+    <section className="flex py-8">
       <div className="w-8/12 mr-4">
         <PaymentContent />
       </div>

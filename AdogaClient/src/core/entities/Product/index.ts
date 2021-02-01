@@ -6,7 +6,7 @@ export interface IProduct {
   productId: string;
   locationId: string;
   productName: string;
-  productPrice: number;
+  productPrice: string;
   productStreet: string;
   productStar: number;
   productImageThumbnail: string;
@@ -27,7 +27,7 @@ export interface IProduct {
 export default class ProductEntities implements IProduct {
   productId: string = "";
   productName: string = "";
-  productPrice: number = 0;
+  productPrice: string = "";
   productStreet: string = "";
   productStar: number = 0;
   locationId: string = "";

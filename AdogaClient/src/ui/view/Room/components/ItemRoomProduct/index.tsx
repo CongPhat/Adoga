@@ -68,7 +68,7 @@ const ItemRoomProduct = ({ data }: IItemRoomProduct) => {
   return (
     <div className="p-4 border border-gray-1100 mb-8 bg-white-200">
       <div className="flex justify-between mb-4 items-center">
-        <h6 className="font-semibold text-base">{data.name}</h6>
+        <h6 className="font-semibold text-base font-mallory">{data.name}</h6>
         <RatingComponent rating={data.rating} isRevert />
       </div>
       <div className="flex">

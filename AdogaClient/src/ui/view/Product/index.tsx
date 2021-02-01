@@ -35,7 +35,7 @@ const Product = () => {
   const { dataDetailProduct } = data;
 
   return (
-    <section>
+    <section className="py-8">
       <HeaderProduct
         title={dataDetailProduct.productName}
         star={dataDetailProduct.productStar}
