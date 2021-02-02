@@ -47,7 +47,7 @@ export default class ProductEntities implements IProduct {
 
   constructor(data) {
     this.productName = data?.name;
-    this.productId = data?.id;
+    this.productId = data?._id;
     this.productPrice = data?.price;
     this.productStreet = data?.street;
     this.productStar = data?.star;
@@ -59,7 +59,7 @@ export default class ProductEntities implements IProduct {
     this.productImages = data?.images || [];
     this.productOnly = data?.only || 0;
     this.productType = data?.productType || "";
-    this.productRoom = this.setOneRoom(data?.rooms[0]);
+    this.productRoom = this.setOneRoom(data?.rooms ? data?.rooms[0] : []);
     this.productAbout = data?.productAbout || "";
     this.productRatingDetail = this.setRatingDetail(
       data?.productRatingDetail || []

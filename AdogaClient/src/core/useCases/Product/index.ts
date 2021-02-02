@@ -4,22 +4,51 @@ import {
   dataRoom,
   dataRoom1,
 } from "src/core/data/dataFake";
-import LocationEntities from "@entities/Location";
-import Repository from "@useCases/Structure";
 import ProductEntities from "@entities/Product";
+import ProductService from "@api/product";
 
-export default class ProductRepositoryImpl implements Repository {
-  public async Get(): Promise<any[]> {
-    return;
+export default class ProductRepositoryImpl extends ProductService {
+  GetProductByLocation: (
+    locationId,
+    pageSize,
+    pageNumber
+  ) => Promise<ProductEntities[]>;
+
+  GetDetailProduct: (productId: string) => Promise<ProductEntities>;
+
+  constructor() {
+    super();
+
+    this.GetProductByLocation = async (
+      locationId,
+      pageSize,
+      pageNumber
+    ): Promise<ProductEntities[]> => {
+      return await this.getProductByLocationService(
+        locationId,
+        pageSize,
+        pageNumber
+      ).then((res) => {
+        return ProductEntities.CreateList(res.data.data || []);
+      });
+    };
+
+    this.GetDetailProduct = async (productId): Promise<ProductEntities> => {
+      return await this.getDetailProductService(productId).then((res) => {
+        return new ProductEntities(res.data.data);
+      });
+    };
   }
-  public async GetProductByLocation(
-    locationId: string
-  ): Promise<ProductEntities[]> {
-    const dataReceive = dataProductFake.filter(
-      (x) => x.locationId == locationId
-    );
-    return ProductEntities.CreateList(dataReceive);
-  }
+
+  // public async GetProductByLocation(
+  //   locationId: string
+  // ): Promise<ProductEntities[]> {
+  //   const dataReceive = dataProductFake.filter(
+  //     (x) => x.locationId == locationId
+  //   );
+  //   return ProductEntities.CreateList(dataReceive);
+  // }
+
   public async GetProductRecommended(): Promise<ProductEntities[]> {
     return ProductEntities.CreateList(dataProductRecommended);
   }
@@ -61,11 +90,6 @@ export default class ProductRepositoryImpl implements Repository {
     //fake
     let dataResult = [...dataProductFake].splice(0, 6);
     return ProductEntities.CreateList(dataResult);
-  }
-
-  public async GetDetailProduct(productId): Promise<ProductEntities> {
-    //fake
-    return new ProductEntities(dataProductFake.find((x) => x.id == productId));
   }
 
   public async GetProductOfRoom(roomId: string): Promise<ProductEntities> {

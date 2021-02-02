@@ -19,7 +19,7 @@ const ItemsFeaturedHome = ({ itemFeatured }: Iprops) => {
     new ProductRepositoryImpl().GetProductByLocation
   );
   useEffect(() => {
-    asyncGetProduct.execute(itemFeatured.id);
+    asyncGetProduct.execute(itemFeatured.id, 9, 1);
   }, []);
 
   if (!asyncGetProduct.value) return null;

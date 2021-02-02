@@ -29,6 +29,7 @@
 
 const ProductRouter = require("./routes/products");
 const LocationRouter = require("./routes/location");
+const RoomRouter = require("./routes/room");
 // const UserRouter = require("./routes/users");
 // const CommentRouter = require("./routes/comments");
 // const MessageRouter = require("./routes/message");
@@ -63,9 +64,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // set up port number
 // set up port
 const port = 5035;
-// set up route
+
 app.use("/product", ProductRouter);
 app.use("/location", LocationRouter);
+app.use("/room", RoomRouter);
+
 app.get("/", (req, res) => {
   res.status(200).json({
     message: "Welcome to Project with Nodejs Express and MongoDB",

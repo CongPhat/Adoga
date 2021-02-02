@@ -9,7 +9,7 @@ export default class BenefitEntities implements IBenefit {
 
   constructor(data) {
     this.name = data?.name;
-    this.id = data?.id;
+    this.id = data?._id;
   }
   public get Properties(): IBenefit {
     return {

@@ -3,7 +3,7 @@ import React from "react";
 
 const LoadingComponent = () => {
   return (
-    <></>
+    <div className="h-screen bg-black fixed top-0"></div>
     // <div
     //   className="loader-wrapper w-screen h-screen bg-white-200 fixed flex justify-center items-center"
     //   style={{ zIndex: 1000 }}

@@ -43,7 +43,7 @@ export default class RoomEntities implements IRoom {
 
   constructor(data) {
     this.name = data?.name;
-    this.id = data?.id;
+    this.id = data?._id;
     this.price = data?.price;
     this.locationId = data?.locationId;
     this.imageThumbnail = data?.imageThumbnail;
@@ -56,6 +56,7 @@ export default class RoomEntities implements IRoom {
     this.beds = data?.beds || 0;
     this.size = data?.size || "";
     this.benefitsRoom = this.setBenefitsRoom(data?.benefitsRoom || []);
+    this.amenitiesImportant = [];
   }
   private setFacilities(listFacilities): Array<FacilitiesEntities> {
     return FacilitiesEntities.CreateList(listFacilities);
@@ -64,8 +65,7 @@ export default class RoomEntities implements IRoom {
     return BenefitEntities.CreateList(listBenefits);
   }
   public setAmenitiesImportant(listAmenities): this {
-    this.amenitiesImportant = AmenitiesEntities.CreateList(listAmenities || []);
-    return this;
+    return AmenitiesEntities.CreateList(listAmenities || []);
   }
   public get Properties(): IRoom {
     return {

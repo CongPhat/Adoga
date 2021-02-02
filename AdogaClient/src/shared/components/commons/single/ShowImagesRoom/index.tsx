@@ -19,7 +19,7 @@ const ShowImagesRoom = ({ images }: IShowImagesRoom) => {
           )}
           <div
             className={`grid grid-cols-${
-              images.length == 3 ? "2" : "1"
+              images.length >= 3 ? "2" : "1"
             } gap-1 h-60`}
           >
             {images.length >= 2 && (

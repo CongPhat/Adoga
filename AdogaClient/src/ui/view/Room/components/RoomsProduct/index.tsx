@@ -11,10 +11,10 @@ interface IRoomsProduct {
 const RoomsProduct = ({ productId }: IRoomsProduct) => {
   const { presenter, data, effect } = useRoomProduct(productId);
   const { dataListRoom } = data;
-  if (!dataListRoom) return null;
+  if (!dataListRoom) return <div className="h-350"></div>;
 
   return (
-    <div>
+    <div className="mt-8">
       {spliceArray(dataListRoom, 0, 1).map((item, index) => (
         <ItemRoomProduct data={item} key={index} />
       ))}

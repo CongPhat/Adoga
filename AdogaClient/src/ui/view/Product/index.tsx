@@ -31,9 +31,9 @@ const Product = () => {
     });
   }, [data]);
 
-  if (data.dataDetailProduct == null) return;
+  if (data.dataDetailProduct == null) return <></>;
   const { dataDetailProduct } = data;
-
+  console.log(dataDetailProduct, "dataDetailProduct");
   return (
     <section className="py-8">
       <HeaderProduct
@@ -55,13 +55,14 @@ const Product = () => {
           <RoomLowestPrice room={dataDetailProduct.productRoom} />
         </div>
       </div>
-      <div className="mt-16">
+      <AboutProduct dataProduct={dataDetailProduct} />
+      {/* <div className="mt-16">
         <RoomsProduct productId={params.productId} />
-      </div>
+      </div> */}
       <InfiniteScrollLazyLoad delay={1}>
+        <RoomsProduct productId={params.productId} />
         <ProductsLike />
         <ProductsViewed />
-        <AboutProduct dataProduct={dataDetailProduct} />
       </InfiniteScrollLazyLoad>
       <ModalShowImages />
     </section>

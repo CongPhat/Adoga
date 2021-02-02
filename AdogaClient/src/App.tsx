@@ -4,7 +4,7 @@ import React, { Suspense } from "react";
 import { Switch } from "react-router-dom";
 
 interface Iprops {
-  privateLogin: boolean;
+  privateLogin?: boolean;
 }
 
 const App = ({}: Iprops) => {

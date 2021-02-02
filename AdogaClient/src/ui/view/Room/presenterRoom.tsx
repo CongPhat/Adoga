@@ -1,7 +1,5 @@
-import ProductEntities from "@entities/Product";
 import RoomEntities from "@entities/Room";
 import { useSingleAsync } from "@hook/useAsync";
-import ProductRepositoryImpl from "@useCases/Product";
 import RoomRepositoryImpl from "@useCases/Room";
 import { useEffect } from "react";
 

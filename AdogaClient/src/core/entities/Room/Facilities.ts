@@ -13,7 +13,7 @@ export default class FacilitiesEntities implements IFacilities {
 
   constructor(data) {
     this.name = data?.name;
-    this.id = data?.id;
+    this.id = data?._id;
     this.amenities = this.setAmenities(data?.amenities);
   }
   private setAmenities(listAmenities): Array<AmenitiesEntities> {

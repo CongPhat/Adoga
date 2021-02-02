@@ -1,6 +1,5 @@
 const express = require("express");
-const User = require("./../../models/Users");
-const controllerProduct = require("./../../controller/Product");
+const controllerRoom = require("./../controller/Room");
 const multer = require("multer");
 const store = multer.diskStorage({
   destination: "public/images",
@@ -20,8 +19,7 @@ const Get = async (id) => {
   });
 };
 
-route.get("/", controllerProduct.getData);
-route.get("/getProductByLocation", controllerProduct.getProductByLocation);
-route.get("/detail", controllerProduct.getDetailProduct);
+route.get("/", controllerRoom.getData);
+route.get("/getRoomByProduct", controllerRoom.getRoomByProduct);
 
 module.exports = route;

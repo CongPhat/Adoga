@@ -12,7 +12,7 @@ export default class AmenitiesEntities implements IAmenities {
   important: boolean;
   constructor(data) {
     this.name = data?.name || "";
-    this.id = data?.id || "";
+    this.id = data?._id || "";
     this.icon = data?.icon || "";
     this.important = data?.important || false;
   }
@@ -25,6 +25,8 @@ export default class AmenitiesEntities implements IAmenities {
     };
   }
   static CreateList(listData) {
-    return listData.map((x) => new AmenitiesEntities(x));
+    if (listData) {
+      return listData.map((x) => new AmenitiesEntities(x));
+    }
   }
 }

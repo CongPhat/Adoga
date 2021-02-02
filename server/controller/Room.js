@@ -1,8 +1,8 @@
 const ProductModel = require("../models/Product");
 const BenefitModel = require("../models/Benefits");
 const RoomModel = require("../models/Room");
-const commonController = require("./common");
 const message = require("../helper/messageResponse");
+const commonController = require("./common");
 const { pagination } = require("../helper/pagination");
 const { messageSuccess } = require("../helper/messageResponse");
 
@@ -36,14 +36,41 @@ const controller = {
     });
   },
 
-  getProductByLocation: async (req, res, next) => {
-    const { location, pageSize, pageNumber } = req.query;
+  getRoomByProduct: async (req, res, next) => {
+    const { productId, pageSize, pageNumber } = req.query;
 
-    const dataFind = await pagination(ProductModel, pageSize, pageNumber, {
-      locationId: location,
+    const dataFind = await pagination(RoomModel, pageSize, pageNumber, {
+      productId,
     });
 
-    res.send(messageSuccess("Get List Product By Loction Success", dataFind));
+    const result = await Promise.all(
+      (dataSetBenifits = dataFind.map(async (x) => {
+        const dataBenefit = await commonController.setBenefits(x);
+        const dataFacilities = await commonController.setFacilities(
+          x.facilities
+        );
+
+        const resultAmenities = await Promise.all(
+          (dataSetBenifits = dataFacilities.map(async (x) => {
+            const dataAmenities = await commonController.setAmenities(
+              x.amenities
+            );
+            return {
+              ...x._doc,
+              amenities: dataAmenities,
+            };
+          }))
+        );
+
+        return {
+          ...x._doc,
+          benefits: dataBenefit,
+          facilities: resultAmenities,
+        };
+      }))
+    );
+
+    res.send(messageSuccess("Get List Room By product Success", result));
     // const result = Promise.all(
     //   dataFind.map(async (item) => {
     //     const userFind = await User.findOne({ _id: item.userId }, "image name");
@@ -68,7 +95,7 @@ const controller = {
       _id: productId,
     });
 
-    const dataBenefit = await commonController.setBenefits(dataProduct);
+    const dataBenefit = await setBenefits(dataProduct);
     const dataRoom = await setRooms(dataProduct);
     const dataResult = {
       ...dataProduct._doc,

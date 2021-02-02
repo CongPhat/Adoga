@@ -1,7 +1,6 @@
 const express = require("express");
 const path = require("path");
 const Post = require("../../models/Posts");
-const User = require("./../../models/Users");
 const controllerLocation = require("./../../controller/Location");
 const controllerAuth = require("./../../controller/auth");
 const multer = require("multer");
