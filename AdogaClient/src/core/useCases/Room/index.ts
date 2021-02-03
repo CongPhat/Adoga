@@ -18,6 +18,7 @@ export default class RoomRepositoryImpl extends RoomService {
     pageSize,
     pageNumber
   ) => Promise<RoomEntities[]>;
+  GetRoomLowest: (productId) => Promise<RoomEntities>;
   constructor() {
     super();
 
@@ -32,6 +33,13 @@ export default class RoomRepositoryImpl extends RoomService {
         pageNumber
       ).then((res) => {
         return RoomEntities.CreateList(res.data.data || []);
+      });
+    };
+
+    //get room lowest
+    this.GetRoomLowest = async (productId): Promise<RoomEntities> => {
+      return await this.GetRoomLowestService(productId).then((res) => {
+        return new RoomEntities(res.data.data);
       });
     };
 

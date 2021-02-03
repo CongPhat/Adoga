@@ -46,15 +46,15 @@ export default class ProductEntities implements IProduct {
   productRatingDetail: Array<RatingEntities>;
 
   constructor(data) {
-    this.productName = data?.name;
-    this.productId = data?._id;
-    this.productPrice = data?.price;
-    this.productStreet = data?.street;
-    this.productStar = data?.star;
-    this.locationId = data?.locationId;
-    this.productImageThumbnail = data?.imageThumbnail;
-    this.productRating = data?.rating;
-    this.productDiscount = data?.discount || this.productDiscount;
+    this.productName = data?.name || "";
+    this.productId = data?._id || "";
+    this.productPrice = data?.price || "";
+    this.productStreet = data?.street || "";
+    this.productStar = data?.star || 0;
+    this.locationId = data?.locationId || "";
+    this.productImageThumbnail = data?.imageThumbnail || "";
+    this.productRating = data?.rating || 0;
+    this.productDiscount = data?.discount || this.productDiscount || 0;
     this.productBenefits = this.setBenefits(data?.benefits || []);
     this.productImages = data?.images || [];
     this.productOnly = data?.only || 0;

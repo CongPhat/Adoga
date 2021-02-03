@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import RoomEntities from "@entities/Room";
 import { Button, Tag } from "antd";
 import { faUsers, faCreditCard } from "@fortawesome/free-solid-svg-icons";
@@ -6,11 +6,21 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { parseMoneyVND } from "@helper/functions";
 import { useSetRecoilState } from "recoil";
 import { modalImagesProduct } from "@view/Product/store";
+import { useSingleAsync } from "@hook/useAsync";
+import RoomRepositoryImpl from "@useCases/Room";
 interface IRoomLowestPrice {
-  room: RoomEntities;
+  productId: string;
 }
 
-const RoomLowestPrice = ({ room }: IRoomLowestPrice) => {
+const RoomLowestPrice = ({ productId }: IRoomLowestPrice) => {
+  const asyncGetRoomLowest = useSingleAsync<RoomEntities>(
+    new RoomRepositoryImpl().GetRoomLowest
+  );
+
+  useEffect(() => {
+    asyncGetRoomLowest.execute(productId);
+  }, []);
+
   const setModal = useSetRecoilState(modalImagesProduct);
   const handleShowImagesProduct = () => {
     setModal({
@@ -20,7 +30,10 @@ const RoomLowestPrice = ({ room }: IRoomLowestPrice) => {
       isShow: true,
     });
   };
-  if (!room.images[0]) return null;
+  const room = asyncGetRoomLowest.value;
+  if (!room) return null;
+
+  // if (!room.images[0]) return null;
   return (
     <div className="overflow-hidden rounded-md rounded-b-none">
       <p className="bg-orange-600 text-white-100 px-2 py-1">

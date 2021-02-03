@@ -1,4 +1,6 @@
 import InfiniteScrollLazyLoad from "@components/commons/effect/InfiniteScrollLazyLoadComponent";
+import ProductEntities, { IProduct } from "@entities/Product";
+import { checkEffectData, createArrayImageSkeleton } from "@helper/functions";
 import RoomsProduct from "@view/Room/components/RoomsProduct";
 import React, { useCallback, useEffect } from "react";
 import { useParams } from "react-router";
@@ -24,38 +26,50 @@ const Product = () => {
 
   const handleShowImagesProduct = useCallback(() => {
     setModal({
-      dataProduct: dataDetailProduct,
+      dataProduct: dataRender,
       dataRoom: null,
       type: "product",
       isShow: true,
     });
   }, [data]);
 
-  if (data.dataDetailProduct == null) return <></>;
-  const { dataDetailProduct } = data;
-  console.log(dataDetailProduct, "dataDetailProduct");
+  const dataRender: ProductEntities = checkEffectData(
+    status == "loading",
+    data.dataDetailProduct
+  )
+    ? new ProductEntities({
+        images: createArrayImageSkeleton(5),
+      })
+    : data.dataDetailProduct ||
+      new ProductEntities({
+        images: createArrayImageSkeleton(5),
+      });
+
+  // const { dataDetailProduct } = data;
+
   return (
     <section className="py-8">
       <HeaderProduct
-        title={dataDetailProduct.productName}
-        star={dataDetailProduct.productStar}
-        street={dataDetailProduct.productStreet}
+        title={dataRender.productName}
+        star={dataRender.productStar}
+        street={dataRender.productStreet}
       />
       <div className=" w-3/4">
-        <HeaderBenefitProduct benefits={dataDetailProduct.productBenefits} />
+        <HeaderBenefitProduct benefits={dataRender.productBenefits} />
       </div>
       <div className="flex mt-8">
         <div className=" w-3/4">
           <ImagesPreview
-            images={dataDetailProduct.productImages}
+            images={dataRender.productImages}
             showImagesProduct={handleShowImagesProduct}
+            loading={effect.loading}
           />
         </div>
         <div className=" w-1/4 ml-4">
-          <RoomLowestPrice room={dataDetailProduct.productRoom} />
+          <RoomLowestPrice productId={params.productId} />
         </div>
       </div>
-      <AboutProduct dataProduct={dataDetailProduct} />
+      <AboutProduct dataProduct={dataRender} />
       {/* <div className="mt-16">
         <RoomsProduct productId={params.productId} />
       </div> */}

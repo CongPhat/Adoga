@@ -11,7 +11,7 @@ export default class RatingEntities implements IRating {
 
   constructor(data) {
     this.ratingName = data?.ratingName;
-    this.ratingId = data?.ratingId;
+    this.ratingId = data?._id;
     this.ratingNumber = data?.ratingNumber;
   }
   static CreateListRating(listRating) {

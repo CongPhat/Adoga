@@ -6,7 +6,7 @@ const FacilitiesSchema = mongoose.Schema({
     type: String,
     required: true,
   },
-  amenities: { type: [String], required: false },
+  amenities: [{ type: Schema.Types.ObjectId, ref: "Amenities" }],
   date: {
     type: Date,
     default: Date.now,

@@ -88,7 +88,7 @@ class ProductView {
 
   static useAllProduct = (): IUseProduct => {
     const asyncGetAllProduct = useSingleAsync<Array<ProductEntities>>(
-      new ProductRepositoryImpl().GetAllProduct
+      new ProductRepositoryImpl().GetAllProductLocation
     );
     const location = useLocation();
 

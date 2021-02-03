@@ -180,3 +180,19 @@ export const spliceDate = (string: string) => {
     return parseInt(x);
   });
 };
+
+export const createArrayLoadingEntities = (number, Entities) => {
+  return Array.from(Array(number).keys()).map((x) => new Entities(x));
+};
+
+export const checkEffectData = (loading, data) => {
+  if (loading && !data) return true;
+  if (!loading && !data) return false;
+};
+
+export const createArrayImageSkeleton = (number) => {
+  return Array.from(Array(number).keys()).map((x) => ({
+    linkImage: "",
+    title: "",
+  }));
+};

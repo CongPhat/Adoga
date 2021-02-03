@@ -6,6 +6,7 @@ import {
 } from "src/core/data/dataFake";
 import ProductEntities from "@entities/Product";
 import ProductService from "@api/product";
+import { parseObjectToSearch } from "@helper/functions";
 
 export default class ProductRepositoryImpl extends ProductService {
   GetProductByLocation: (
@@ -13,7 +14,8 @@ export default class ProductRepositoryImpl extends ProductService {
     pageSize,
     pageNumber
   ) => Promise<ProductEntities[]>;
-
+  GetAllProductLocation: (options) => Promise<ProductEntities[]>;
+  GetProductRecommended: (optios) => Promise<ProductEntities[]>;
   GetDetailProduct: (productId: string) => Promise<ProductEntities>;
 
   constructor() {
@@ -33,6 +35,28 @@ export default class ProductRepositoryImpl extends ProductService {
       });
     };
 
+    this.GetAllProductLocation = async (
+      options
+    ): Promise<ProductEntities[]> => {
+      const optionsQuery = parseObjectToSearch(options);
+      return await this.getAllProductLocationService(optionsQuery).then(
+        (res) => {
+          return ProductEntities.CreateList(res.data.data || []);
+        }
+      );
+    };
+
+    this.GetProductRecommended = async (
+      options
+    ): Promise<ProductEntities[]> => {
+      const optionsQuery = parseObjectToSearch(options);
+      return await this.getProductRecommendedService(optionsQuery).then(
+        (res) => {
+          return ProductEntities.CreateList(res.data.data || []);
+        }
+      );
+    };
+
     this.GetDetailProduct = async (productId): Promise<ProductEntities> => {
       return await this.getDetailProductService(productId).then((res) => {
         return new ProductEntities(res.data.data);
@@ -49,9 +73,6 @@ export default class ProductRepositoryImpl extends ProductService {
   //   return ProductEntities.CreateList(dataReceive);
   // }
 
-  public async GetProductRecommended(): Promise<ProductEntities[]> {
-    return ProductEntities.CreateList(dataProductRecommended);
-  }
   public async GetAllProduct(dataSearch): Promise<ProductEntities[]> {
     //fake
     const { location, type, PriceFrom, PriceTo } = dataSearch;

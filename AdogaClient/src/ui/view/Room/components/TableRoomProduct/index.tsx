@@ -123,10 +123,10 @@ const TableRoomProduct = ({ data }: ITableRoomProduct) => {
     },
     {
       title: "Rooms",
-      dataIndex: "rooms",
-      key: "rooms",
+      dataIndex: "only",
+      key: "only",
       width: "5%",
-      render: () => {
+      render: (number) => {
         return (
           <>
             <Select
@@ -134,7 +134,7 @@ const TableRoomProduct = ({ data }: ITableRoomProduct) => {
               onChange={handleChange}
               style={{ width: "70px" }}
             >
-              {Array.from(Array(11).keys()).map((item, index) => (
+              {Array.from(Array(number + 1).keys()).map((item, index) => (
                 <Select.Option value={item} key={index}>
                   {item}
                 </Select.Option>

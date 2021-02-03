@@ -37,3 +37,7 @@ export const video = ["mp4", "webm"];
 export const PATH_NAME_FILTER = ["/all-product"];
 
 export const LOCAL_SEARCH = "LOCAL_SEARCH";
+
+export const PRODUCT_RECOMMENDED = {
+  rating: 3,
+};

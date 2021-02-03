@@ -10,7 +10,6 @@ import ProductView from "./useAllProduct";
 
 const AllProduct = ({}) => {
   const { data, effect } = ProductView.useAllProduct();
-
   return (
     <>
       <div className="all-product relative flex">

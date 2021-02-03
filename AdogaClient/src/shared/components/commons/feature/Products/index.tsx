@@ -4,13 +4,17 @@ import CardProduct from "../CardProduct";
 
 interface IProps {
   listProducts: Array<IProduct>;
+  loading?: boolean;
 }
 
-const Products = ({ listProducts }: IProps) => {
+const Products = ({ listProducts, loading = true }: IProps) => {
+  const data: Array<IProduct | number> = loading
+    ? Array.from(Array(9).keys())
+    : listProducts;
   return (
     <div className="products grid lg:grid-cols-2 gap-4 md:grid-cols-2 xs:grid-cols-1 xl:grid-cols-3">
-      {listProducts.map((x: IProduct, index) => (
-        <CardProduct key={index} product={x} />
+      {data?.map((x: IProduct, index) => (
+        <CardProduct key={index} product={x} loading={loading} />
       ))}
     </div>
   );

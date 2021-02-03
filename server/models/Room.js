@@ -23,8 +23,8 @@ const RoomSchema = mongoose.Schema({
   rating: { type: Number, required: true },
   discount: { type: Number, required: true },
   only: { type: Number, default: 0 },
-  benefits: { type: [String], required: false },
-  facilities: { type: [String], default: [] },
+  benefits: [{ type: Schema.Types.ObjectId, ref: "benefits" }],
+  facilities: [{ type: Schema.Types.ObjectId, ref: "Facilities" }],
   date: {
     type: Date,
     default: Date.now,

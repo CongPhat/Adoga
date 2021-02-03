@@ -55,7 +55,7 @@ export default class RoomEntities implements IRoom {
     this.rating = data?.rating || 0;
     this.beds = data?.beds || 0;
     this.size = data?.size || "";
-    this.benefitsRoom = this.setBenefitsRoom(data?.benefitsRoom || []);
+    this.benefitsRoom = this.setBenefitsRoom(data?.benefits || []);
     this.amenitiesImportant = [];
   }
   private setFacilities(listFacilities): Array<FacilitiesEntities> {

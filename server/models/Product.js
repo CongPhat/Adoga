@@ -24,9 +24,15 @@ const ProductSchema = mongoose.Schema({
   only: { type: Number, default: 0 },
   productType: { type: String, required: false },
   productAbout: { type: String, required: false },
-  benefits: { type: [String], default: [] },
+  benefits: [{ type: [Schema.Types.ObjectId], ref: "benefits" }],
   locationId: { type: String, required: true },
-  rooms: { type: [String], default: [] },
+  rooms: [{ type: [Schema.Types.ObjectId], ref: "Rooms" }],
+  ratingDetail: [
+    {
+      ratingId: { type: Schema.Types.ObjectId, ref: "Ratings" },
+      ratingNumber: { type: Number, default: 0 },
+    },
+  ],
   date: {
     type: Date,
     default: Date.now,

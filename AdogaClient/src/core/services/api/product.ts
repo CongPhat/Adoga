@@ -17,6 +17,24 @@ export default class ProductService {
     });
   }
 
+  public async getProductRecommendedService(optionQuery): Promise<any> {
+    const path = `product/getProductRecommended${optionQuery}`;
+    return await apiService.executeApi({
+      path,
+      showSuccess: false,
+      showError: false,
+    });
+  }
+
+  public async getAllProductLocationService(optionQuery): Promise<any> {
+    const path = `product/getProductByLocation${optionQuery}`;
+    return await apiService.executeApi({
+      path,
+      showSuccess: false,
+      showError: false,
+    });
+  }
+
   public async getDetailProductService(productId: string): Promise<any> {
     const path = `product/detail?productId=${productId}`;
     return await apiService.executeApi({

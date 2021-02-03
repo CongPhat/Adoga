@@ -1,3 +1,4 @@
+import EffectImageComponent from "@components/commons/single/EffectImageComponent";
 import React from "react";
 import { useSetRecoilState } from "recoil";
 import { modalImagesProduct } from "../store";
@@ -7,6 +8,7 @@ interface IImagesPreviewProduct {
     title: string;
   }>;
   showImagesProduct?: () => void;
+  loading?: boolean;
 }
 
 const OverlayImage = () => {
@@ -18,6 +20,7 @@ const OverlayImage = () => {
 const ImagesPreview = ({
   images,
   showImagesProduct,
+  loading = true,
 }: IImagesPreviewProduct) => {
   return (
     <div>
@@ -30,11 +33,16 @@ const ImagesPreview = ({
           className="h-350 relative group cursor-pointer"
           onClick={showImagesProduct}
         >
-          <img
-            src={images[0].linkImage}
-            alt={images[0].title}
-            className="w-full h-full object-cover"
-          />
+          {loading ? (
+            <EffectImageComponent />
+          ) : (
+            <img
+              src={images[0].linkImage}
+              alt={images[0].title}
+              className="w-full h-full object-cover"
+            />
+          )}
+
           <OverlayImage />
         </div>
         {images.length > 1 && (
@@ -51,11 +59,16 @@ const ImagesPreview = ({
                     : "100%",
               }}
             >
-              <img
-                src={images[1].linkImage}
-                alt={images[1].title}
-                className="w-full h-full object-cover"
-              />
+              {loading ? (
+                <EffectImageComponent />
+              ) : (
+                <img
+                  src={images[1].linkImage}
+                  alt={images[1].title}
+                  className="w-full h-full object-cover"
+                />
+              )}
+
               <OverlayImage />
             </div>
             {images.length > 2 && (
@@ -68,11 +81,16 @@ const ImagesPreview = ({
                   className="relative group cursor-pointer"
                   onClick={showImagesProduct}
                 >
-                  <img
-                    src={images[2].linkImage}
-                    alt={images[2].title}
-                    className="w-full h-full object-cover"
-                  />
+                  {loading ? (
+                    <EffectImageComponent />
+                  ) : (
+                    <img
+                      src={images[2].linkImage}
+                      alt={images[2].title}
+                      className="w-full h-full object-cover"
+                    />
+                  )}
+
                   <OverlayImage />
                 </div>
                 {images.length > 3 && (
@@ -81,19 +99,25 @@ const ImagesPreview = ({
                     className="relative group cursor-pointer"
                     onClick={showImagesProduct}
                   >
-                    <img
-                      src={images[3].linkImage}
-                      alt={images[3].title}
-                      className="w-full h-full object-cover"
-                    />
-                    {images.length > 3 && (
-                      <div className="absolute w-full h-full top-0 z-10 flex justify-center items-center bg-black bg-opacity-50 ">
-                        <span className="text-xs font-semibold text-white-100">
-                          SEE ALL {images.length - 3} PHOTOS
-                        </span>
-                      </div>
+                    {loading ? (
+                      <EffectImageComponent />
+                    ) : (
+                      <>
+                        <img
+                          src={images[3].linkImage}
+                          alt={images[3].title}
+                          className="w-full h-full object-cover"
+                        />
+                        {images.length > 3 && (
+                          <div className="absolute w-full h-full top-0 z-10 flex justify-center items-center bg-black bg-opacity-50 ">
+                            <span className="text-xs font-semibold text-white-100">
+                              SEE ALL {images.length - 3} PHOTOS
+                            </span>
+                          </div>
+                        )}
+                        <OverlayImage />
+                      </>
                     )}
-                    <OverlayImage />
                   </div>
                 )}
               </div>

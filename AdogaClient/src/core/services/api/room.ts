@@ -14,6 +14,15 @@ export default class RoomService {
     });
   }
 
+  public async GetRoomLowestService(productId: string): Promise<any> {
+    const path = `room/getRoomLowestByProduct?productId=${productId}`;
+    return await apiService.executeApi({
+      path,
+      showSuccess: false,
+      showError: false,
+    });
+  }
+
   // public async getDetailProductService(productId: string): Promise<any> {
   //   const path = `product/detail?productId=${productId}`;
   //   return await apiService.executeApi({
