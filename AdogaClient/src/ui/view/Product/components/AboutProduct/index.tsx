@@ -1,8 +1,11 @@
 import React from "react";
 import ProductEntities from "@entities/Product";
 import RatingComponent from "@components/commons/single/RatingComponent";
+import SkeletonComponent from "@components/commons/single/SkeletonComponent";
+import EffectImageComponent from "@components/commons/single/EffectImageComponent";
 interface IAboutProduct {
   dataProduct: ProductEntities;
+  loading?: boolean;
 }
 interface IProcessRating {
   name: string;
@@ -32,7 +35,7 @@ const ItemProcessRating = ({ name, number }: IProcessRating) => {
   );
 };
 
-const AboutProduct = ({ dataProduct }: IAboutProduct) => {
+const AboutProduct = ({ dataProduct, loading = true }: IAboutProduct) => {
   if (!dataProduct) return null;
 
   const {
@@ -48,26 +51,38 @@ const AboutProduct = ({ dataProduct }: IAboutProduct) => {
       <div className="flex">
         <div className="w-2/6 mr-4 border border-gray-1100 rounded-md p-4 place-self-start">
           <span className="block mb-4 text-black text-sm">Overall rating:</span>
-          <RatingComponent rating={productRating} className=" text-lg" />
-          <ul className="mt-4">
-            {productRatingDetail.map((item, index) => (
-              <ItemProcessRating
-                key={index}
-                name={item.ratingName}
-                number={item.ratingNumber}
-              />
-            ))}
-          </ul>
+          {loading ? (
+            <SkeletonComponent loading={loading} rowsSkeleton={4} />
+          ) : (
+            <>
+              <RatingComponent rating={productRating} className=" text-lg" />
+              <ul className="mt-4">
+                {productRatingDetail.map((item, index) => (
+                  <ItemProcessRating
+                    key={index}
+                    name={item.ratingName}
+                    number={item.ratingNumber}
+                  />
+                ))}
+              </ul>
+            </>
+          )}
         </div>
         <div className=" w-4/6 border border-gray-1100 rounded-md p-4">
           <div className="relative">
             <div className=" h-270px">
               {productImages.length > 1 && (
-                <img
-                  src={productImages[0].linkImage}
-                  alt={productImages[0].linkImage}
-                  className="object-cover"
-                />
+                <>
+                  {loading ? (
+                    <EffectImageComponent />
+                  ) : (
+                    <img
+                      src={productImages[0].linkImage}
+                      alt={productImages[0].linkImage}
+                      className="object-cover"
+                    />
+                  )}
+                </>
               )}
             </div>
             <div
@@ -80,10 +95,14 @@ const AboutProduct = ({ dataProduct }: IAboutProduct) => {
               </h1>
             </div>
           </div>
-          <div
-            dangerouslySetInnerHTML={{ __html: productAbout }}
-            className="mt-4 text-black"
-          ></div>
+          {loading ? (
+            <SkeletonComponent loading={loading} rowsSkeleton={4} />
+          ) : (
+            <div
+              dangerouslySetInnerHTML={{ __html: productAbout }}
+              className="mt-4 text-black"
+            ></div>
+          )}
         </div>
       </div>
     </div>

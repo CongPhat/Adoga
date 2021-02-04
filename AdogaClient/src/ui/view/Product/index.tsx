@@ -53,6 +53,7 @@ const Product = () => {
         title={dataRender.productName}
         star={dataRender.productStar}
         street={dataRender.productStreet}
+        loading={effect.loading}
       />
       <div className=" w-3/4">
         <HeaderBenefitProduct benefits={dataRender.productBenefits} />
@@ -69,7 +70,7 @@ const Product = () => {
           <RoomLowestPrice productId={params.productId} />
         </div>
       </div>
-      <AboutProduct dataProduct={dataRender} />
+      <AboutProduct dataProduct={dataRender} loading={effect.loading}/>
       {/* <div className="mt-16">
         <RoomsProduct productId={params.productId} />
       </div> */}

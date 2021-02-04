@@ -372,8 +372,14 @@ body {
 
 //loading
 .ant-skeleton-title {
-  margin-top: 12px !important;
+  margin-bottom: 12px !important;
 }
 .ant-skeleton-paragraph {
   margin-top: 0 !important;
+}
+
+.ant-skeleton-reverse {
+  .ant-skeleton-content {
+    text-align: -webkit-right !important;
+  }
 }
