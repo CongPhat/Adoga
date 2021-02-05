@@ -26,6 +26,27 @@ export default class ProductService {
     });
   }
 
+  public async getProductsLikeByLocationService(
+    locationId,
+    optionString
+  ): Promise<any> {
+    const path = `product/getProductsLikeByLocation${optionString}&locationId=${locationId}`;
+    return await apiService.executeApi({
+      path,
+      showSuccess: false,
+      showError: false,
+    });
+  }
+
+  public async getProductsLikeService(productId): Promise<any> {
+    const path = `product/getProductLike?productId=${productId}`;
+    return await apiService.executeApi({
+      path,
+      showSuccess: false,
+      showError: false,
+    });
+  }
+
   public async getAllProductLocationService(optionQuery): Promise<any> {
     const path = `product/getProductByLocation${optionQuery}`;
     return await apiService.executeApi({

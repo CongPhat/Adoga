@@ -15,9 +15,10 @@ export interface IDetailProduct {
 }
 
 export default class PresenterProduct {
-  static useDetailProduct(productId): IDetailProduct {
+  static useDetailProduct(productId, dataFake): IDetailProduct {
     const asyncGetDetailProduct = useSingleAsync<ProductEntities>(
-      new ProductRepositoryImpl().GetDetailProduct
+      new ProductRepositoryImpl().GetDetailProduct,
+      { initialData: dataFake }
     );
     useEffect(() => {
       asyncGetDetailProduct.execute(productId);

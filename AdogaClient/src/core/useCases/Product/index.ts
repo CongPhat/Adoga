@@ -15,6 +15,11 @@ export default class ProductRepositoryImpl extends ProductService {
     pageNumber
   ) => Promise<ProductEntities[]>;
   GetAllProductLocation: (options) => Promise<ProductEntities[]>;
+  GetProductsLikeByProduct: (productId: string) => Promise<ProductEntities[]>;
+  GetProductsLikeByLocation: (
+    locationId: string,
+    pagination: any
+  ) => Promise<ProductEntities[]>;
   GetProductRecommended: (optios) => Promise<ProductEntities[]>;
   GetDetailProduct: (productId: string) => Promise<ProductEntities>;
 
@@ -44,6 +49,27 @@ export default class ProductRepositoryImpl extends ProductService {
           return ProductEntities.CreateList(res.data.data || []);
         }
       );
+    };
+
+    this.GetProductsLikeByProduct = async (
+      productId
+    ): Promise<ProductEntities[]> => {
+      return await this.getProductsLikeService(productId).then((res) => {
+        return ProductEntities.CreateList(res.data.data || []);
+      });
+    };
+
+    this.GetProductsLikeByLocation = async (
+      locationId,
+      pagination
+    ): Promise<ProductEntities[]> => {
+      const optionsQuery = parseObjectToSearch(pagination);
+      return await this.getProductsLikeByLocationService(
+        locationId,
+        optionsQuery
+      ).then((res) => {
+        return ProductEntities.CreateList(res.data.data || []);
+      });
     };
 
     this.GetProductRecommended = async (
@@ -89,21 +115,6 @@ export default class ProductRepositoryImpl extends ProductService {
     if (PriceTo) {
       dataResult = dataResult.filter((x) => x.price <= parseInt(PriceTo));
     }
-    return ProductEntities.CreateList(dataResult);
-  }
-  public async GetProductsLikeByLocation(
-    locationId
-  ): Promise<ProductEntities[]> {
-    //fake
-    let dataResult = [...dataProductFake]
-      .filter((x) => x.locationId == locationId)
-      .splice(0, 3);
-    return ProductEntities.CreateList(dataResult);
-  }
-
-  public async GetProductsLikeByProduct(): Promise<ProductEntities[]> {
-    //fake
-    let dataResult = [...dataProductFake].splice(0, 4);
     return ProductEntities.CreateList(dataResult);
   }
 

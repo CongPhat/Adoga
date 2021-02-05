@@ -1,5 +1,5 @@
 import InfiniteScrollLazyLoad from "@components/commons/effect/InfiniteScrollLazyLoadComponent";
-import { spliceArray } from "@helper/functions";
+import { createArrayLoadingEntities, spliceArray } from "@helper/functions";
 const CardProductProperties = React.lazy(
   () => import("@components/commons/feature/CardProductProperties")
 );
@@ -7,9 +7,13 @@ import React from "react";
 import ProductsLike from "./components/ProductsLike";
 import OptionsProduct from "./components/OptionsProduct";
 import ProductView from "./useAllProduct";
+import ProductEntities from "@entities/Product";
+import PrivateLocation from "./PrivateLocation";
 
 const AllProduct = ({}) => {
-  const { data, effect } = ProductView.useAllProduct();
+  const { data, effect } = ProductView.useAllProduct(
+    createArrayLoadingEntities(3, ProductEntities)
+  );
   return (
     <>
       <div className="all-product relative flex">
@@ -43,4 +47,4 @@ const AllProduct = ({}) => {
     </>
   );
 };
-export default React.memo(AllProduct);
+export default React.memo(PrivateLocation(AllProduct));

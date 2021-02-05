@@ -185,6 +185,12 @@ export const createArrayLoadingEntities = (number, Entities) => {
   return Array.from(Array(number).keys()).map((x) => new Entities(x));
 };
 
+export const arrayDataLoadingFake = (number, loading, value, valueFake) => {
+  const data = Array.from(Array(number).keys()).map((x) => valueFake);
+  const dataRender = checkEffectData(loading, value) ? data : value || data;
+  return dataRender;
+};
+
 export const checkEffectData = (loading, data) => {
   if (loading && !data) return true;
   if (!loading && !data) return false;

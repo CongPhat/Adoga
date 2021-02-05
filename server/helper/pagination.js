@@ -1,4 +1,5 @@
 const pagination = async (models, pageSize, pageNumber, dataQuery) => {
+  console.log(dataQuery);
   const dataFind = await models
     .find(dataQuery)
     .limit(parseInt(pageSize))

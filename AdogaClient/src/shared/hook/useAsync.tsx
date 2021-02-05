@@ -9,15 +9,17 @@ interface IState<T> {
 interface IOptions {
   showError?: boolean;
   showSuccess?: boolean;
+  initialData?: any;
 }
 
 export function useSingleAsync<T>(asyncFunction?, options?: IOptions) {
   if (!asyncFunction) return;
-  const { showError = true, showSuccess = false } = options || {};
+  const { showError = true, showSuccess = false, initialData = null } =
+    options || {};
 
   const [state, setState] = useState<IState<T>>({
     status: "ready",
-    value: null,
+    value: initialData,
     error: null,
   });
 
@@ -39,12 +41,22 @@ export function useSingleAsync<T>(asyncFunction?, options?: IOptions) {
     return Promise.reject(error);
   };
 
+  const setDataInitial = useCallback(
+    async (data) => {
+      setState((prevState) => ({
+        ...prevState,
+        value: data,
+      }));
+    },
+    [asyncFunction]
+  );
+
   const execute = useCallback(
     async (...args) => {
       setState((prevState) => ({
         ...prevState,
         status: "loading",
-        value: null,
+        value: initialData,
         error: null,
       }));
 
@@ -59,7 +71,7 @@ export function useSingleAsync<T>(asyncFunction?, options?: IOptions) {
     [asyncFunction]
   );
 
-  return { execute, ...state };
+  return { execute, setDataInitial, ...state };
 }
 
 interface IMutipleAsync extends IState<any> {

@@ -4,20 +4,29 @@ import Repository from "@useCases/Structure";
 import LocationService from "@api/location";
 
 export default class LocationRepositoryImpl extends LocationService {
-  GetLocationTop: () => Promise<LocationEntities>;
-  GetLocation: () => Promise<LocationEntities>;
+  GetLocationTop: () => Promise<Array<LocationEntities>>;
+  GetLocation: () => Promise<Array<LocationEntities>>;
+  GetDetailLocation: (locationId: string) => Promise<LocationEntities>;
   constructor() {
     super();
 
-    this.GetLocation = async (): Promise<LocationEntities> => {
+    this.GetLocation = async (): Promise<Array<LocationEntities>> => {
       return await this.getList().then((res) => {
         return LocationEntities.CreateList(res.data.data || []);
       });
     };
 
-    this.GetLocationTop = async (): Promise<LocationEntities> => {
+    this.GetLocationTop = async (): Promise<Array<LocationEntities>> => {
       return await this.getListLocationTop().then((res) => {
         return LocationEntities.CreateList(res.data.data || []);
+      });
+    };
+
+    this.GetDetailLocation = async (
+      locationId: string
+    ): Promise<LocationEntities> => {
+      return await this.getDetailLocationService(locationId).then((res) => {
+        return new LocationEntities(res.data.data);
       });
     };
   }

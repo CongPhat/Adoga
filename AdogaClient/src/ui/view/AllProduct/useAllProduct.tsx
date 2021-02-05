@@ -86,9 +86,10 @@ class ProductView {
     };
   }
 
-  static useAllProduct = (): IUseProduct => {
+  static useAllProduct = (dataFake): IUseProduct => {
     const asyncGetAllProduct = useSingleAsync<Array<ProductEntities>>(
-      new ProductRepositoryImpl().GetAllProductLocation
+      new ProductRepositoryImpl().GetAllProductLocation,
+      { initialData: dataFake }
     );
     const location = useLocation();
 

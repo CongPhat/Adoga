@@ -24,6 +24,7 @@ const Get = async (id) => {
 
 route.get("/", controllerLocation.getData);
 route.get("/locationTop", controllerLocation.getDataIsTop);
+route.get("/detail", controllerLocation.getDetailLocation);
 // route.post(
 //   "/",
 //   controllerAuth.checkToken,

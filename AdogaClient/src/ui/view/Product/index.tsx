@@ -21,47 +21,38 @@ const Product = () => {
   const params: any = useParams();
   const setModal = useSetRecoilState(modalImagesProduct);
   const { presenter, data, effect } = PresenterProduct.useDetailProduct(
-    params.productId
+    params.productId,
+    new ProductEntities({
+      images: createArrayImageSkeleton(5),
+    })
   );
 
   const handleShowImagesProduct = useCallback(() => {
     setModal({
-      dataProduct: dataRender,
+      dataProduct: dataDetailProduct,
       dataRoom: null,
       type: "product",
       isShow: true,
     });
   }, [data]);
 
-  const dataRender: ProductEntities = checkEffectData(
-    status == "loading",
-    data.dataDetailProduct
-  )
-    ? new ProductEntities({
-        images: createArrayImageSkeleton(5),
-      })
-    : data.dataDetailProduct ||
-      new ProductEntities({
-        images: createArrayImageSkeleton(5),
-      });
-
-  // const { dataDetailProduct } = data;
+  const { dataDetailProduct } = data;
 
   return (
     <section className="py-8">
       <HeaderProduct
-        title={dataRender.productName}
-        star={dataRender.productStar}
-        street={dataRender.productStreet}
+        title={dataDetailProduct.productName}
+        star={dataDetailProduct.productStar}
+        street={dataDetailProduct.productStreet}
         loading={effect.loading}
       />
       <div className=" w-3/4">
-        <HeaderBenefitProduct benefits={dataRender.productBenefits} />
+        <HeaderBenefitProduct benefits={dataDetailProduct.productBenefits} />
       </div>
       <div className="flex mt-8">
         <div className=" w-3/4">
           <ImagesPreview
-            images={dataRender.productImages}
+            images={dataDetailProduct.productImages}
             showImagesProduct={handleShowImagesProduct}
             loading={effect.loading}
           />
@@ -70,14 +61,14 @@ const Product = () => {
           <RoomLowestPrice productId={params.productId} />
         </div>
       </div>
-      <AboutProduct dataProduct={dataRender} loading={effect.loading}/>
+      <AboutProduct dataProduct={dataDetailProduct} loading={effect.loading} />
       {/* <div className="mt-16">
         <RoomsProduct productId={params.productId} />
       </div> */}
       <InfiniteScrollLazyLoad delay={1}>
         <RoomsProduct productId={params.productId} />
-        <ProductsLike />
-        <ProductsViewed />
+        <ProductsLike productId={params.productId} />
+        {/* <ProductsViewed /> */}
       </InfiniteScrollLazyLoad>
       <ModalShowImages />
     </section>

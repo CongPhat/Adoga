@@ -30,24 +30,20 @@ const CardProduct = ({ product, loading = true }: IProps) => {
       <div>
         <h1 className=" text-sm font-semibold mt-2 mb-1">
           {loading ? (
-            <LoadingParagraphComponent row={1} title={false} />
+            <LoadingParagraphComponent row={2} />
           ) : (
             product?.productName
           )}
         </h1>
-        {loading ? (
-          <LoadingParagraphComponent row={0} />
-        ) : (
-          <Rate value={product?.productStar} disabled className=" text-sm" />
-        )}
-        {loading ? (
-          <LoadingParagraphComponent row={0} />
-        ) : (
+        {!loading && (
           <>
-            <p className="text-blue-600 text-xs">{product?.productStreet}</p>
-            <p className="text-red-1100 hover:text-red-1100 text-lg">
-              đ {parseMoneyVND(product?.productPrice)}
-            </p>
+            <Rate value={product?.productStar} disabled className=" text-sm" />
+            <>
+              <p className="text-blue-600 text-xs">{product?.productStreet}</p>
+              <p className="text-red-1100 hover:text-red-1100 text-lg">
+                đ {parseMoneyVND(product?.productPrice)}
+              </p>
+            </>
           </>
         )}
       </div>

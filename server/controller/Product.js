@@ -77,11 +77,20 @@ const controller = {
   },
 
   getProductByLocation: async (req, res, next) => {
-    const { location, pageSize, pageNumber } = req.query;
-
-    const dataFind = await pagination(ProductModel, pageSize, pageNumber, {
+    const { location, pageSize, pageNumber, PriceTo, PriceFrom } = req.query;
+    let options = {
       locationId: location,
-    });
+    };
+    if (PriceFrom && PriceTo) {
+      options["price"] = { $gte: PriceFrom, $lte: PriceTo };
+    }
+
+    const dataFind = await pagination(
+      ProductModel,
+      pageSize,
+      pageNumber,
+      options
+    );
 
     const result = await Promise.all(
       dataFind.map(async (item) => {
@@ -111,6 +120,47 @@ const controller = {
     res.send(messageSuccess("Get Product Recommended Success", result));
   },
 
+  getProductsLike: async (req, res, next) => {
+    const { productId, pageSize, pageNumber } = req.query;
+
+    const dataProductFind = await ProductModel.findOne({ _id: productId });
+    if (!dataProductFind) {
+      //error
+    }
+
+    const dataFind = await pagination(ProductModel, pageSize, pageNumber, {
+      locationId: dataProductFind.locationId,
+    });
+
+    const result = await Promise.all(
+      dataFind.map(async (item) => {
+        const dataResult = await setOptionRooms(item);
+        return dataResult;
+      })
+    );
+
+    res.send(messageSuccess("Get List Product Like Success", result));
+  },
+
+  getProductsLikeByLocation: async (req, res, next) => {
+    const { locationId, pageSize, pageNumber } = req.query;
+
+    const dataFind = await pagination(ProductModel, pageSize, pageNumber, {
+      locationId,
+    });
+
+    const result = await Promise.all(
+      dataFind.map(async (item) => {
+        const dataResult = await setOptionRooms(item);
+        return dataResult;
+      })
+    );
+
+    res.send(
+      messageSuccess("Get List Product Like By Location Success", result)
+    );
+  },
+
   getDetailProduct: async (req, res, next) => {
     const { productId } = req.query;
 
@@ -121,23 +171,6 @@ const controller = {
     const dataResult = await setOptionRooms(dataProduct, true, true);
 
     res.send(messageSuccess("Get Detail Product Success", dataResult));
-
-    // res.send(messageSuccess("Get List Product By Loction Success", dataFind));
-    // const result = Promise.all(
-    //   dataFind.map(async (item) => {
-    //     const userFind = await User.findOne({ _id: item.userId }, "image name");
-    //     const commentFind = await Comment.find({
-    //       postId: item._id,
-    //       idCommentParrent: "",
-    //     }).populate("user", "name");
-    //     return {
-    //       ...item._doc,
-    //     };
-    //   })
-    // );
-    // result.then((data) => {
-    //   res.send(data);
-    // });
   },
 
   // res.send(messageSuccess("Get List Product By Loction Success", dataFind));

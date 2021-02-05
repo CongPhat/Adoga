@@ -34,29 +34,24 @@ const CardProductSimple = ({
       </div>
       <div className="px-2">
         {loading ? (
-          <LoadingParagraphComponent row={0} />
+          <LoadingParagraphComponent row={2} />
         ) : (
           <h1 className=" text-sm-em font-semibold mt-2 mb-1 group-hover:underline ellipsis">
             {product?.productName}
           </h1>
         )}
 
-        {loading ? (
-          <LoadingParagraphComponent row={0} />
-        ) : (
-          <p className="text-blue-600 text-xs-em ellipsis">
-            {product.productStreet}
-          </p>
-        )}
-
-        {loading ? (
-          <LoadingParagraphComponent row={0} />
-        ) : (
-          <Rate
-            value={product?.productStar}
-            disabled
-            className=" text-xs-em text-pink-1000"
-          />
+        {!loading && (
+          <>
+            <p className="text-blue-600 text-xs-em ellipsis">
+              {product.productStreet}
+            </p>
+            <Rate
+              value={product?.productStar}
+              disabled
+              className=" text-xs-em text-pink-1000"
+            />
+          </>
         )}
 
         {!loading && (

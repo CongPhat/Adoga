@@ -22,6 +22,11 @@ const Get = async (id) => {
 
 route.get("/", controllerProduct.getData);
 route.get("/getProductByLocation", controllerProduct.getProductByLocation);
+route.get("/getProductLike", controllerProduct.getProductsLike);
+route.get(
+  "/getProductsLikeByLocation",
+  controllerProduct.getProductsLikeByLocation
+);
 route.get("/getProductRecommended", controllerProduct.getProductsRecommended);
 route.get("/detail", controllerProduct.getDetailProduct);
 

@@ -1,3 +1,4 @@
+import EffectImageComponent from "@components/commons/single/EffectImageComponent";
 import { IProduct } from "@entities/Product";
 import { Rate } from "antd";
 import React from "react";
@@ -15,10 +16,14 @@ const CardProductProperties = ({ product, loading }: IProps) => {
       to={`/product/${product.productId}`}
     >
       <div className=" w-2/6">
-        <PriviewImageProduct images={product.productImages} />
+        {loading ? (
+          <EffectImageComponent />
+        ) : (
+          <PriviewImageProduct images={product.productImages} />
+        )}
       </div>
       <div className="w-4/6">
-        <ProductProperties product={product} />
+        <ProductProperties product={product} loading={loading} />
       </div>
     </Link>
   );

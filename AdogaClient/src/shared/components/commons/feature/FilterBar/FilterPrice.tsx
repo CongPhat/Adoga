@@ -22,7 +22,7 @@ const FilterPrice = ({}) => {
       PriceFrom: value[0],
       PriceTo: value[1],
     };
-    setPrice(checkPrice(value[0], value[1], 0, 10000000));
+    setPrice(checkPrice(value[0], value[1], 0, 9999999));
     history.push(
       `${history.location.pathname}${parseObjectToSearch(dataSearchAfter)}`
     );
@@ -40,7 +40,7 @@ const FilterPrice = ({}) => {
 
   useEffect(() => {
     const { PriceFrom, PriceTo } = parseSearchToObject(history.location.search);
-    setPrice(checkPrice(PriceFrom, PriceTo, 0, 10000000));
+    setPrice(checkPrice(PriceFrom, PriceTo, 0, 9999999));
   }, [location.search]);
 
   const menu = (

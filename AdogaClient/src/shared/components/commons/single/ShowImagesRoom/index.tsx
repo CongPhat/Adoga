@@ -17,22 +17,24 @@ const ShowImagesRoom = ({ images }: IShowImagesRoom) => {
               <img src={images[0].linkImage} alt={images[0].title} />
             </div>
           )}
-          <div
-            className={`grid grid-cols-${
-              images.length >= 3 ? "2" : "1"
-            } gap-1 h-60`}
-          >
-            {images.length >= 2 && (
-              <div className="h-inherit">
-                <img src={images[1].linkImage} alt={images[1].title} />
-              </div>
-            )}
-            {images.length >= 3 && (
-              <div className="h-inherit">
-                <img src={images[2].linkImage} alt={images[2].title} />
-              </div>
-            )}
-          </div>
+          {images.length >= 2 && (
+            <div
+              className={`grid grid-cols-${
+                images.length >= 3 ? "2" : "1"
+              } gap-1 h-60`}
+            >
+              {images.length >= 2 && (
+                <div className="h-inherit">
+                  <img src={images[1].linkImage} alt={images[1].title} />
+                </div>
+              )}
+              {images.length >= 3 && (
+                <div className="h-inherit">
+                  <img src={images[2].linkImage} alt={images[2].title} />
+                </div>
+              )}
+            </div>
+          )}
         </div>
       )}
     </>

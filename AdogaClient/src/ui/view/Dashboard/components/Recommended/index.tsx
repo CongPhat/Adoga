@@ -9,7 +9,8 @@ import { checkEffectData, createArrayLoadingEntities } from "@helper/functions";
 
 const Recommended = ({}) => {
   const asyncGetProductRecommended = useSingleAsync<Array<ProductEntities>>(
-    new ProductRepositoryImpl().GetProductRecommended
+    new ProductRepositoryImpl().GetProductRecommended,
+    { initialData: createArrayLoadingEntities(3, ProductEntities) }
   );
 
   const { status, value } = asyncGetProductRecommended;
@@ -21,22 +22,15 @@ const Recommended = ({}) => {
     });
   }, []);
 
-  const dataRender: Array<IProduct> = checkEffectData(
-    status == "loading",
-    value
-  )
-    ? createArrayLoadingEntities(3, ProductEntities)
-    : value;
-
   return (
     <div className=" mt-60">
       <TitleDashboard text="Recommended places to stay for your next trip!" />
       <div className="w-5/6 m-auto grid lg:grid-cols-3 gap-4 sm:grid-cols-1">
-        {dataRender?.map((item, index) => (
+        {value?.map((item, index) => (
           <CardProductSimple
             product={item}
             key={index}
-            loading={asyncGetProductRecommended.status == "loading"}
+            loading={status == "loading"}
           />
         ))}
       </div>

@@ -21,4 +21,13 @@ export default class LocationService {
       showError: false,
     });
   }
+
+  public async getDetailLocationService(locationId): Promise<any> {
+    const path = `location/detail?locationId=${locationId}`;
+    return await apiService.executeApi({
+      path,
+      showSuccess: false,
+      showError: false,
+    });
+  }
 }

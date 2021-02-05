@@ -4,7 +4,7 @@ import { useLocation } from "react-router";
 import { parseMoneyVND, parseSearchToObject } from "@helper/functions";
 
 const SliderFilterPrice = ({ price, onAfterChange }) => {
-  const [stateSliderPrice, setStateSliderPrice] = useState([0, 10000000]);
+  const [stateSliderPrice, setStateSliderPrice] = useState([0, 9999999]);
   const location = useLocation();
 
   function onChange(value) {
@@ -21,8 +21,8 @@ const SliderFilterPrice = ({ price, onAfterChange }) => {
         range
         step={10}
         min={0}
-        max={10000000}
-        defaultValue={price.length == 0 ? [0, 10000000] : price}
+        max={9999999}
+        defaultValue={price.length == 0 ? [0, 9999999] : price}
         onChange={onChange}
         onAfterChange={(values) => onAfterChange(values)}
         // marks={marks}
