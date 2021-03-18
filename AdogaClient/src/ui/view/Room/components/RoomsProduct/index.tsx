@@ -3,6 +3,7 @@ import InfiniteScrollLazyLoad from "@components/commons/effect/InfiniteScrollLaz
 import { useRoomProduct } from "@view/Room/presenterRoom";
 import React from "react";
 import DropdownSeeAllFacilities from "../DropdownSeeAllFacilities";
+import LoadingComponent from "@components/commons/effect/LoadingComponent";
 const ItemRoomProduct = React.lazy(() => import("../ItemRoomProduct"));
 
 interface IRoomsProduct {
@@ -11,6 +12,14 @@ interface IRoomsProduct {
 const RoomsProduct = ({ productId }: IRoomsProduct) => {
   const { presenter, data, effect } = useRoomProduct(productId);
   const { dataListRoom } = data;
+
+  if (effect.loading)
+    return (
+      <div className="w-full h-48 mt-10">
+        <LoadingComponent />
+      </div>
+    );
+
   if (!dataListRoom) return <div className="h-350"></div>;
 
   return (

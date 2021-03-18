@@ -4,7 +4,7 @@ const RoomModel = require("../models/Room");
 const message = require("../helper/messageResponse");
 const commonController = require("./common");
 const { pagination } = require("../helper/pagination");
-const { messageSuccess } = require("../helper/messageResponse");
+const { messageSuccess, messageError } = require("../helper/messageResponse");
 const Facilities = require("../models/Facilities");
 
 const setRooms = async (dataProduct) => {
@@ -102,6 +102,24 @@ const controller = {
       rooms: dataRoom,
     };
     res.send(messageSuccess("Get Detail Product Success", dataResult));
+  },
+
+  getDetailRoom: async (req, res, next) => {
+    const { roomId } = req.query;
+    console.log(roomId, "roomIdroomIdroomId");
+    let dataRoom = await RoomModel.findOne({
+      _id: roomId,
+    });
+    if (!dataRoom) res.send(messageError("Room room does not exist"));
+
+    // const dataBenefit = await setBenefits(dataProduct);
+    // const dataRoom = await setRooms(dataProduct);
+    // const dataResult = {
+    //   ...dataProduct._doc,
+    //   benefits: dataBenefit,
+    //   rooms: dataRoom,
+    // };
+    // res.send(messageSuccess("Get Detail Product Success", dataResult));
   },
 };
 module.exports = controller;

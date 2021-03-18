@@ -4,12 +4,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { ReactComponentElement, ReactElement } from "react";
 interface IProps {
   text?: string | ReactElement;
+  icon?: any;
 }
-const EmptyComponent = ({ text = "No data" }: IProps) => {
+const EmptyComponent = ({ text = "No data", icon = faHotel }: IProps) => {
   return (
     <Empty
       image={
-        <FontAwesomeIcon icon={faHotel} className=" text-6xl text-gray-1100" />
+        <FontAwesomeIcon icon={icon} className=" text-6xl text-gray-1100" />
       }
       description={<div className=" text-base">{text}</div>}
     />

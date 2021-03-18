@@ -22,5 +22,6 @@ const Get = async (id) => {
 route.get("/", controllerRoom.getData);
 route.get("/getRoomByProduct", controllerRoom.getRoomByProduct);
 route.get("/getRoomLowestByProduct", controllerRoom.getOneRoomLowestByProduct);
+route.get("/getDetailRoom", controllerRoom.getDetailRoom);
 
 module.exports = route;

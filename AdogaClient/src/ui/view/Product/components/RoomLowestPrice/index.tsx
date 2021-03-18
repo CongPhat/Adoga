@@ -31,7 +31,7 @@ const RoomLowestPrice = ({ productId }: IRoomLowestPrice) => {
 
   useEffect(() => {
     asyncGetRoomLowest.execute(productId);
-  }, []);
+  }, [productId]);
 
   const setModal = useSetRecoilState(modalImagesProduct);
   const handleShowImagesProduct = () => {

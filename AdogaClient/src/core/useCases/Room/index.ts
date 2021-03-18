@@ -19,6 +19,7 @@ export default class RoomRepositoryImpl extends RoomService {
     pageNumber
   ) => Promise<RoomEntities[]>;
   GetRoomLowest: (productId) => Promise<RoomEntities>;
+  GetDetailRoom: (roomId) => Promise<RoomEntities>;
   constructor() {
     super();
 
@@ -39,6 +40,20 @@ export default class RoomRepositoryImpl extends RoomService {
     //get room lowest
     this.GetRoomLowest = async (productId): Promise<RoomEntities> => {
       return await this.GetRoomLowestService(productId).then((res) => {
+        return new RoomEntities(res.data.data);
+      });
+    };
+
+    this.GetRoomLowest = async (productId): Promise<RoomEntities> => {
+      return await this.GetRoomLowestService(productId).then((res) => {
+        return new RoomEntities(res.data.data);
+      });
+    };
+
+    this.GetDetailRoom = async (roomId: string): Promise<RoomEntities> => {
+      return await this.GetDetailRoomService(roomId).then((res) => {
+        console.log(res, "ressss");
+
         return new RoomEntities(res.data.data);
       });
     };
@@ -68,8 +83,8 @@ export default class RoomRepositoryImpl extends RoomService {
   //   return dataRoomAmenitiesImportant;
   // }
 
-  public async GetDetailRoom(roomId: string): Promise<RoomEntities> {
-    const dataFind = [dataRoom, dataRoom1].find((x) => x.id == roomId);
-    return new RoomEntities(dataFind);
-  }
+  // public async GetDetailRoom(roomId: string): Promise<RoomEntities> {
+  //   const dataFind = [dataRoom, dataRoom1].find((x) => x.id == roomId);
+  //   return new RoomEntities(dataFind);
+  // }
 }

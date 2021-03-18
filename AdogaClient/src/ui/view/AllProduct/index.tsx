@@ -11,6 +11,8 @@ import ProductEntities from "@entities/Product";
 import PrivateLocation from "./PrivateLocation";
 
 const AllProduct = ({}) => {
+  console.log("vo day ne");
+
   const { data, effect } = ProductView.useAllProduct(
     createArrayLoadingEntities(3, ProductEntities)
   );

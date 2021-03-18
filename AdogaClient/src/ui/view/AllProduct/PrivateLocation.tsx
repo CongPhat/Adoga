@@ -1,11 +1,11 @@
 import LoadingPrivateComponent from "@components/commons/effect/LoadingPrivateComponent";
 import LocationEntities from "@entities/Location";
-import ProductEntities from "@entities/Product";
 import { parseSearchToObject } from "@helper/functions";
 import { useSingleAsync } from "@hook/useAsync";
 import LocationRepositoryImpl from "@useCases/Location";
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router";
+import ErrorLocation from "./components/ErrorLocation";
 
 const PrivateLocation = (Component) => {
   return () => {
@@ -20,17 +20,22 @@ const PrivateLocation = (Component) => {
       const searchData = parseSearchToObject(location.search);
       asyncGetAllProduct
         .execute(searchData.location || "")
-        .then((res) => {
+        .then(() => {
           setPrivateLocation(true);
         })
-        .catch((err) => {
+        .catch(() => {
           setPrivateLocation(false);
         });
     }, []);
 
-    if (true) {
+    if (status == "loading") {
       return <LoadingPrivateComponent />;
     }
+
+    if (status == "error") {
+      return <ErrorLocation />;
+    }
+
     return <>{privateLocation && <Component />}</>;
   };
 };

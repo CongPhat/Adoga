@@ -23,6 +23,15 @@ export default class RoomService {
     });
   }
 
+  public async GetDetailRoomService(roomId: string): Promise<any> {
+    const path = `room/getDetailRoom?roomId=${roomId}`;
+    return await apiService.executeApi({
+      path,
+      showSuccess: false,
+      showError: false,
+    });
+  }
+
   // public async getDetailProductService(productId: string): Promise<any> {
   //   const path = `product/detail?productId=${productId}`;
   //   return await apiService.executeApi({

@@ -18,7 +18,9 @@ const ProductsViewed = React.lazy(() => import("./components/ProductsViewed"));
 const AboutProduct = React.lazy(() => import("./components/AboutProduct"));
 
 const Product = () => {
-  const params: any = useParams();
+  const params: {
+    productId: string;
+  } = useParams();
   const setModal = useSetRecoilState(modalImagesProduct);
   const { presenter, data, effect } = PresenterProduct.useDetailProduct(
     params.productId,
@@ -37,6 +39,10 @@ const Product = () => {
   }, [data]);
 
   const { dataDetailProduct } = data;
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [params.productId]);
 
   return (
     <section className="py-8">
